@@ -16,7 +16,7 @@ jobs:
           echo "::set-output name=ISSUE_NUMBER::$ISSUE_NUMBER"
 
       - name: Check if issue number exists
-        if: ${{ steps.get_issue_number.outputs.ISSUE_NUMBER != '' }}
+        if: ${{ steps.get_issue_number.outputs.ISSUE_NUMBER }}
         run: echo "Issue number found: ${{ steps.get_issue_number.outputs.ISSUE_NUMBER }}"
 
       - name: Move issue to In Progress on PR opened
