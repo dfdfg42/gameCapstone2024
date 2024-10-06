@@ -1,0 +1,47 @@
+name: Manage Issue Status with Pull Request Workflow
+
+on:
+  pull_request:
+    types: [opened, ready_for_review, closed]
+
+jobs:
+  move_issue:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Determine issue number from PR body
+        id: get_issue_number
+        run: |
+          ISSUE_NUMBER=$(echo "${{ github.event.pull_request.body }}" | grep -oP '(?<=Closes #)\d+')
+          echo "::set-output name=ISSUE_NUMBER::$ISSUE_NUMBER"
+
+      - name: Check if issue number exists
+        if: ${{ steps.get_issue_number.outputs.ISSUE_NUMBER }}
+        run: echo "Issue number found: ${{ steps.get_issue_number.outputs.ISSUE_NUMBER }}"
+
+      - name: Move issue to In Progress on PR opened
+        if: ${{ github.event.action == 'opened' }}
+        run: |
+          curl -X POST \
+            -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Accept: application/vnd.github.v3+json" \
+            https://api.github.com/projects/columns/IN_PROGRESS_COLUMN_ID/cards \
+            -d "{\"content_id\": ${{ steps.get_issue_number.outputs.ISSUE_NUMBER }}, \"content_type\": \"Issue\"}"
+
+      - name: Move issue to In Review on PR ready for review
+        if: ${{ github.event.action == 'ready_for_review' }}
+        run: |
+          curl -X POST \
+            -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Accept: application/vnd.github.v3+json" \
+            https://api.github.com/projects/columns/IN_REVIEW_COLUMN_ID/cards \
+            -d "{\"content_id\": ${{ steps.get_issue_number.outputs.ISSUE_NUMBER }}, \"content_type\": \"Issue\"}"
+
+      - name: Move issue to Done on PR merged
+        if: ${{ github.event.pull_request.merged == true }}
+        run: |
+          curl -X POST \
+            -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Accept: application/vnd.github.v3+json" \
+            https://api.github.com/projects/columns/DONE_COLUMN_ID/cards \
+            -d "{\"content_id\": ${{ steps.get_issue_number.outputs.ISSUE_NUMBER }}, \"content_type\": \"Issue\"}"
