@@ -17,7 +17,7 @@ jobs:
 
       - name: Check if issue number exists
         if: ${{ steps.get_issue_number.outputs.ISSUE_NUMBER }}
-        run: echo "Issue number found: ${{ steps.get_issue_number.outputs.ISSUE_NUMBER }}"
+      
 
       - name: Move issue to In Progress on PR opened
         if: ${{ github.event.action == 'opened' }}
