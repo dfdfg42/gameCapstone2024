@@ -38,6 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6437,7 +6438,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 8.351851
+  orthographic size: 10.222222
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -18469,7 +18470,7 @@ GameObject:
   - component: {fileID: 1269587926}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19045,6 +19046,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabs:
   - {fileID: 6749529728457446564, guid: ff2496df85c933c4e9cf45755ec681ed, type: 3}
+  - {fileID: 6221701723499978845, guid: 05d9f75539996dc4b876f94d6df181f1, type: 3}
   - {fileID: 5272879928290123412, guid: 6124eaeded2c09d4fbe0dd02a5e8d28a, type: 3}
   - {fileID: 8712857537723402916, guid: 624ca929d11dc1c42a293e351d9e50fe, type: 3}
 --- !u!4 &1368503948

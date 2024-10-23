@@ -45,6 +45,7 @@ public class Player : MonoBehaviour
         anim = GetComponent<Animator>();
         scanner = GetComponent<Scanner>();
         hands = GetComponentsInChildren<Hand>(true);
+
     }
 
     void OnEnable()
@@ -98,9 +99,21 @@ public class Player : MonoBehaviour
         if (!GameManager.Instance.isLive)
             return;
 
-        GameManager.Instance.health -= Time.deltaTime * 10;
+        Enemy enemy = collision.gameObject.GetComponent<Enemy>();
 
-        if (GameManager.Instance.health < 0)
+        //기본 근접 타입 몬스터일때
+        if (enemy != null && enemy.attackType == EnemyAttackType.melee)
+        {
+            GameManager.Instance.health -= Time.deltaTime * 10;
+        }
+        
+        else if (enemy != null && enemy.attackType != EnemyAttackType.melee) //기본타입 아니면 attackDamage만큼 즉시 감소
+        {
+            GameManager.Instance.health -= enemy.attackDamage;
+        }
+        
+
+        if (GameManager.Instance.health <= 0)
         {
             for (int index = 2; index < transform.childCount; index++)
             {

@@ -5,13 +5,30 @@ using UnityEngine.UIElements;
 
 public class Enemy : MonoBehaviour
 {
+    //default info
     public float speed;
     public float health;
     public float maxHealth;
-    public RuntimeAnimatorController[] animCon;
-    public Rigidbody2D target;
+    public float rangedDistance = 3f; //원거리몹 유지 거리
+
+    //Attack
+    public float damage = 10f;
+    //public EnemyAttackType attackType = EnemyAttackType.melee;
+    public EnemyAttackType attackType = EnemyAttackType.ranged; //임시
+
+    //특수 Attack
+    public float attackDamage = 3f; //특수 공격 데미지
+    public float attackSpeed = 3f; //특수 공격 스피드
+    public float attackCooldown = 5f; //단위는 second
+
+    public float attackTimer = 0f; //공격 타이머
+    int bulletIndex = 1; //풀 인덱스
 
     bool isLive;
+
+
+    public RuntimeAnimatorController[] animCon;
+    public Rigidbody2D target;
 
     Rigidbody2D rigid;
     Collider2D coll;
@@ -26,6 +43,14 @@ public class Enemy : MonoBehaviour
         anim = GetComponent<Animator>();
         spriter = GetComponent<SpriteRenderer>();
         wait = new WaitForFixedUpdate();
+
+        //////////////test/////////////////////////
+        ///
+        rigid.gravityScale = 0;  // 중력 영향 제거
+        rigid.constraints = RigidbodyConstraints2D.FreezeRotation;  // 회전 방지
+        rigid.collisionDetectionMode = CollisionDetectionMode2D.Continuous;  // 충돌 감지 모드 설정
+        rigid.drag = 10;  // 마찰력 증가로 미끄러짐 감소
+        rigid.mass = 100;  // 질량 증가로 밀림 현상 감소
     }
 
     void FixedUpdate()
@@ -36,11 +61,79 @@ public class Enemy : MonoBehaviour
         if (!isLive || anim.GetCurrentAnimatorStateInfo(0).IsName("Hit"))
             return;
 
-
         Vector2 dirVec = target.position - rigid.position;
-        Vector2 nextVec = dirVec.normalized * speed * Time.fixedDeltaTime;
-        rigid.MovePosition(rigid.position + nextVec);
+        float distance = Vector2.Distance(target.position, rigid.position);
         rigid.velocity = Vector2.zero;
+
+        //Player tracking
+        if (attackType == EnemyAttackType.ranged) //원거리 공격 타입일 때
+        {
+
+            Vector2 moveVec = Vector2.zero;
+
+            // 공격 타이머 업데이트
+            attackTimer += Time.fixedDeltaTime;
+
+            // attackSpeed 간격으로 총알 발사
+            if (attackTimer >= attackSpeed)
+            {
+                AttackRanged();
+                attackTimer = 0f;  // 타이머 리셋
+            }
+
+
+            // 거리가 rangedDistance보다 클 때만 이동
+            if (distance < rangedDistance - 0.1f)  // 여유 범위 추가
+            {
+                //플레이어와 가까우면 뒤로 이동
+                moveVec = -dirVec.normalized * speed;
+            }
+            else if (distance > rangedDistance + 0.1f) 
+            {
+                //플레이어와 멀면 앞으로 이동
+                moveVec = dirVec.normalized * speed;
+          
+            }
+            if (moveVec != Vector2.zero)
+            {
+                Vector2 newPosition = rigid.position + moveVec * Time.fixedDeltaTime;
+                rigid.MovePosition(newPosition);
+            }
+        }
+
+        else if(attackType == EnemyAttackType.rush)
+        {
+
+        }
+
+        else //기본 타입일 때
+        {
+            Vector2 nextVec = dirVec.normalized * speed * Time.fixedDeltaTime;
+            rigid.MovePosition(rigid.position + nextVec);
+            
+        }
+    }
+
+    void AttackRanged()
+    {
+        // 플레이어 방향 계산
+        Vector2 dirVec = target.position - rigid.position;
+        dirVec = dirVec.normalized;
+
+        // 오브젝트 풀에서 총알 가져오기
+        GameObject bullet = GameManager.Instance.pool.Get(bulletIndex);  // MonsterBullet의 풀 인덱스
+        bullet.transform.position = transform.position;  // 몬스터의 위치에서 발사
+
+        // 총알 초기화
+        MonsterBullet monsterBullet = bullet.GetComponent<MonsterBullet>();
+        if (monsterBullet != null)
+        {
+            monsterBullet.Init(attackDamage, dirVec); 
+        }
+
+        // 플레이어 바라보도록 총알 회전
+        float angle = Mathf.Atan2(dirVec.y, dirVec.x) * Mathf.Rad2Deg;
+        bullet.transform.rotation = Quaternion.AngleAxis(angle - 90, Vector3.forward);
     }
 
     void LateUpdate()
@@ -63,6 +156,22 @@ public class Enemy : MonoBehaviour
         spriter.sortingOrder = 2;
         anim.SetBool("Dead", false);
         health = maxHealth;
+    }
+
+    public void onAttack()
+    {
+        if (attackType == EnemyAttackType.ranged)
+        {
+            //Ranged Attack
+            //조건 플레이어와 거리가 특정 이하일 경우 & 쿨타임 돌았을 때.
+            //발사체 오브젝트 생성해서 고유 데미지 값으로 플레이어 데미지 닳게 하기.
+        }
+        else if (attackType == EnemyAttackType.rush)
+        {
+            //rush Attack
+            //조건 플레이어와 거리가 특정 이하일 경우 & 쿨타임 돌았을 때.
+            //플레이어 방향으로 돌진하게 하면서 고유 데미지 값으로 플레이어 데미지 닳게하기.
+        }
     }
 
     public void Init(SpawnData data)
@@ -116,4 +225,10 @@ public class Enemy : MonoBehaviour
     {
         gameObject.SetActive(false);
     }
+}
+public enum EnemyAttackType
+{
+    ranged,
+    melee,
+    rush
 }
