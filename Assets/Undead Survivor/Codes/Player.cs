@@ -53,7 +53,6 @@ public class Player : MonoBehaviour
         speed *= Character.Speed;
         anim.runtimeAnimatorController = animCon[GameManager.Instance.playerId];
     }
-
     private void Update()
     {
         if (Input.GetButtonDown("Jump"))
@@ -101,28 +100,23 @@ public class Player : MonoBehaviour
 
         Enemy enemy = collision.gameObject.GetComponent<Enemy>();
 
-        //기본 근접 타입 몬스터일때
-        if (enemy != null && enemy.attackType == EnemyAttackType.melee)
-        {
+        //기본 몬스터의 근접 공격
+        if (enemy != null){
             GameManager.Instance.health -= Time.deltaTime * 10;
         }
-        
-        else if (enemy != null && enemy.attackType != EnemyAttackType.melee) //기본타입 아니면 attackDamage만큼 즉시 감소
+        if (GameManager.Instance.health < 0)
         {
-            GameManager.Instance.health -= enemy.attackDamage;
+            this.onDeath();
         }
-        
+    }
 
-        if (GameManager.Instance.health <= 0)
-        {
-            for (int index = 2; index < transform.childCount; index++)
-            {
-                transform.GetChild(index).gameObject.SetActive(false);
-            }
-
-            anim.SetTrigger("Dead");
-            GameManager.Instance.GameOver();
+    public void onDeath(){
+        for (int index = 2; index < transform.childCount; index++){
+            transform.GetChild(index).gameObject.SetActive(false);
         }
+
+        anim.SetTrigger("Dead");
+        GameManager.Instance.GameOver();
     }
 
     public void OnDash()

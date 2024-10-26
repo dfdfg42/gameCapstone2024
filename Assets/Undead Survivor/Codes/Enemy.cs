@@ -9,7 +9,7 @@ public class Enemy : MonoBehaviour
     public float speed;
     public float health;
     public float maxHealth;
-    public float rangedDistance = 3f; //원거리몹 유지 거리
+    public float rangedDistance = 3f; //공격 거리
 
     //Attack
     public float damage = 10f;
@@ -18,11 +18,12 @@ public class Enemy : MonoBehaviour
 
     //특수 Attack
     public float attackDamage = 3f; //특수 공격 데미지
-    public float attackSpeed = 3f; //특수 공격 스피드
-    public float attackCooldown = 5f; //단위는 second
+    public float attackSpeed = 1f; //특수 공격 스피드
 
-    public float attackTimer = 0f; //공격 타이머
-    int bulletIndex = 1; //풀 인덱스
+    //Trigger
+    public bool attacked;
+    public float attackMaxCooldown = 2f; //단위는 second
+    public float attackCooldown = 2f;
 
     bool isLive;
 
@@ -71,17 +72,6 @@ public class Enemy : MonoBehaviour
 
             Vector2 moveVec = Vector2.zero;
 
-            // 공격 타이머 업데이트
-            attackTimer += Time.fixedDeltaTime;
-
-            // attackSpeed 간격으로 총알 발사
-            if (attackTimer >= attackSpeed)
-            {
-                AttackRanged();
-                attackTimer = 0f;  // 타이머 리셋
-            }
-
-
             // 거리가 rangedDistance보다 클 때만 이동
             if (distance < rangedDistance - 0.1f)  // 여유 범위 추가
             {
@@ -103,7 +93,17 @@ public class Enemy : MonoBehaviour
 
         else if(attackType == EnemyAttackType.rush)
         {
-
+            if(attacked==true){
+                return;
+            }
+            // 기본 이동.
+            if (distance < rangedDistance - 0.1f)  // 여유 범위 추가
+            {
+                //플레이어와 가까우면 뒤로 이동
+                onAttack();
+            }
+            Vector2 nextVec = dirVec.normalized * speed * Time.fixedDeltaTime;
+            rigid.MovePosition(rigid.position + nextVec);
         }
 
         else //기본 타입일 때
@@ -112,28 +112,6 @@ public class Enemy : MonoBehaviour
             rigid.MovePosition(rigid.position + nextVec);
             
         }
-    }
-
-    void AttackRanged()
-    {
-        // 플레이어 방향 계산
-        Vector2 dirVec = target.position - rigid.position;
-        dirVec = dirVec.normalized;
-
-        // 오브젝트 풀에서 총알 가져오기
-        GameObject bullet = GameManager.Instance.pool.Get(bulletIndex);  // MonsterBullet의 풀 인덱스
-        bullet.transform.position = transform.position;  // 몬스터의 위치에서 발사
-
-        // 총알 초기화
-        MonsterBullet monsterBullet = bullet.GetComponent<MonsterBullet>();
-        if (monsterBullet != null)
-        {
-            monsterBullet.Init(attackDamage, dirVec); 
-        }
-
-        // 플레이어 바라보도록 총알 회전
-        float angle = Mathf.Atan2(dirVec.y, dirVec.x) * Mathf.Rad2Deg;
-        bullet.transform.rotation = Quaternion.AngleAxis(angle - 90, Vector3.forward);
     }
 
     void LateUpdate()
@@ -145,6 +123,9 @@ public class Enemy : MonoBehaviour
             return;
 
         spriter.flipX = target.position.x < rigid.position.x;
+        if( (attackCooldown >= 0f) && (attacked == false)) {
+            attackCooldown -= Time.deltaTime;
+        }
     }
 
     void OnEnable()
@@ -156,7 +137,7 @@ public class Enemy : MonoBehaviour
         spriter.sortingOrder = 2;
         anim.SetBool("Dead", false);
         health = maxHealth;
-    }
+    }   
 
     public void onAttack()
     {
@@ -171,6 +152,11 @@ public class Enemy : MonoBehaviour
             //rush Attack
             //조건 플레이어와 거리가 특정 이하일 경우 & 쿨타임 돌았을 때.
             //플레이어 방향으로 돌진하게 하면서 고유 데미지 값으로 플레이어 데미지 닳게하기.
+            if((attacked == false) && (attackCooldown <= 0f) ){
+                attackCooldown = 3f;
+                attacked = true;
+                StartCoroutine(rushAttack());
+            }
         }
     }
 
@@ -218,7 +204,23 @@ public class Enemy : MonoBehaviour
         Vector3 playerPos = GameManager.Instance.player.transform.position;
         Vector3 dirVec = transform.position - playerPos;
         rigid.AddForce(dirVec.normalized * 3, ForceMode2D.Impulse);
+    }
 
+    IEnumerator rushAttack(){
+        //공격 전 돌진 준비 모션.
+        yield return new WaitForSeconds(0.75f);
+
+
+        //돌진 로직
+        Vector2 dirVec = target.position - rigid.position;
+        float distance = Vector2.Distance(target.position, rigid.position);
+        rigid.velocity = Vector2.zero;
+        
+        for(int i = 0; i<10; i++){
+            Vector2 nextVec = dirVec.normalized * speed * 20 * Time.fixedDeltaTime;
+            rigid.MovePosition(rigid.position + nextVec);
+            yield return new WaitForSeconds(0.01f);
+        }
     }
 
     void Dead()

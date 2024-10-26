@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class MonsterBullet : MonoBehaviour
 {
-    public float damage = 3f; //ÀÏ´Ü 3À¸·Î
-    public float speed = 3f;  // ÃÑ¾Ë ¼Óµµ(ÀÏ´Ü 3À¸·Î)
+    public float damage = 3f; //ì¼ë‹¨ 3ìœ¼ë¡œ
+    public float speed = 3f;  // ì´ì•Œ ì†ë„(ì¼ë‹¨ 3ìœ¼ë¡œ)
 
     Vector2 direction;
     Rigidbody2D rigid;
@@ -23,18 +23,22 @@ public class MonsterBullet : MonoBehaviour
 
     void FixedUpdate()
     {
-        // ÃÑ¾Ë ÀÌµ¿
+        // ì´ì•Œ ì´ë™
         rigid.velocity = direction * speed;
     }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        // ÇÃ·¹ÀÌ¾î¿Í Ãæµ¹ÇßÀ» ¶§
+        // í”Œë ˆì´ì–´ì™€ ì¶©ëŒí–ˆì„ ë•Œ
         if (collision.CompareTag("Player"))
         {
-            // ÇÃ·¹ÀÌ¾î µ¥¹ÌÁö Ã³¸®
+            // í”Œë ˆì´ì–´ ë°ë¯¸ì§€ ì²˜ë¦¬
             GameManager.Instance.health -= damage;
-            // ÃÑ¾Ë ºñÈ°¼ºÈ­
+            if (GameManager.Instance.health < 0)
+            {
+                collision.gameObject.GetComponent<Player>().onDeath();
+            }
+            // ì´ì•Œ ë¹„í™œì„±í™”
             gameObject.SetActive(false);
         }
         
