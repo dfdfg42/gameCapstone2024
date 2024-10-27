@@ -34,7 +34,7 @@ public class MonsterBullet : MonoBehaviour
         {
             // 플레이어 데미지 처리
             GameManager.Instance.health -= damage;
-            if (GameManager.Instance.health < 0)
+            if (GameManager.Instance.health <= 0)
             {
                 collision.gameObject.GetComponent<Player>().onDeath();
             }

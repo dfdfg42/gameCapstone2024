@@ -13,8 +13,7 @@ public class Enemy : MonoBehaviour
 
     //Attack
     public float damage = 10f;
-    //public EnemyAttackType attackType = EnemyAttackType.melee;
-    public EnemyAttackType attackType = EnemyAttackType.ranged; //임시
+    public EnemyAttackType attackType = EnemyAttackType.melee;
 
     //특수 Attack
     public float attackDamage = 3f; //특수 공격 데미지
@@ -36,6 +35,8 @@ public class Enemy : MonoBehaviour
     Animator anim;
     SpriteRenderer spriter;
     WaitForFixedUpdate wait;
+
+    int bulletIndex = 1; //풀 인덱스
 
     void Awake()
     {
@@ -69,9 +70,11 @@ public class Enemy : MonoBehaviour
         //Player tracking
         if (attackType == EnemyAttackType.ranged) //원거리 공격 타입일 때
         {
-
             Vector2 moveVec = Vector2.zero;
-
+            // attack
+            if(attacked==false){
+                onAttack();
+            }
             // 거리가 rangedDistance보다 클 때만 이동
             if (distance < rangedDistance - 0.1f)  // 여유 범위 추가
             {
@@ -144,8 +147,28 @@ public class Enemy : MonoBehaviour
         if (attackType == EnemyAttackType.ranged)
         {
             //Ranged Attack
-            //조건 플레이어와 거리가 특정 이하일 경우 & 쿨타임 돌았을 때.
-            //발사체 오브젝트 생성해서 고유 데미지 값으로 플레이어 데미지 닳게 하기.
+            if((attacked == false) && (attackCooldown <= 0f) ){
+                attackCooldown = 3f;
+                attacked = true;
+
+                // 플레이어 방향 계산
+                Vector2 dirVec = target.position - rigid.position;
+                dirVec = dirVec.normalized;
+                // 오브젝트 풀에서 총알 가져오기
+                GameObject bullet = GameManager.Instance.pool.Get(bulletIndex);  // MonsterBullet의 풀 인덱스
+                bullet.transform.position = transform.position;  // 몬스터의 위치에서 발사
+                // 총알 초기화
+                MonsterBullet monsterBullet = bullet.GetComponent<MonsterBullet>();
+                if (monsterBullet != null)
+                {
+                    monsterBullet.Init(attackDamage, dirVec); 
+                }
+                // 플레이어 바라보도록 총알 회전
+                float angle = Mathf.Atan2(dirVec.y, dirVec.x) * Mathf.Rad2Deg;
+                bullet.transform.rotation = Quaternion.AngleAxis(angle - 90, Vector3.forward);
+                
+                attacked = false;
+            }
         }
         else if (attackType == EnemyAttackType.rush)
         {
@@ -208,6 +231,7 @@ public class Enemy : MonoBehaviour
 
     IEnumerator rushAttack(){
         //공격 전 돌진 준비 모션.
+
         yield return new WaitForSeconds(0.75f);
 
 
@@ -217,7 +241,7 @@ public class Enemy : MonoBehaviour
         rigid.velocity = Vector2.zero;
         
         for(int i = 0; i<10; i++){
-            Vector2 nextVec = dirVec.normalized * speed * 20 * Time.fixedDeltaTime;
+            Vector2 nextVec = dirVec.normalized * speed * attackSpeed * Time.fixedDeltaTime;
             rigid.MovePosition(rigid.position + nextVec);
             yield return new WaitForSeconds(0.01f);
         }
