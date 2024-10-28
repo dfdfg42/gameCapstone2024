@@ -1,20 +1,35 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 public class Dash : MonoBehaviour
 {
+    public delegate void DashEndHandler();
+    public event DashEndHandler OnDashEnd;
+
     Vector2 dir;
     int damage, distance;
     const int Fdamage = 1, Fdistance = 5;
 
+    public float dashDuration = 0.1f;  // ëŒ€ì‹œ ì§€ì† ì‹œê°„ (ì§§ê²Œ ì„¤ì •)
+    public float dashCooldown = 0.5f;  // ëŒ€ì‹œ ì¿¨íƒ€ì„ (ëª…ì¤‘ ì‹¤íŒ¨ ì‹œ)
+    private bool canDash = true;
+    private Rigidbody2D rb;
+
+    void Awake()
+    {
+        rb = GetComponent<Rigidbody2D>();
+    }
+
     public void Init(Vector2 direction)
     {
-        this.dir = direction;
+        if (canDash)
+        {
+            this.dir = direction;
 
-        Setting();
-        Dashing();
-        Effect();
+            Setting();
+            StartCoroutine(Dashing());
+            Effect();
+        }
     }
 
     protected void Setting()
@@ -22,38 +37,61 @@ public class Dash : MonoBehaviour
         damage = Fdamage;
         distance = Fdistance;
 
-        // Å¸°ÙÀ» Ã£´Â ·ÎÁ÷ µî Ãß°¡ °¡´É
         Debug.Log("Setting up dash: damage = " + damage + ", distance = " + distance);
     }
 
-    protected void Dashing()
+    protected IEnumerator Dashing()
     {
-        // ´ë½Ã °Å¸®¸¦ °è»êÇÏ¿© ÇÃ·¹ÀÌ¾î À§Ä¡¸¦ ÀÌµ¿
-        Vector2 targetPosition = (Vector2)transform.position + dir.normalized * distance;
+        canDash = false;  // ëŒ€ì‹œë¥¼ ì‹œì‘í•˜ë©´ ì„ì‹œë¡œ ëŒ€ì‹œ ë¶ˆê°€
 
-        // Ãæµ¹ Ã³¸® ·ÎÁ÷ - ÀÌµ¿ Áß Ãæµ¹ÇÏ´Â °æ¿ì¸¦ ´ëºñÇÏ¿© Raycast È°¿ë
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, dir, distance);
-        if (hit.collider != null)
+        Vector2 startPosition = rb.position;
+        Vector2 targetPosition = startPosition + dir.normalized * distance;
+
+        float elapsedTime = 0;
+        bool hitTarget = false;
+
+        while (elapsedTime < dashDuration)
         {
-            targetPosition = hit.point;  // Ãæµ¹ ÁöÁ¡À¸·Î ÀÌµ¿ À§Ä¡ Á¶Á¤
-            // ÀûÀÌ³ª Àå¾Ö¹° µî°ú Ãæµ¹ ½ÃÀÇ ·ÎÁ÷ Ãß°¡ °¡´É
-            Debug.Log("Dash hit: " + hit.collider.name);
+            Vector2 newPosition = Vector2.Lerp(startPosition, targetPosition, elapsedTime / dashDuration);
+            rb.MovePosition(newPosition);
+
+            elapsedTime += Time.deltaTime;
+
+            Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, 1.0f);
+            foreach (var hit in hits)
+            {
+                if (hit.CompareTag("enemy"))
+                {
+                    Debug.Log("Dash hit: " + hit.name);
+                    hitTarget = true;
+                    break;
+                }
+            }
+
+            if (hitTarget)
+                break;
+
+            yield return null;
         }
 
-        // ÃÖÁ¾ À§Ä¡·Î ÀÌµ¿
-        transform.position = targetPosition;
-        Debug.Log("Dashing to " + targetPosition);
+        rb.MovePosition(targetPosition);
+
+        if (hitTarget)
+        {
+            canDash = true;
+        }
+        else
+        {
+            yield return new WaitForSeconds(dashCooldown);
+            canDash = true;
+        }
+
+        OnDashEnd?.Invoke();  // ëŒ€ì‹œê°€ ëë‚¬ìŒì„ ì•Œë¦¼
     }
 
     protected void Effect()
     {
-        // ÀÜ»ó »ı¼º, »ç¿îµå Àç»ı, ÀÌÆåÆ® Ãß°¡ µî
-        for (int i = 0; i < 5; i++)
-        {
-            //GameObject ghost = Instantiate(GameManager.Instance.ghostPrefab, transform.position, Quaternion.identity);
-            //Destroy(ghost, 0.5f); // Àá½Ã ÈÄ ÀÜ»óÀ» Á¦°Å
-        }
-
+        // ëŒ€ì‹œ ì‹œ ë¹„ì£¼ì–¼ ì´í™íŠ¸ (ì”ìƒ, ì´í™íŠ¸ ë“±) ì²˜ë¦¬
         Debug.Log("Dash effect triggered");
     }
 }
