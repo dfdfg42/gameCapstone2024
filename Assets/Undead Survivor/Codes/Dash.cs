@@ -52,24 +52,21 @@ public class Dash : MonoBehaviour
 
         while (elapsedTime < dashDuration)
         {
-            Vector2 newPosition = Vector2.Lerp(startPosition, targetPosition, elapsedTime / dashDuration);
-            rb.MovePosition(newPosition);
-
             elapsedTime += Time.deltaTime;
+            float t = Mathf.Clamp01(elapsedTime / dashDuration);  // 비율을 0에서 1 사이로 고정
+            Vector2 newPosition = Vector2.Lerp(startPosition, targetPosition, t);
+            rb.MovePosition(newPosition);
 
             Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, 1.0f);
             foreach (var hit in hits)
             {
-                if (hit.CompareTag("enemy"))
+                if (hit.CompareTag("Enemy"))
                 {
                     Debug.Log("Dash hit: " + hit.name);
                     hitTarget = true;
                     break;
                 }
             }
-
-            if (hitTarget)
-                break;
 
             yield return null;
         }

@@ -6190,7 +6190,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 8.305555
+  orthographic size: 7.796296
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -18376,7 +18376,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inputVec: {x: 0, y: 0}
-  speed: 3
+  speed: 9
   scanner: {fileID: 0}
   hands: []
   animCon:
