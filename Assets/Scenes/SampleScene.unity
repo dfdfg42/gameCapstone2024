@@ -6437,7 +6437,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 8.351851
+  orthographic size: 14.5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -18467,9 +18467,10 @@ GameObject:
   - component: {fileID: 1269587925}
   - component: {fileID: 1269587923}
   - component: {fileID: 1269587926}
+  - component: {fileID: 1269587927}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18624,8 +18625,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputVec: {x: 0, y: 0}
   speed: 3
-  dashDistance: 3
-  dashCooldown: 0.5
   scanner: {fileID: 0}
   hands: []
   animCon:
@@ -18633,8 +18632,6 @@ MonoBehaviour:
   - {fileID: 22100000, guid: 7f58328cf6dea96499c19a5e8034912c, type: 2}
   - {fileID: 22100000, guid: 85e3bc83ec560c740b196b7ca6421fea, type: 2}
   - {fileID: 22100000, guid: 5536dd4c48e3aa84fa849337ec2da1a4, type: 2}
-  bulletPrefab: {fileID: 358726806}
-  ghostPrefab: {fileID: 175707485}
 --- !u!114 &1269587924
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18703,6 +18700,20 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   nearestTarget: {fileID: 0}
+--- !u!114 &1269587927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1269587918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4e0b77643a0e2a43b6c084fc0fd5f69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dashDuration: 0.1
+  dashCooldown: 0.5
 --- !u!1 &1293337360
 GameObject:
   m_ObjectHideFlags: 0
@@ -19045,6 +19056,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabs:
   - {fileID: 6749529728457446564, guid: ff2496df85c933c4e9cf45755ec681ed, type: 3}
+  - {fileID: 6221701723499978845, guid: 05d9f75539996dc4b876f94d6df181f1, type: 3}
   - {fileID: 5272879928290123412, guid: 6124eaeded2c09d4fbe0dd02a5e8d28a, type: 3}
   - {fileID: 8712857537723402916, guid: 624ca929d11dc1c42a293e351d9e50fe, type: 3}
 --- !u!4 &1368503948
