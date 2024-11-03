@@ -37,7 +37,7 @@ public class Enemy : MonoBehaviour, IObjectDameged
     SpriteRenderer spriter;
     WaitForFixedUpdate wait;
 
-    int bulletIndex = 1; //풀 인덱스
+    int bulletIndex = 3; //풀 인덱스
 
     void Awake()
     {
@@ -211,9 +211,9 @@ public class Enemy : MonoBehaviour, IObjectDameged
 
     }
 
-    public void Dameged(int damege)
+    public void Dameged(int tempdamege)
     {
-        health -= damage;
+        health -= tempdamege;
         StartCoroutine(KnockBack());
 
         if (health > 0)
@@ -233,6 +233,7 @@ public class Enemy : MonoBehaviour, IObjectDameged
 
             if (GameManager.Instance.isLive)
                 AudioManager.instance.PlaySfx(AudioManager.Sfx.Dead);
+            Dead();
         }
     }
     IEnumerator KnockBack()
