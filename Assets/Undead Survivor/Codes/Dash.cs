@@ -1,3 +1,4 @@
+using Assets.Undead_Survivor.Codes;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -60,12 +61,14 @@ public class Dash : MonoBehaviour
             {
                 if (hit.CompareTag("Enemy"))
                 {
-                    Debug.Log("Dash hit: " + hit.name);
-                    hitTarget = true;
-                    break;
+                    IObjectDameged target = hit.GetComponent<IObjectDameged>();
+                    if (target!=null)
+                    {
+                        target.Dameged(damage);
+                        hitTarget = true;
+                    }
                 }
             }
-
             yield return null;
         }
 
@@ -78,15 +81,15 @@ public class Dash : MonoBehaviour
         else
         {
             yield return new WaitForSeconds(dashCooldown);
-            canDash = true;
         }
+        canDash = true;
 
         OnDashEnd?.Invoke();  // 대시가 끝났음을 알림
     }
 
     protected void Effect()
     {
-        AudioManager.instance.PlaySfx(AudioManager.Sfx.dash);
+        //AudioManager.instance.PlaySfx(AudioManager.Sfx.dash);
         // 대시 시 비주얼 이펙트 (잔상, 이펙트 등) 처리
         Debug.Log("Dash effect triggered");
     }

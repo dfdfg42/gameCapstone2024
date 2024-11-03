@@ -41,7 +41,7 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-       
+
     }
 
     void FixedUpdate()
@@ -84,18 +84,28 @@ public class Player : MonoBehaviour
         if (!GameManager.Instance.isLive)
             return;
 
-        GameManager.Instance.health -= Time.deltaTime * 10;
+        Enemy enemy = collision.gameObject.GetComponent<Enemy>();
 
+        //기본 몬스터의 근접 공격
+        if (enemy != null)
+        {
+            GameManager.Instance.health -= Time.deltaTime * 10;
+        }
         if (GameManager.Instance.health < 0)
         {
-            for (int index = 2; index < transform.childCount; index++)
-            {
-                transform.GetChild(index).gameObject.SetActive(false);
-            }
-
-            anim.SetTrigger("Dead");
-            GameManager.Instance.GameOver();
+            this.onDeath();
         }
+    }
+
+    public void onDeath()
+    {
+        for (int index = 2; index < transform.childCount; index++)
+        {
+            transform.GetChild(index).gameObject.SetActive(false);
+        }
+
+        anim.SetTrigger("Dead");
+        GameManager.Instance.GameOver();
     }
 
     void OnDash()

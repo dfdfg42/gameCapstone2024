@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{D5F16073-29EB-C666-82BF-AD7D43F6BB4C}</ProjectGuid>
+    <ProjectGuid>{AEF71C7F-0A7A-E58A-7510-96CEF29CC8BF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -63,7 +63,6 @@
     <Compile Include="Assets\Undead Survivor\Codes\LevelUp.cs" />
     <Compile Include="Assets\Undead Survivor\Codes\Hand.cs" />
     <Compile Include="Assets\Undead Survivor\Codes\Spawner.cs" />
-    <Compile Include="Assets\Undead Survivor\Codes\Gear.cs" />
     <Compile Include="Assets\Undead Survivor\Codes\Bullet.cs" />
     <Compile Include="Assets\Undead Survivor\Codes\Enemy.cs" />
     <Compile Include="Assets\Undead Survivor\Codes\Character.cs" />
@@ -75,11 +74,12 @@
     <Compile Include="Assets\Undead Survivor\Codes\AchiveManager.cs" />
     <Compile Include="Assets\Undead Survivor\Codes\Result.cs" />
     <Compile Include="Assets\Undead Survivor\Codes\Follow.cs" />
+    <Compile Include="Assets\Undead Survivor\Codes\MonsterBullet.cs" />
     <Compile Include="Assets\Undead Survivor\Codes\HUD.cs" />
     <Compile Include="Assets\Undead Survivor\Codes\Item.cs" />
     <Compile Include="Assets\Undead Survivor\Codes\Scanner.cs" />
     <Compile Include="Assets\Undead Survivor\Codes\PoolManager.cs" />
-    <Compile Include="Assets\Undead Survivor\Codes\Weapon.cs" />
+    <Compile Include="Assets\Undead Survivor\Codes\IObjectDameged.cs" />
     <Compile Include="Assets\Undead Survivor\Codes\ItemData.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -1007,12 +1007,20 @@
       <HintPath>Library\ScriptAssemblies\Unity.2D.Aseprite.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.Toolchain.Win-x86_64-Linux-x86_64">
+      <HintPath>Library\ScriptAssemblies\Unity.Toolchain.Win-x86_64-Linux-x86_64.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
       <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Sysroot.Linux_x86_64">
+      <HintPath>Library\ScriptAssemblies\Unity.Sysroot.Linux_x86_64.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="PsdPlugin">
@@ -1101,6 +1109,10 @@
     </Reference>
     <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.SysrootPackage.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.SysrootPackage.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.InternalAPIEditorBridge.001">

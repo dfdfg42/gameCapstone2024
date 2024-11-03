@@ -5,10 +5,47 @@ using UnityEngine;
 public class Reposition : MonoBehaviour
 {
     Collider2D coll;
+    private const float CHECK_FREQUENCY = 0.1f;  // 위치 체크 주기
+    private float checkTimer = 0;
 
     void Awake()
     {
-        coll = GetComponent<Collider2D>();    
+        coll = GetComponent<Collider2D>();
+    }
+
+    void FixedUpdate()
+    {
+        if (transform.CompareTag("Ground"))
+        {
+            //update timer
+            checkTimer += Time.fixedDeltaTime;
+
+            if (checkTimer >= CHECK_FREQUENCY)
+            {
+                checkTimer = 0;
+                RepositionTile();
+            }
+        }
+    }
+
+    void RepositionTile()
+    {
+        Vector3 playerPos = GameManager.Instance.player.transform.position;
+        Vector3 myPos = transform.position;
+
+        //현재 타일이 어느 사분면에 있는지 확인
+        bool isRight = myPos.x > playerPos.x;
+        bool isUp = myPos.y > playerPos.y;
+
+        //플레이어 기준으로 새로운 타일 위치 계산
+        float newX = playerPos.x + (isRight ? 10 : -10);
+        float newY = playerPos.y + (isUp ? 10 : -10);
+
+        // 현재 위치 - 목표 위치 > 1 이면 이동
+        if (Vector2.Distance(myPos, new Vector2(newX, newY)) > 1f)
+        {
+            transform.position = new Vector3(newX, newY, 0);
+        }
     }
 
     void OnTriggerExit2D(Collider2D collision)
@@ -16,37 +53,13 @@ public class Reposition : MonoBehaviour
         if (!collision.CompareTag("Area"))
             return;
 
-        Vector3 playerPos = GameManager.Instance.player.transform.position;
-        Vector3 myPos = transform.position;
-        
-
-        switch (transform.tag)
+        if (transform.CompareTag("Enemy") && coll.enabled)
         {
-            case "Ground":
-                float diffX = playerPos.x - myPos.x;
-                float diffY = playerPos.y - myPos.y;
-                float dirX = diffX < 0 ? -1 : 1;
-                float dirY = diffY < 0 ? -1 : 1;
-                diffX = Mathf.Abs(diffX);
-                diffY = Mathf.Abs(diffY);
-
-                if (diffX > diffY)
-                {
-                    transform.Translate(Vector3.right * dirX * 40);
-                }
-                else if (diffX < diffY)
-                {
-                    transform.Translate(Vector3.up * dirY * 40);
-                }
-                break;
-            case "Enemy":
-                if (coll.enabled)
-                {
-                    Vector3 dist = playerPos - myPos;
-                    Vector3 ran = new Vector3(Random.Range(-3, 3), Random.Range(-3, 3), 0);
-                    transform.Translate(ran + dist * 2);
-                }
-                break;
+            Vector3 playerPos = GameManager.Instance.player.transform.position;
+            Vector3 myPos = transform.position;
+            Vector3 dist = playerPos - myPos;
+            Vector3 ran = new Vector3(Random.Range(-3, 3), Random.Range(-3, 3), 0);
+            transform.Translate(ran + dist * 2);
         }
     }
 }
