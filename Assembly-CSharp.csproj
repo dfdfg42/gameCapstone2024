@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{AEF71C7F-0A7A-E58A-7510-96CEF29CC8BF}</ProjectGuid>
+    <ProjectGuid>{60C24F78-9517-92E0-2682-2F59CE97B723}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -63,6 +63,7 @@
     <Compile Include="Assets\Undead Survivor\Codes\LevelUp.cs" />
     <Compile Include="Assets\Undead Survivor\Codes\Hand.cs" />
     <Compile Include="Assets\Undead Survivor\Codes\Spawner.cs" />
+    <Compile Include="Assets\Undead Survivor\Codes\Gear.cs" />
     <Compile Include="Assets\Undead Survivor\Codes\Bullet.cs" />
     <Compile Include="Assets\Undead Survivor\Codes\Enemy.cs" />
     <Compile Include="Assets\Undead Survivor\Codes\Character.cs" />
@@ -80,6 +81,7 @@
     <Compile Include="Assets\Undead Survivor\Codes\Scanner.cs" />
     <Compile Include="Assets\Undead Survivor\Codes\PoolManager.cs" />
     <Compile Include="Assets\Undead Survivor\Codes\IObjectDameged.cs" />
+    <Compile Include="Assets\Undead Survivor\Codes\Weapon.cs" />
     <Compile Include="Assets\Undead Survivor\Codes\ItemData.cs" />
   </ItemGroup>
   <ItemGroup>

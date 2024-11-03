@@ -1,4 +1,3 @@
-using Assets.Undead_Survivor.Codes;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,6 +5,7 @@ public class Dash : MonoBehaviour
 {
     public delegate void DashEndHandler();
     public event DashEndHandler OnDashEnd;
+    private TrailRenderer trailRenderer;
 
     Vector2 dir;
     int damage, distance;
@@ -51,6 +51,11 @@ public class Dash : MonoBehaviour
         float elapsedTime = 0;
         bool hitTarget = false;
 
+        // 트레일 렌더러 활성화
+        if (trailRenderer != null)
+            trailRenderer.enabled = true;
+
+
         while (elapsedTime < dashDuration)
         {
             elapsedTime += Time.deltaTime;
@@ -61,16 +66,19 @@ public class Dash : MonoBehaviour
             {
                 if (hit.CompareTag("Enemy"))
                 {
-                    IObjectDameged target = hit.GetComponent<IObjectDameged>();
-                    if (target!=null)
-                    {
-                        target.Dameged(damage);
-                        hitTarget = true;
-                    }
+                    Debug.Log("Dash hit: " + hit.name);
+                    hitTarget = true;
+                    break;
                 }
             }
+
             yield return null;
         }
+
+        // 트레일 렌더러 비활성화
+        if (trailRenderer != null)
+            trailRenderer.enabled = false;
+
 
         rb.MovePosition(targetPosition);
 
@@ -81,8 +89,8 @@ public class Dash : MonoBehaviour
         else
         {
             yield return new WaitForSeconds(dashCooldown);
+            canDash = true;
         }
-        canDash = true;
 
         OnDashEnd?.Invoke();  // 대시가 끝났음을 알림
     }
