@@ -72,14 +72,18 @@ public class Enemy : MonoBehaviour
         {
             Vector2 moveVec = Vector2.zero;
             // attack
-            if(attacked==false){
-                onAttack();
+            if(attacked==true){
+                return;
             }
-            // 거리가 rangedDistance보다 클 때만 이동
-            if (distance < rangedDistance - 0.1f)  // 여유 범위 추가
+            else if (distance <= rangedDistance + 0.1f)  // 여유 범위 추가
             {
-                //플레이어와 가까우면 뒤로 이동
-                moveVec = -dirVec.normalized * speed;
+                if (attackCooldown <= 0f){
+                    onAttack();
+                }
+                else{
+                    //플레이어와 가까우면 뒤로 이동
+                    moveVec = -dirVec.normalized * speed;
+                }
             }
             else if (distance > rangedDistance + 0.1f) 
             {
@@ -151,23 +155,8 @@ public class Enemy : MonoBehaviour
                 attackCooldown = 3f;
                 attacked = true;
 
-                // 플레이어 방향 계산
-                Vector2 dirVec = target.position - rigid.position;
-                dirVec = dirVec.normalized;
-                // 오브젝트 풀에서 총알 가져오기
-                GameObject bullet = GameManager.Instance.pool.Get(bulletIndex);  // MonsterBullet의 풀 인덱스
-                bullet.transform.position = transform.position;  // 몬스터의 위치에서 발사
-                // 총알 초기화
-                MonsterBullet monsterBullet = bullet.GetComponent<MonsterBullet>();
-                if (monsterBullet != null)
-                {
-                    monsterBullet.Init(attackDamage, dirVec); 
-                }
-                // 플레이어 바라보도록 총알 회전
-                float angle = Mathf.Atan2(dirVec.y, dirVec.x) * Mathf.Rad2Deg;
-                bullet.transform.rotation = Quaternion.AngleAxis(angle - 90, Vector3.forward);
+                StartCoroutine(rangedAttack());
                 
-                attacked = false;
             }
         }
         else if (attackType == EnemyAttackType.rush)
@@ -234,7 +223,7 @@ public class Enemy : MonoBehaviour
 
         yield return new WaitForSeconds(0.75f);
 
-
+        anim.SetTrigger("Rush");
         //돌진 로직
         Vector2 dirVec = target.position - rigid.position;
         float distance = Vector2.Distance(target.position, rigid.position);
@@ -245,6 +234,32 @@ public class Enemy : MonoBehaviour
             rigid.MovePosition(rigid.position + nextVec);
             yield return new WaitForSeconds(0.01f);
         }
+
+        attacked = false;
+    }
+
+    IEnumerator rangedAttack(){
+        //공격모션
+        anim.SetTrigger("Attack");
+
+        yield return new WaitForSeconds(0.35f);
+
+        // 플레이어 방향 계산
+        Vector2 dirVec = target.position - rigid.position;
+        dirVec = dirVec.normalized;
+        // 오브젝트 풀에서 총알 가져오기
+        GameObject bullet = GameManager.Instance.pool.Get(bulletIndex);  // MonsterBullet의 풀 인덱스
+        bullet.transform.position = transform.position;  // 몬스터의 위치에서 발사
+        // 총알 초기화
+        MonsterBullet monsterBullet = bullet.GetComponent<MonsterBullet>();
+        if (monsterBullet != null){
+            monsterBullet.Init(attackDamage, dirVec); 
+        }
+        // 플레이어 바라보도록 총알 회전
+        float angle = Mathf.Atan2(dirVec.y, dirVec.x) * Mathf.Rad2Deg;
+        bullet.transform.rotation = Quaternion.AngleAxis(angle - 90, Vector3.forward);
+                
+        attacked = false;
     }
 
     void Dead()
