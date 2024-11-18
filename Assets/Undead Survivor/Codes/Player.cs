@@ -112,11 +112,13 @@ public class Player : MonoBehaviour
     {
         Vector2 direction = inputVec.normalized;
         isDashing = true; // 대시 중으로 설정
+        anim.SetBool("Attack", true); // attack 애니메이션 시작
         dashComponent.Init(direction);  // 대시 시작
     }
 
     void HandleDashEnd()
     {
         isDashing = false;  // 대시가 끝나면 대시 중 아님으로 설정
+        anim.SetBool("Attack", false); // attack 애니메이션 종료
     }
 }

@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Assets.Undead_Survivor.Codes;
 public class Dash : MonoBehaviour
 {
     public delegate void DashEndHandler();
     public event DashEndHandler OnDashEnd;
+    private TrailRenderer trailRenderer;
 
     Vector2 dir;
     int damage, distance;
@@ -50,6 +52,13 @@ public class Dash : MonoBehaviour
         float elapsedTime = 0;
         bool hitTarget = false;
 
+        // 트레일 렌더러 활성화
+        if (trailRenderer != null)
+            trailRenderer.enabled = true;
+
+        //데미지 준 아이 저장.
+        HashSet<Collider2D> damagedTargets = new HashSet<Collider2D>();
+
         while (elapsedTime < dashDuration)
         {
             elapsedTime += Time.deltaTime;
@@ -58,18 +67,33 @@ public class Dash : MonoBehaviour
             Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, 1.0f);
             foreach (var hit in hits)
             {
-                if (hit.CompareTag("Enemy"))
+                if (hit.CompareTag("Enemy") && !damagedTargets.Contains(hit))
                 {
-                    Debug.Log("Dash hit: " + hit.name);
-                    hitTarget = true;
-                    break;
+                    IObjectDameged target = hit.GetComponent<IObjectDameged>();
+                    if(target!=null){
+                        damagedTargets.Add(hit);
+                    }
                 }
             }
 
             yield return null;
         }
 
-        rb.MovePosition(targetPosition);
+        foreach (var hit2 in damagedTargets){
+            if (hit2.CompareTag("Enemy")){
+                IObjectDameged target = hit2.GetComponent<IObjectDameged>();
+                if(target!=null){
+                    target.Dameged(damage);
+                    hitTarget=true;
+                }
+            }
+        }
+
+        // 트레일 렌더러 비활성화
+        if (trailRenderer != null)
+            trailRenderer.enabled = false;
+
+        rb.position = targetPosition;
 
         if (hitTarget)
         {

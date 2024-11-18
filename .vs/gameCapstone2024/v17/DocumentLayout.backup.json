@@ -1,0 +1,182 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\RYZEN\\Documents\\GitHub\\gameCapstone2024\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E92D8E0C-8606-C486-A559-4F7D8B2BCFBC}|Assembly-CSharp.csproj|C:\\Users\\RYZEN\\Documents\\GitHub\\gameCapstone2024\\assets\\undead survivor\\codes\\dash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E92D8E0C-8606-C486-A559-4F7D8B2BCFBC}|Assembly-CSharp.csproj|solutionrelative:assets\\undead survivor\\codes\\dash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E92D8E0C-8606-C486-A559-4F7D8B2BCFBC}|Assembly-CSharp.csproj|c:\\users\\ryzen\\documents\\github\\gamecapstone2024\\assets\\undead survivor\\codes\\reposition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E92D8E0C-8606-C486-A559-4F7D8B2BCFBC}|Assembly-CSharp.csproj|solutionrelative:assets\\undead survivor\\codes\\reposition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E92D8E0C-8606-C486-A559-4F7D8B2BCFBC}|Assembly-CSharp.csproj|C:\\Users\\RYZEN\\Documents\\GitHub\\gameCapstone2024\\assets\\undead survivor\\codes\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E92D8E0C-8606-C486-A559-4F7D8B2BCFBC}|Assembly-CSharp.csproj|solutionrelative:assets\\undead survivor\\codes\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E92D8E0C-8606-C486-A559-4F7D8B2BCFBC}|Assembly-CSharp.csproj|C:\\Users\\RYZEN\\Documents\\GitHub\\gameCapstone2024\\assets\\undead survivor\\codes\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E92D8E0C-8606-C486-A559-4F7D8B2BCFBC}|Assembly-CSharp.csproj|solutionrelative:assets\\undead survivor\\codes\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E92D8E0C-8606-C486-A559-4F7D8B2BCFBC}|Assembly-CSharp.csproj|C:\\Users\\RYZEN\\Documents\\GitHub\\gameCapstone2024\\assets\\undead survivor\\codes\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E92D8E0C-8606-C486-A559-4F7D8B2BCFBC}|Assembly-CSharp.csproj|solutionrelative:assets\\undead survivor\\codes\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E92D8E0C-8606-C486-A559-4F7D8B2BCFBC}|Assembly-CSharp.csproj|C:\\Users\\RYZEN\\Documents\\GitHub\\gameCapstone2024\\assets\\undead survivor\\codes\\monsterbullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E92D8E0C-8606-C486-A559-4F7D8B2BCFBC}|Assembly-CSharp.csproj|solutionrelative:assets\\undead survivor\\codes\\monsterbullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E92D8E0C-8606-C486-A559-4F7D8B2BCFBC}|Assembly-CSharp.csproj|C:\\Users\\RYZEN\\Documents\\GitHub\\gameCapstone2024\\assets\\undead survivor\\codes\\poolmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E92D8E0C-8606-C486-A559-4F7D8B2BCFBC}|Assembly-CSharp.csproj|solutionrelative:assets\\undead survivor\\codes\\poolmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E92D8E0C-8606-C486-A559-4F7D8B2BCFBC}|Assembly-CSharp.csproj|C:\\Users\\RYZEN\\Documents\\GitHub\\gameCapstone2024\\assets\\undead survivor\\codes\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E92D8E0C-8606-C486-A559-4F7D8B2BCFBC}|Assembly-CSharp.csproj|solutionrelative:assets\\undead survivor\\codes\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E92D8E0C-8606-C486-A559-4F7D8B2BCFBC}|Assembly-CSharp.csproj|C:\\Users\\RYZEN\\Documents\\GitHub\\gameCapstone2024\\assets\\undead survivor\\codes\\weapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E92D8E0C-8606-C486-A559-4F7D8B2BCFBC}|Assembly-CSharp.csproj|solutionrelative:assets\\undead survivor\\codes\\weapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E92D8E0C-8606-C486-A559-4F7D8B2BCFBC}|Assembly-CSharp.csproj|C:\\Users\\RYZEN\\Documents\\GitHub\\gameCapstone2024\\assets\\undead survivor\\codes\\spawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E92D8E0C-8606-C486-A559-4F7D8B2BCFBC}|Assembly-CSharp.csproj|solutionrelative:assets\\undead survivor\\codes\\spawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Dash.cs",
+              "DocumentMoniker": "C:\\Users\\RYZEN\\Documents\\GitHub\\gameCapstone2024\\Assets\\Undead Survivor\\Codes\\Dash.cs",
+              "RelativeDocumentMoniker": "Assets\\Undead Survivor\\Codes\\Dash.cs",
+              "ToolTip": "C:\\Users\\RYZEN\\Documents\\GitHub\\gameCapstone2024\\Assets\\Undead Survivor\\Codes\\Dash.cs",
+              "RelativeToolTip": "Assets\\Undead Survivor\\Codes\\Dash.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-02T13:59:35.631Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Reposition.cs",
+              "DocumentMoniker": "C:\\Users\\RYZEN\\Documents\\GitHub\\gameCapstone2024\\Assets\\Undead Survivor\\Codes\\Reposition.cs",
+              "RelativeDocumentMoniker": "Assets\\Undead Survivor\\Codes\\Reposition.cs",
+              "ToolTip": "C:\\Users\\RYZEN\\Documents\\GitHub\\gameCapstone2024\\Assets\\Undead Survivor\\Codes\\Reposition.cs",
+              "RelativeToolTip": "Assets\\Undead Survivor\\Codes\\Reposition.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAQwDoAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-02T13:24:42.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "C:\\Users\\RYZEN\\Documents\\GitHub\\gameCapstone2024\\Assets\\Undead Survivor\\Codes\\GameManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Undead Survivor\\Codes\\GameManager.cs",
+              "ToolTip": "C:\\Users\\RYZEN\\Documents\\GitHub\\gameCapstone2024\\Assets\\Undead Survivor\\Codes\\GameManager.cs",
+              "RelativeToolTip": "Assets\\Undead Survivor\\Codes\\GameManager.cs",
+              "ViewState": "AQIAAHIAAAAAAAAAAAAmwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-02T13:22:19.163Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MonsterBullet.cs",
+              "DocumentMoniker": "C:\\Users\\RYZEN\\Documents\\GitHub\\gameCapstone2024\\Assets\\Undead Survivor\\Codes\\MonsterBullet.cs",
+              "RelativeDocumentMoniker": "Assets\\Undead Survivor\\Codes\\MonsterBullet.cs",
+              "ToolTip": "C:\\Users\\RYZEN\\Documents\\GitHub\\gameCapstone2024\\Assets\\Undead Survivor\\Codes\\MonsterBullet.cs",
+              "RelativeToolTip": "Assets\\Undead Survivor\\Codes\\MonsterBullet.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T12:08:20.852Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PoolManager.cs",
+              "DocumentMoniker": "C:\\Users\\RYZEN\\Documents\\GitHub\\gameCapstone2024\\Assets\\Undead Survivor\\Codes\\PoolManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Undead Survivor\\Codes\\PoolManager.cs",
+              "ToolTip": "C:\\Users\\RYZEN\\Documents\\GitHub\\gameCapstone2024\\Assets\\Undead Survivor\\Codes\\PoolManager.cs",
+              "RelativeToolTip": "Assets\\Undead Survivor\\Codes\\PoolManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T12:25:21.871Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Weapon.cs",
+              "DocumentMoniker": "C:\\Users\\RYZEN\\Documents\\GitHub\\gameCapstone2024\\Assets\\Undead Survivor\\Codes\\Weapon.cs",
+              "RelativeDocumentMoniker": "Assets\\Undead Survivor\\Codes\\Weapon.cs",
+              "ToolTip": "C:\\Users\\RYZEN\\Documents\\GitHub\\gameCapstone2024\\Assets\\Undead Survivor\\Codes\\Weapon.cs",
+              "RelativeToolTip": "Assets\\Undead Survivor\\Codes\\Weapon.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAIwDQAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T09:01:23.985Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Spawner.cs",
+              "DocumentMoniker": "C:\\Users\\RYZEN\\Documents\\GitHub\\gameCapstone2024\\Assets\\Undead Survivor\\Codes\\Spawner.cs",
+              "RelativeDocumentMoniker": "Assets\\Undead Survivor\\Codes\\Spawner.cs",
+              "ToolTip": "C:\\Users\\RYZEN\\Documents\\GitHub\\gameCapstone2024\\Assets\\Undead Survivor\\Codes\\Spawner.cs",
+              "RelativeToolTip": "Assets\\Undead Survivor\\Codes\\Spawner.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAkwBYAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T12:04:07.377Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Bullet.cs",
+              "DocumentMoniker": "C:\\Users\\RYZEN\\Documents\\GitHub\\gameCapstone2024\\Assets\\Undead Survivor\\Codes\\Bullet.cs",
+              "RelativeDocumentMoniker": "Assets\\Undead Survivor\\Codes\\Bullet.cs",
+              "ToolTip": "C:\\Users\\RYZEN\\Documents\\GitHub\\gameCapstone2024\\Assets\\Undead Survivor\\Codes\\Bullet.cs",
+              "RelativeToolTip": "Assets\\Undead Survivor\\Codes\\Bullet.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAmwCkAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T12:03:54.745Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Enemy.cs",
+              "DocumentMoniker": "C:\\Users\\RYZEN\\Documents\\GitHub\\gameCapstone2024\\Assets\\Undead Survivor\\Codes\\Enemy.cs",
+              "RelativeDocumentMoniker": "Assets\\Undead Survivor\\Codes\\Enemy.cs",
+              "ToolTip": "C:\\Users\\RYZEN\\Documents\\GitHub\\gameCapstone2024\\Assets\\Undead Survivor\\Codes\\Enemy.cs",
+              "RelativeToolTip": "Assets\\Undead Survivor\\Codes\\Enemy.cs",
+              "ViewState": "AQIAADUAAAAAAAAAAAAAwEcAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T12:03:02.618Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\Users\\RYZEN\\Documents\\GitHub\\gameCapstone2024\\Assets\\Undead Survivor\\Codes\\Player.cs",
+              "RelativeDocumentMoniker": "Assets\\Undead Survivor\\Codes\\Player.cs",
+              "ToolTip": "C:\\Users\\RYZEN\\Documents\\GitHub\\gameCapstone2024\\Assets\\Undead Survivor\\Codes\\Player.cs",
+              "RelativeToolTip": "Assets\\Undead Survivor\\Codes\\Player.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-06T04:47:09.777Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\RYZEN\\Downloads\\gameCapstone2024-feat-dash\\gameCapstone2024-feat-dash\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D5F16073-29EB-C666-82BF-AD7D43F6BB4C}|Assembly-CSharp.csproj|c:\\users\\ryzen\\downloads\\gamecapstone2024-feat-dash\\gamecapstone2024-feat-dash\\assets\\undead survivor\\codes\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5F16073-29EB-C666-82BF-AD7D43F6BB4C}|Assembly-CSharp.csproj|solutionrelative:assets\\undead survivor\\codes\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5F16073-29EB-C666-82BF-AD7D43F6BB4C}|Assembly-CSharp.csproj|C:\\Users\\RYZEN\\Downloads\\gameCapstone2024-feat-dash\\gameCapstone2024-feat-dash\\assets\\undead survivor\\codes\\dash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5F16073-29EB-C666-82BF-AD7D43F6BB4C}|Assembly-CSharp.csproj|solutionrelative:assets\\undead survivor\\codes\\dash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5F16073-29EB-C666-82BF-AD7D43F6BB4C}|Assembly-CSharp.csproj|C:\\Users\\RYZEN\\Downloads\\gameCapstone2024-feat-dash\\gameCapstone2024-feat-dash\\assets\\undead survivor\\codes\\audiomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5F16073-29EB-C666-82BF-AD7D43F6BB4C}|Assembly-CSharp.csproj|solutionrelative:assets\\undead survivor\\codes\\audiomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5F16073-29EB-C666-82BF-AD7D43F6BB4C}|Assembly-CSharp.csproj|C:\\Users\\RYZEN\\Downloads\\gameCapstone2024-feat-dash\\gameCapstone2024-feat-dash\\assets\\undead survivor\\codes\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5F16073-29EB-C666-82BF-AD7D43F6BB4C}|Assembly-CSharp.csproj|solutionrelative:assets\\undead survivor\\codes\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AudioManager.cs",
+              "DocumentMoniker": "C:\\Users\\RYZEN\\Downloads\\gameCapstone2024-feat-dash\\gameCapstone2024-feat-dash\\Assets\\Undead Survivor\\Codes\\AudioManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Undead Survivor\\Codes\\AudioManager.cs",
+              "ToolTip": "C:\\Users\\RYZEN\\Downloads\\gameCapstone2024-feat-dash\\gameCapstone2024-feat-dash\\Assets\\Undead Survivor\\Codes\\AudioManager.cs",
+              "RelativeToolTip": "Assets\\Undead Survivor\\Codes\\AudioManager.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBYAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T11:42:57.895Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "C:\\Users\\RYZEN\\Downloads\\gameCapstone2024-feat-dash\\gameCapstone2024-feat-dash\\Assets\\Undead Survivor\\Codes\\GameManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Undead Survivor\\Codes\\GameManager.cs",
+              "ToolTip": "C:\\Users\\RYZEN\\Downloads\\gameCapstone2024-feat-dash\\gameCapstone2024-feat-dash\\Assets\\Undead Survivor\\Codes\\GameManager.cs",
+              "RelativeToolTip": "Assets\\Undead Survivor\\Codes\\GameManager.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAwCwAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T08:45:02.124Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\Users\\RYZEN\\Downloads\\gameCapstone2024-feat-dash\\gameCapstone2024-feat-dash\\Assets\\Undead Survivor\\Codes\\Player.cs",
+              "RelativeDocumentMoniker": "Assets\\Undead Survivor\\Codes\\Player.cs",
+              "ToolTip": "C:\\Users\\RYZEN\\Downloads\\gameCapstone2024-feat-dash\\gameCapstone2024-feat-dash\\Assets\\Undead Survivor\\Codes\\Player.cs",
+              "RelativeToolTip": "Assets\\Undead Survivor\\Codes\\Player.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAiwDQAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T08:36:14.71Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Dash.cs",
+              "DocumentMoniker": "C:\\Users\\RYZEN\\Downloads\\gameCapstone2024-feat-dash\\gameCapstone2024-feat-dash\\Assets\\Undead Survivor\\Codes\\Dash.cs",
+              "RelativeDocumentMoniker": "Assets\\Undead Survivor\\Codes\\Dash.cs",
+              "ToolTip": "C:\\Users\\RYZEN\\Downloads\\gameCapstone2024-feat-dash\\gameCapstone2024-feat-dash\\Assets\\Undead Survivor\\Codes\\Dash.cs",
+              "RelativeToolTip": "Assets\\Undead Survivor\\Codes\\Dash.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAgwCcAAABWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T08:30:01.092Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
