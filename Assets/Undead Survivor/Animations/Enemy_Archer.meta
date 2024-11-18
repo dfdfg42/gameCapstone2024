@@ -1,7 +1,12 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Undead Survivor/Animations/Enemy_Archer.meta
 guid: 623fa5b377086af4082d07a34070f28b
 folderAsset: yes
 DefaultImporter:
+========
+guid: 05d9f75539996dc4b876f94d6df181f1
+PrefabImporter:
+>>>>>>>> master:Assets/Undead Survivor/Prefabs/MonsterBullet.prefab.meta
   externalObjects: {}
   userData: 
   assetBundleName: 
