@@ -246,6 +246,9 @@ public class Enemy : MonoBehaviour, IObjectDameged
 
     IEnumerator rushAttack(){
         //공격 전 돌진 준비 모션.
+        
+
+        anim.SetTrigger("Ready_Rush");
 
         yield return new WaitForSeconds(0.75f);
 
