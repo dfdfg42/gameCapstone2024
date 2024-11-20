@@ -24,7 +24,7 @@ public class Enemy : MonoBehaviour, IObjectDameged
     public bool attacked;
     public float attackMaxCooldown = 2f; //단위는 second
     public float attackCooldown = 2f;
-    public float attackRange = 1.5f;
+    public float attackRange = 1.0f; //근접몹 공격 범위
 
 
     bool isLive;
