@@ -24,6 +24,8 @@ public class Enemy : MonoBehaviour, IObjectDameged
     public bool attacked;
     public float attackMaxCooldown = 2f; //단위는 second
     public float attackCooldown = 2f;
+    public float attackRange = 1.5f;
+
 
     bool isLive;
 
@@ -73,24 +75,27 @@ public class Enemy : MonoBehaviour, IObjectDameged
         {
             Vector2 moveVec = Vector2.zero;
             // attack
-            if(attacked == true){
+            if (attacked == true)
+            {
                 return;
             }
             else if (distance <= rangedDistance + 0.1f)  // 여유 범위 추가
             {
-                if (attackCooldown <= 0f){
+                if (attackCooldown <= 0f)
+                {
                     onAttack();
                 }
-                else{
+                else
+                {
                     //플레이어와 가까우면 뒤로 이동
                     moveVec = -dirVec.normalized * speed;
                 }
             }
-            else if (distance > rangedDistance + 0.1f) 
+            else if (distance > rangedDistance + 0.1f)
             {
                 //플레이어와 멀면 앞으로 이동
                 moveVec = dirVec.normalized * speed;
-          
+
             }
             if (moveVec != Vector2.zero)
             {
@@ -99,9 +104,10 @@ public class Enemy : MonoBehaviour, IObjectDameged
             }
         }
 
-        else if(attackType == EnemyAttackType.rush)
+        else if (attackType == EnemyAttackType.rush)
         {
-            if(attacked==true){
+            if (attacked == true)
+            {
                 return;
             }
             // 기본 이동.
@@ -114,11 +120,27 @@ public class Enemy : MonoBehaviour, IObjectDameged
             rigid.MovePosition(rigid.position + nextVec);
         }
 
-        else //기본 타입일 때
+        else if (attackType == EnemyAttackType.melee) //기본 타입일 때
+
         {
             Vector2 nextVec = dirVec.normalized * speed * Time.fixedDeltaTime;
             rigid.MovePosition(rigid.position + nextVec);
-            
+
+            // 공격 범위 안에 들어오면 공격 애니메이션 재생
+            if (distance <= attackRange)
+            {
+                anim.SetTrigger("Attack");
+                //
+                if (GameManager.Instance.player != null)
+                {
+                    IObjectDameged damageable = GameManager.Instance.player.GetComponent<IObjectDameged>();
+                    if (damageable != null)
+                    {
+                        damageable.Dameged((int)damage);
+                    }
+                }
+
+            }
         }
     }
 
@@ -145,7 +167,9 @@ public class Enemy : MonoBehaviour, IObjectDameged
         spriter.sortingOrder = 2;
         anim.SetBool("Dead", false);
         health = maxHealth;
-    }   
+
+		
+	}   
 
     public void onAttack()
     {
