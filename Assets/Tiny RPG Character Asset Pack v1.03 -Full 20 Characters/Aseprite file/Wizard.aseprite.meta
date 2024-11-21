@@ -1,0 +1,2401 @@
+fileFormatVersion: 2
+guid: 1eef87d8e0fe81040bf0b1e195284cd7
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: Wizard_Frame_0
+    originalName: 
+    pivot: {x: 0.41176465, y: -1.9047619}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 186
+      y: 135
+      width: 17
+      height: 21
+    spriteID: be1a12dc225ca094bad74ef799f35a17
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 186, y: 135}
+  - name: Wizard_Frame_1
+    originalName: 
+    pivot: {x: 0.41176465, y: -1.9047619}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 186
+      y: 164
+      width: 17
+      height: 21
+    spriteID: c9d4a287a19b4fc448a1a11375735702
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 186, y: 164}
+  - name: Wizard_Frame_2
+    originalName: 
+    pivot: {x: 0.41176465, y: -1.8181819}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 126
+      y: 435
+      width: 17
+      height: 22
+    spriteID: bf1fbf0b3c9295c45b8c0ed2bd811dac
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 126, y: 435}
+  - name: Wizard_Frame_3
+    originalName: 
+    pivot: {x: 0.41176465, y: -1.8181819}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 126
+      y: 465
+      width: 17
+      height: 22
+    spriteID: 674bc58aceb5168428da6760d98193ae
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 126, y: 465}
+  - name: Wizard_Frame_4
+    originalName: 
+    pivot: {x: 0.41176465, y: -1.9047619}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 186
+      y: 193
+      width: 17
+      height: 21
+    spriteID: e09bafdf62cc23c4c93ffc0031bb4005
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 186, y: 193}
+  - name: Wizard_Frame_5
+    originalName: 
+    pivot: {x: 0.41176465, y: -1.9047619}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 186
+      y: 222
+      width: 17
+      height: 21
+    spriteID: 72c223bf0a820ce4bab33ede514da7a1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 186, y: 222}
+  - name: Wizard_Frame_14
+    originalName: 
+    pivot: {x: 0.41176465, y: -1.9047619}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 186
+      y: 251
+      width: 17
+      height: 21
+    spriteID: 4d8d1d1fb3e0fa543a507f7bb7bdd76c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 186, y: 251}
+  - name: Wizard_Frame_15
+    originalName: 
+    pivot: {x: 0.38888884, y: -1.8181819}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 154
+      y: 457
+      width: 18
+      height: 22
+    spriteID: b388bc15444497146b39512bb94244a9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 154, y: 457}
+  - name: Wizard_Frame_16
+    originalName: 
+    pivot: {x: 0.36842102, y: -1.8181819}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 154
+      y: 367
+      width: 19
+      height: 22
+    spriteID: 451032c58cd4fff4694d2f6f2f741478
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 154, y: 367}
+  - name: Wizard_Frame_17
+    originalName: 
+    pivot: {x: 0.34999996, y: -1.7391304}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 154
+      y: 305
+      width: 20
+      height: 23
+    spriteID: 40c16a76248447a43ba46b92a1549682
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 154, y: 305}
+  - name: Wizard_Frame_18
+    originalName: 
+    pivot: {x: 0.33333328, y: -1.6666666}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 154
+      y: 211
+      width: 21
+      height: 24
+    spriteID: a944b3e6afe9b1241b34868067568059
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 154, y: 211}
+  - name: Wizard_Frame_19
+    originalName: 
+    pivot: {x: 0.122807, y: -0.17808218}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 85
+      width: 57
+      height: 73
+    spriteID: 9184260533cef604e8ebf47c2372e9e8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 85}
+  - name: Wizard_Frame_20
+    originalName: 
+    pivot: {x: 0.12962961, y: -0.5652174}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 166
+      width: 54
+      height: 46
+    spriteID: 046e43a973cfb6143bf832eb1a4ec46e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 166}
+  - name: Wizard_Frame_21
+    originalName: 
+    pivot: {x: 0.15555555, y: -1.0625}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 447
+      width: 45
+      height: 32
+    spriteID: f3ce63fa2e572734d9cb05baf4901f57
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 447}
+  - name: Wizard_Frame_22
+    originalName: 
+    pivot: {x: 0.15555555, y: -1.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 73
+      y: 4
+      width: 45
+      height: 32
+    spriteID: 419e9b534d18c6b46accecad0b4711e2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 73, y: 4}
+  - name: Wizard_Frame_23
+    originalName: 
+    pivot: {x: 0.15909089, y: -1.0625}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 73
+      y: 84
+      width: 44
+      height: 32
+    spriteID: 5d7b8165844cd1347bf6b3ed730b0c3b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 73, y: 84}
+  - name: Wizard_Frame_24
+    originalName: 
+    pivot: {x: 0.14893615, y: -1.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 407
+      width: 47
+      height: 32
+    spriteID: d3d49b79614c2874096007385131e06f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 407}
+  - name: Wizard_Frame_25
+    originalName: 
+    pivot: {x: 0.15555555, y: -1.0625}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 73
+      y: 44
+      width: 45
+      height: 32
+    spriteID: 76cd83c9b64a82141a72be1d605f1db2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 73, y: 44}
+  - name: Wizard_Frame_26
+    originalName: 
+    pivot: {x: 0.15909089, y: -1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 321
+      width: 44
+      height: 35
+    spriteID: ca771c917273f8d40890347487728f35
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 321}
+  - name: Wizard_Frame_27
+    originalName: 
+    pivot: {x: 0.15909089, y: -1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 364
+      width: 44
+      height: 35
+    spriteID: c27e30bcc52422f4fb717882fc287ff5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 364}
+  - name: Wizard_Frame_28
+    originalName: 
+    pivot: {x: 0.15555555, y: -0.8461539}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 274
+      width: 45
+      height: 39
+    spriteID: ad2b47cac41a4a24aa2ea4065121e033
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 274}
+  - name: Wizard_Frame_29
+    originalName: 
+    pivot: {x: 0.41176465, y: -1.9047619}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 186
+      y: 280
+      width: 17
+      height: 21
+    spriteID: 7b0a72ded3d3f834cb6c0a33dd71bc28
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 186, y: 280}
+  - name: Wizard_Frame_30
+    originalName: 
+    pivot: {x: 0.38888884, y: -1.8181819}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 126
+      y: 283
+      width: 18
+      height: 22
+    spriteID: 4c56720228faa86469f521641976b864
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 126, y: 283}
+  - name: Wizard_Frame_31
+    originalName: 
+    pivot: {x: 0.36842102, y: -1.8181819}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 154
+      y: 397
+      width: 19
+      height: 22
+    spriteID: 5fdfce4bb9dd0db42b745c91db19ffc1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 154, y: 397}
+  - name: Wizard_Frame_32
+    originalName: 
+    pivot: {x: 0.34999996, y: -1.7391304}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 154
+      y: 336
+      width: 20
+      height: 23
+    spriteID: bd3b73a129fdf524b9dcea88da9e9a60
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 154, y: 336}
+  - name: Wizard_Frame_33
+    originalName: 
+    pivot: {x: 0.33333328, y: -1.6666666}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 154
+      y: 243
+      width: 21
+      height: 24
+    spriteID: cd1ecd9f7b6c86b44b6679f2ec7255a1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 154, y: 243}
+  - name: Wizard_Frame_34
+    originalName: 
+    pivot: {x: 0.36842102, y: -1.8181819}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 154
+      y: 427
+      width: 19
+      height: 22
+    spriteID: 532bb218b6164984b9326af61ecb55a8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 154, y: 427}
+  - name: Wizard_Frame_45
+    originalName: 
+    pivot: {x: 0.41176465, y: -1.9047619}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 186
+      y: 309
+      width: 17
+      height: 21
+    spriteID: 378aabf6cd0d1974296fdc75eb782ed0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 186, y: 309}
+  - name: Wizard_Frame_46
+    originalName: 
+    pivot: {x: 0.38888884, y: -1.8181819}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 126
+      y: 313
+      width: 18
+      height: 22
+    spriteID: 23b49260db8608444a7b3c2ad16f22c2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 126, y: 313}
+  - name: Wizard_Frame_47
+    originalName: 
+    pivot: {x: 0.41176465, y: -1.7391304}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 126
+      y: 373
+      width: 17
+      height: 23
+    spriteID: 2fbb3deeccf522949928f6d73b9d6afb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 126, y: 373}
+  - name: Wizard_Frame_48
+    originalName: 
+    pivot: {x: 0.6, y: -1.4285715}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 126
+      y: 211
+      width: 20
+      height: 28
+    spriteID: 2fc804c320f2cde4da57cdff3c4fcc7e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 126, y: 211}
+  - name: Wizard_Frame_49
+    originalName: 
+    pivot: {x: 0.24137928, y: -1.9047619}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 126
+      y: 124
+      width: 29
+      height: 21
+    spriteID: 7ffc658ccc43e4a4c9eb166ad06e1d55
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 126, y: 124}
+  - name: Wizard_Frame_50
+    originalName: 
+    pivot: {x: 0.1707317, y: -1.9047619}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 73
+      y: 366
+      width: 41
+      height: 21
+    spriteID: dc298602ed42a03478a76ba62dcb84ba
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 73, y: 366}
+  - name: Wizard_Frame_51
+    originalName: 
+    pivot: {x: 0.15555555, y: -1.9047619}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 73
+      y: 171
+      width: 45
+      height: 21
+    spriteID: b76f02da7af551442998bd91d1f3ade7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 73, y: 171}
+  - name: Wizard_Frame_52
+    originalName: 
+    pivot: {x: 0.14893615, y: -1.9047619}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 126
+      y: 95
+      width: 47
+      height: 21
+    spriteID: e6633ae6ff754f04ab03c2717a3f371a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 126, y: 95}
+  - name: Wizard_Frame_53
+    originalName: 
+    pivot: {x: 0.14285713, y: -1.9047619}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 487
+      width: 49
+      height: 21
+    spriteID: bc7d4c19576d3344a91e03e440523004
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 487}
+  - name: Wizard_Frame_54
+    originalName: 
+    pivot: {x: 0.14285713, y: -1.9047619}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 126
+      y: 66
+      width: 49
+      height: 21
+    spriteID: d7c036a5d2f4d4c4b8e85c63ac907123
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 126, y: 66}
+  - name: Wizard_Frame_55
+    originalName: 
+    pivot: {x: 0.1372549, y: -1.7727271}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 126
+      y: 36
+      width: 51
+      height: 22
+    spriteID: 3d5a915418d901e478074bce9b3db721
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 126, y: 36}
+  - name: Wizard_Frame_56
+    originalName: 
+    pivot: {x: 0.13461536, y: -1.5416666}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 126
+      y: 4
+      width: 52
+      height: 24
+    spriteID: 30ab31275c7eaf548b153f310fe0c08b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 126, y: 4}
+  - name: Wizard_Frame_57
+    originalName: 
+    pivot: {x: 0.41176465, y: -1.9047619}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 186
+      y: 338
+      width: 17
+      height: 21
+    spriteID: 01167363f409a94418a3f6b40c1f03e1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 186, y: 338}
+  - name: Wizard_Frame_58
+    originalName: 
+    pivot: {x: 0.38888884, y: -1.8181819}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 126
+      y: 343
+      width: 18
+      height: 22
+    spriteID: 8135c8540ce24654b85af65c70d29d1d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 126, y: 343}
+  - name: Wizard_Frame_59
+    originalName: 
+    pivot: {x: 0.41176465, y: -1.7391304}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 126
+      y: 404
+      width: 17
+      height: 23
+    spriteID: 7ef2e6edcd6922245955ffed95c49d77
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 126, y: 404}
+  - name: Wizard_Frame_60
+    originalName: 
+    pivot: {x: 0.6, y: -1.4285715}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 126
+      y: 247
+      width: 20
+      height: 28
+    spriteID: 6aad137f75b706c4c83b25457afde0e5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 126, y: 247}
+  - name: Wizard_Frame_61
+    originalName: 
+    pivot: {x: 0.24137928, y: -1.9047619}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 126
+      y: 153
+      width: 29
+      height: 21
+    spriteID: 34fd65f48be01824cb03ae8f5d64263b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 126, y: 153}
+  - name: Wizard_Frame_62
+    originalName: 
+    pivot: {x: 0.24137928, y: -1.9047619}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 126
+      y: 182
+      width: 29
+      height: 21
+    spriteID: d59684b1e92408e4eb4674496f3ed0e6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 126, y: 182}
+  - name: Wizard_Frame_70
+    originalName: 
+    pivot: {x: 0.4705883, y: -1.9047619}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 186
+      y: 367
+      width: 17
+      height: 21
+    spriteID: fffe209952c69ea4e84395e2020a79ba
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 186, y: 367}
+  - name: Wizard_Frame_71
+    originalName: 
+    pivot: {x: 0.4705883, y: -1.9047619}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 186
+      y: 396
+      width: 17
+      height: 21
+    spriteID: aa6836f9336877a4ea59abe865fbd3ad
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 186, y: 396}
+  - name: Wizard_Frame_72
+    originalName: 
+    pivot: {x: 0.4705883, y: -1.9047619}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 186
+      y: 425
+      width: 17
+      height: 21
+    spriteID: cb102c477dca4f343b6bf5e74e348c83
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 186, y: 425}
+  - name: Wizard_Frame_73
+    originalName: 
+    pivot: {x: 0.4705883, y: -1.9047619}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 186
+      y: 454
+      width: 17
+      height: 21
+    spriteID: fc5acfc1358f4f8488c952820d2e9811
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 186, y: 454}
+  - name: Wizard_Frame_74
+    originalName: 
+    pivot: {x: 0.4705883, y: -1.9047619}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 186
+      y: 483
+      width: 17
+      height: 21
+    spriteID: b6b93a94c8b1fbf419a89e68d3fe1bd3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 186, y: 483}
+  - name: Wizard_Frame_75
+    originalName: 
+    pivot: {x: 0.4705883, y: -2}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 226
+      y: 120
+      width: 17
+      height: 20
+    spriteID: 7c9121e6746294242a8352e1ec849020
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 226, y: 120}
+  - name: Wizard_Frame_76
+    originalName: 
+    pivot: {x: 0.33333328, y: -2.222222}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 154
+      y: 487
+      width: 21
+      height: 18
+    spriteID: 33f140fdb6a095f49b39795e8817e78b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 154, y: 487}
+  - name: Wizard_Frame_77
+    originalName: 
+    pivot: {x: 0.21874997, y: -3.0769231}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 186
+      y: 4
+      width: 32
+      height: 13
+    spriteID: aadfc7c451d37ca4c8ea7af272886629
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 186, y: 4}
+  - name: Wizard_Frame_6
+    originalName: 
+    pivot: {x: 0.41176465, y: -1.9047619}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 226
+      y: 4
+      width: 17
+      height: 21
+    spriteID: 5d7220e52b14b1f47ab3c7f00f036f4b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 226, y: 4}
+  - name: Wizard_Frame_7
+    originalName: 
+    pivot: {x: 0.41176465, y: -1.8181819}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 186
+      y: 25
+      width: 17
+      height: 22
+    spriteID: 72fb5639782ebcb4db53d16528fe78c7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 186, y: 25}
+  - name: Wizard_Frame_8
+    originalName: 
+    pivot: {x: 0.41176465, y: -1.9047619}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 226
+      y: 33
+      width: 17
+      height: 21
+    spriteID: fb424022912d5194ba4a23a2c1953e3d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 226, y: 33}
+  - name: Wizard_Frame_9
+    originalName: 
+    pivot: {x: 0.41176465, y: -2}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 226
+      y: 148
+      width: 17
+      height: 20
+    spriteID: 7c65d347fc40a8b4aa29d65989c75c20
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 226, y: 148}
+  - name: Wizard_Frame_10
+    originalName: 
+    pivot: {x: 0.41176465, y: -1.9047619}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 226
+      y: 62
+      width: 17
+      height: 21
+    spriteID: f2ffa8cbfd4aa95478d3a2d9c7bc143d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 226, y: 62}
+  - name: Wizard_Frame_11
+    originalName: 
+    pivot: {x: 0.41176465, y: -1.8181819}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 186
+      y: 55
+      width: 17
+      height: 22
+    spriteID: 8fbc1a4d06a0fb44c9a89d3eb2158394
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 186, y: 55}
+  - name: Wizard_Frame_12
+    originalName: 
+    pivot: {x: 0.41176465, y: -1.9047619}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 226
+      y: 91
+      width: 17
+      height: 21
+    spriteID: a6ced39f76b4d0844b65e26f2523b52b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 226, y: 91}
+  - name: Wizard_Frame_13
+    originalName: 
+    pivot: {x: 0.41176465, y: -2}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 226
+      y: 176
+      width: 17
+      height: 20
+    spriteID: aa23669443b3b4a4884b418a79a5c1ab
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 226, y: 176}
+  - name: Wizard_Frame_35
+    originalName: 
+    pivot: {x: 0.40983605, y: -0.17808218}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 61
+      height: 73
+    spriteID: b3d63a5cbd8ff904db55651af632237e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: Wizard_Frame_36
+    originalName: 
+    pivot: {x: 0.375, y: -0.5652174}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 220
+      width: 40
+      height: 46
+    spriteID: 87ee3aa1541ecca49a0845eb6ac77c92
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 220}
+  - name: Wizard_Frame_37
+    originalName: 
+    pivot: {x: 0.38461536, y: -1.0625}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 73
+      y: 395
+      width: 26
+      height: 32
+    spriteID: b963cd52a7f0e8e4b88c727fd00b95c8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 73, y: 395}
+  - name: Wizard_Frame_38
+    originalName: 
+    pivot: {x: 0.38461536, y: -1.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 73
+      y: 435
+      width: 26
+      height: 32
+    spriteID: f539dbb13b93d64479efb76c1911f88d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 73, y: 435}
+  - name: Wizard_Frame_39
+    originalName: 
+    pivot: {x: 0.4642857, y: -1.0625}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 73
+      y: 200
+      width: 28
+      height: 32
+    spriteID: bf8053078c199904f8472976a639d0a1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 73, y: 200}
+  - name: Wizard_Frame_40
+    originalName: 
+    pivot: {x: 0.33333334, y: -1.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 73
+      y: 326
+      width: 27
+      height: 32
+    spriteID: 69d2e6b89fbd45d46a685091d9f66af8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 73, y: 326}
+  - name: Wizard_Frame_41
+    originalName: 
+    pivot: {x: 0.38461536, y: -1.0625}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 73
+      y: 475
+      width: 26
+      height: 32
+    spriteID: 4ac615ae2ecc2c34684df1485fc9a4e7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 73, y: 475}
+  - name: Wizard_Frame_42
+    originalName: 
+    pivot: {x: 0.44000006, y: -1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 73
+      y: 240
+      width: 25
+      height: 35
+    spriteID: 7e3ae0ae104b2364ba86ed301b42b8d7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 73, y: 240}
+  - name: Wizard_Frame_43
+    originalName: 
+    pivot: {x: 0.44000006, y: -1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 73
+      y: 283
+      width: 25
+      height: 35
+    spriteID: ae307570f49efcc4795e82c5ce5bb34b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 73, y: 283}
+  - name: Wizard_Frame_44
+    originalName: 
+    pivot: {x: 0.4642857, y: -0.8461539}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 73
+      y: 124
+      width: 28
+      height: 39
+    spriteID: 6d226622decdbc249a84f4b4bbcbf624
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 73, y: 124}
+  - name: Wizard_Frame_63
+    originalName: 
+    pivot: {x: 0.4545454, y: -3.230769}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 226
+      y: 227
+      width: 22
+      height: 13
+    spriteID: 1fb3368dc8e592a49aaf38ceffb0a211
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 226, y: 227}
+  - name: Wizard_Frame_64
+    originalName: 
+    pivot: {x: 0.40000007, y: -3.230769}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 126
+      y: 495
+      width: 20
+      height: 13
+    spriteID: db2bf48fe8c7456439bfe76be1927199
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 126, y: 495}
+  - name: Wizard_Frame_65
+    originalName: 
+    pivot: {x: 0.5, y: -2.7333333}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 186
+      y: 112
+      width: 24
+      height: 15
+    spriteID: 29f7d57c96531b04a877a10135ff248c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 186, y: 112}
+  - name: Wizard_Frame_66
+    originalName: 
+    pivot: {x: 0.42857143, y: -2.7333333}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 226
+      y: 204
+      width: 21
+      height: 15
+    spriteID: 66973525030bef2438a920c2c63a25d9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 226, y: 204}
+  - name: Wizard_Frame_67
+    originalName: 
+    pivot: {x: 0.14285722, y: -2.9999998}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 163
+      y: 124
+      width: 14
+      height: 14
+    spriteID: 8d17c67d0c896684288abc386565cb40
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 163, y: 124}
+  - name: Wizard_Frame_68
+    originalName: 
+    pivot: {x: 0.26315796, y: -2.0526314}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 186
+      y: 85
+      width: 19
+      height: 19
+    spriteID: 5084894e23637e549840b1db40ffbd24
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 186, y: 85}
+  - name: Wizard_Frame_69
+    originalName: 
+    pivot: {x: 0.31818178, y: -1.6818182}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 154
+      y: 275
+      width: 22
+      height: 22
+    spriteID: 989cc360e5c248a4983d59682d762b1d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 154, y: 275}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 1678267451
+    name: Wizard
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Wizard_Frame_0
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 17
+        height: 21
+      spriteId: be1a12dc225ca094bad74ef799f35a17
+    - name: Wizard_Frame_1
+      frameIndex: 1
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 17
+        height: 21
+      spriteId: c9d4a287a19b4fc448a1a11375735702
+    - name: Wizard_Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 17
+        height: 22
+      spriteId: bf1fbf0b3c9295c45b8c0ed2bd811dac
+    - name: Wizard_Frame_3
+      frameIndex: 3
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 17
+        height: 22
+      spriteId: 674bc58aceb5168428da6760d98193ae
+    - name: Wizard_Frame_4
+      frameIndex: 4
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 17
+        height: 21
+      spriteId: e09bafdf62cc23c4c93ffc0031bb4005
+    - name: Wizard_Frame_5
+      frameIndex: 5
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 17
+        height: 21
+      spriteId: 72c223bf0a820ce4bab33ede514da7a1
+    - name: Wizard_Frame_14
+      frameIndex: 14
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 17
+        height: 21
+      spriteId: 4d8d1d1fb3e0fa543a507f7bb7bdd76c
+    - name: Wizard_Frame_15
+      frameIndex: 15
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 18
+        height: 22
+      spriteId: b388bc15444497146b39512bb94244a9
+    - name: Wizard_Frame_16
+      frameIndex: 16
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 19
+        height: 22
+      spriteId: 451032c58cd4fff4694d2f6f2f741478
+    - name: Wizard_Frame_17
+      frameIndex: 17
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 20
+        height: 23
+      spriteId: 40c16a76248447a43ba46b92a1549682
+    - name: Wizard_Frame_18
+      frameIndex: 18
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 21
+        height: 24
+      spriteId: a944b3e6afe9b1241b34868067568059
+    - name: Wizard_Frame_19
+      frameIndex: 19
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 13
+        width: 57
+        height: 73
+      spriteId: 9184260533cef604e8ebf47c2372e9e8
+    - name: Wizard_Frame_20
+      frameIndex: 20
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 26
+        width: 54
+        height: 46
+      spriteId: 046e43a973cfb6143bf832eb1a4ec46e
+    - name: Wizard_Frame_21
+      frameIndex: 21
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 34
+        width: 45
+        height: 32
+      spriteId: f3ce63fa2e572734d9cb05baf4901f57
+    - name: Wizard_Frame_22
+      frameIndex: 22
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 33
+        width: 45
+        height: 32
+      spriteId: 419e9b534d18c6b46accecad0b4711e2
+    - name: Wizard_Frame_23
+      frameIndex: 23
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 34
+        width: 44
+        height: 32
+      spriteId: 5d7b8165844cd1347bf6b3ed730b0c3b
+    - name: Wizard_Frame_24
+      frameIndex: 24
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 33
+        width: 47
+        height: 32
+      spriteId: d3d49b79614c2874096007385131e06f
+    - name: Wizard_Frame_25
+      frameIndex: 25
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 34
+        width: 45
+        height: 32
+      spriteId: 76cd83c9b64a82141a72be1d605f1db2
+    - name: Wizard_Frame_26
+      frameIndex: 26
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 35
+        width: 44
+        height: 35
+      spriteId: ca771c917273f8d40890347487728f35
+    - name: Wizard_Frame_27
+      frameIndex: 27
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 35
+        width: 44
+        height: 35
+      spriteId: c27e30bcc52422f4fb717882fc287ff5
+    - name: Wizard_Frame_28
+      frameIndex: 28
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 33
+        width: 45
+        height: 39
+      spriteId: ad2b47cac41a4a24aa2ea4065121e033
+    - name: Wizard_Frame_29
+      frameIndex: 29
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 17
+        height: 21
+      spriteId: 7b0a72ded3d3f834cb6c0a33dd71bc28
+    - name: Wizard_Frame_30
+      frameIndex: 30
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 18
+        height: 22
+      spriteId: 4c56720228faa86469f521641976b864
+    - name: Wizard_Frame_31
+      frameIndex: 31
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 19
+        height: 22
+      spriteId: 5fdfce4bb9dd0db42b745c91db19ffc1
+    - name: Wizard_Frame_32
+      frameIndex: 32
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 20
+        height: 23
+      spriteId: bd3b73a129fdf524b9dcea88da9e9a60
+    - name: Wizard_Frame_33
+      frameIndex: 33
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 21
+        height: 24
+      spriteId: cd1ecd9f7b6c86b44b6679f2ec7255a1
+    - name: Wizard_Frame_34
+      frameIndex: 34
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 19
+        height: 22
+      spriteId: 532bb218b6164984b9326af61ecb55a8
+    - name: Wizard_Frame_45
+      frameIndex: 45
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 17
+        height: 21
+      spriteId: 378aabf6cd0d1974296fdc75eb782ed0
+    - name: Wizard_Frame_46
+      frameIndex: 46
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 18
+        height: 22
+      spriteId: 23b49260db8608444a7b3c2ad16f22c2
+    - name: Wizard_Frame_47
+      frameIndex: 47
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 17
+        height: 23
+      spriteId: 2fbb3deeccf522949928f6d73b9d6afb
+    - name: Wizard_Frame_48
+      frameIndex: 48
+      additiveSortOrder: 0
+      cellRect:
+        x: 38
+        y: 40
+        width: 20
+        height: 28
+      spriteId: 2fc804c320f2cde4da57cdff3c4fcc7e
+    - name: Wizard_Frame_49
+      frameIndex: 49
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 29
+        height: 21
+      spriteId: 7ffc658ccc43e4a4c9eb166ad06e1d55
+    - name: Wizard_Frame_50
+      frameIndex: 50
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 41
+        height: 21
+      spriteId: dc298602ed42a03478a76ba62dcb84ba
+    - name: Wizard_Frame_51
+      frameIndex: 51
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 45
+        height: 21
+      spriteId: b76f02da7af551442998bd91d1f3ade7
+    - name: Wizard_Frame_52
+      frameIndex: 52
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 47
+        height: 21
+      spriteId: e6633ae6ff754f04ab03c2717a3f371a
+    - name: Wizard_Frame_53
+      frameIndex: 53
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 49
+        height: 21
+      spriteId: bc7d4c19576d3344a91e03e440523004
+    - name: Wizard_Frame_54
+      frameIndex: 54
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 49
+        height: 21
+      spriteId: d7c036a5d2f4d4c4b8e85c63ac907123
+    - name: Wizard_Frame_55
+      frameIndex: 55
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 39
+        width: 51
+        height: 22
+      spriteId: 3d5a915418d901e478074bce9b3db721
+    - name: Wizard_Frame_56
+      frameIndex: 56
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 37
+        width: 52
+        height: 24
+      spriteId: 30ab31275c7eaf548b153f310fe0c08b
+    - name: Wizard_Frame_57
+      frameIndex: 57
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 17
+        height: 21
+      spriteId: 01167363f409a94418a3f6b40c1f03e1
+    - name: Wizard_Frame_58
+      frameIndex: 58
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 18
+        height: 22
+      spriteId: 8135c8540ce24654b85af65c70d29d1d
+    - name: Wizard_Frame_59
+      frameIndex: 59
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 17
+        height: 23
+      spriteId: 7ef2e6edcd6922245955ffed95c49d77
+    - name: Wizard_Frame_60
+      frameIndex: 60
+      additiveSortOrder: 0
+      cellRect:
+        x: 38
+        y: 40
+        width: 20
+        height: 28
+      spriteId: 6aad137f75b706c4c83b25457afde0e5
+    - name: Wizard_Frame_61
+      frameIndex: 61
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 29
+        height: 21
+      spriteId: 34fd65f48be01824cb03ae8f5d64263b
+    - name: Wizard_Frame_62
+      frameIndex: 62
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 29
+        height: 21
+      spriteId: d59684b1e92408e4eb4674496f3ed0e6
+    - name: Wizard_Frame_70
+      frameIndex: 70
+      additiveSortOrder: 0
+      cellRect:
+        x: 42
+        y: 40
+        width: 17
+        height: 21
+      spriteId: fffe209952c69ea4e84395e2020a79ba
+    - name: Wizard_Frame_71
+      frameIndex: 71
+      additiveSortOrder: 0
+      cellRect:
+        x: 42
+        y: 40
+        width: 17
+        height: 21
+      spriteId: aa6836f9336877a4ea59abe865fbd3ad
+    - name: Wizard_Frame_72
+      frameIndex: 72
+      additiveSortOrder: 0
+      cellRect:
+        x: 42
+        y: 40
+        width: 17
+        height: 21
+      spriteId: cb102c477dca4f343b6bf5e74e348c83
+    - name: Wizard_Frame_73
+      frameIndex: 73
+      additiveSortOrder: 0
+      cellRect:
+        x: 42
+        y: 40
+        width: 17
+        height: 21
+      spriteId: fc5acfc1358f4f8488c952820d2e9811
+    - name: Wizard_Frame_74
+      frameIndex: 74
+      additiveSortOrder: 0
+      cellRect:
+        x: 42
+        y: 40
+        width: 17
+        height: 21
+      spriteId: b6b93a94c8b1fbf419a89e68d3fe1bd3
+    - name: Wizard_Frame_75
+      frameIndex: 75
+      additiveSortOrder: 0
+      cellRect:
+        x: 42
+        y: 40
+        width: 17
+        height: 20
+      spriteId: 7c9121e6746294242a8352e1ec849020
+    - name: Wizard_Frame_76
+      frameIndex: 76
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 21
+        height: 18
+      spriteId: 33f140fdb6a095f49b39795e8817e78b
+    - name: Wizard_Frame_77
+      frameIndex: 77
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 32
+        height: 13
+      spriteId: aadfc7c451d37ca4c8ea7af272886629
+    - name: Wizard_Frame_6
+      frameIndex: 6
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 17
+        height: 21
+      spriteId: 5d7220e52b14b1f47ab3c7f00f036f4b
+    - name: Wizard_Frame_7
+      frameIndex: 7
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 17
+        height: 22
+      spriteId: 72fb5639782ebcb4db53d16528fe78c7
+    - name: Wizard_Frame_8
+      frameIndex: 8
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 17
+        height: 21
+      spriteId: fb424022912d5194ba4a23a2c1953e3d
+    - name: Wizard_Frame_9
+      frameIndex: 9
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 17
+        height: 20
+      spriteId: 7c65d347fc40a8b4aa29d65989c75c20
+    - name: Wizard_Frame_10
+      frameIndex: 10
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 17
+        height: 21
+      spriteId: f2ffa8cbfd4aa95478d3a2d9c7bc143d
+    - name: Wizard_Frame_11
+      frameIndex: 11
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 17
+        height: 22
+      spriteId: 8fbc1a4d06a0fb44c9a89d3eb2158394
+    - name: Wizard_Frame_12
+      frameIndex: 12
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 17
+        height: 21
+      spriteId: a6ced39f76b4d0844b65e26f2523b52b
+    - name: Wizard_Frame_13
+      frameIndex: 13
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 17
+        height: 20
+      spriteId: aa23669443b3b4a4884b418a79a5c1ab
+    - name: Wizard_Frame_35
+      frameIndex: 35
+      additiveSortOrder: 0
+      cellRect:
+        x: 25
+        y: 13
+        width: 61
+        height: 73
+      spriteId: b3d63a5cbd8ff904db55651af632237e
+    - name: Wizard_Frame_36
+      frameIndex: 36
+      additiveSortOrder: 0
+      cellRect:
+        x: 35
+        y: 26
+        width: 40
+        height: 46
+      spriteId: 87ee3aa1541ecca49a0845eb6ac77c92
+    - name: Wizard_Frame_37
+      frameIndex: 37
+      additiveSortOrder: 0
+      cellRect:
+        x: 40
+        y: 34
+        width: 26
+        height: 32
+      spriteId: b963cd52a7f0e8e4b88c727fd00b95c8
+    - name: Wizard_Frame_38
+      frameIndex: 38
+      additiveSortOrder: 0
+      cellRect:
+        x: 40
+        y: 33
+        width: 26
+        height: 32
+      spriteId: f539dbb13b93d64479efb76c1911f88d
+    - name: Wizard_Frame_39
+      frameIndex: 39
+      additiveSortOrder: 0
+      cellRect:
+        x: 37
+        y: 34
+        width: 28
+        height: 32
+      spriteId: bf8053078c199904f8472976a639d0a1
+    - name: Wizard_Frame_40
+      frameIndex: 40
+      additiveSortOrder: 0
+      cellRect:
+        x: 41
+        y: 33
+        width: 27
+        height: 32
+      spriteId: 69d2e6b89fbd45d46a685091d9f66af8
+    - name: Wizard_Frame_41
+      frameIndex: 41
+      additiveSortOrder: 0
+      cellRect:
+        x: 40
+        y: 34
+        width: 26
+        height: 32
+      spriteId: 4ac615ae2ecc2c34684df1485fc9a4e7
+    - name: Wizard_Frame_42
+      frameIndex: 42
+      additiveSortOrder: 0
+      cellRect:
+        x: 39
+        y: 35
+        width: 25
+        height: 35
+      spriteId: 7e3ae0ae104b2364ba86ed301b42b8d7
+    - name: Wizard_Frame_43
+      frameIndex: 43
+      additiveSortOrder: 0
+      cellRect:
+        x: 39
+        y: 35
+        width: 25
+        height: 35
+      spriteId: ae307570f49efcc4795e82c5ce5bb34b
+    - name: Wizard_Frame_44
+      frameIndex: 44
+      additiveSortOrder: 0
+      cellRect:
+        x: 37
+        y: 33
+        width: 28
+        height: 39
+      spriteId: 6d226622decdbc249a84f4b4bbcbf624
+    - name: Wizard_Frame_63
+      frameIndex: 63
+      additiveSortOrder: 0
+      cellRect:
+        x: 40
+        y: 42
+        width: 22
+        height: 13
+      spriteId: 1fb3368dc8e592a49aaf38ceffb0a211
+    - name: Wizard_Frame_64
+      frameIndex: 64
+      additiveSortOrder: 0
+      cellRect:
+        x: 42
+        y: 42
+        width: 20
+        height: 13
+      spriteId: db2bf48fe8c7456439bfe76be1927199
+    - name: Wizard_Frame_65
+      frameIndex: 65
+      additiveSortOrder: 0
+      cellRect:
+        x: 38
+        y: 41
+        width: 24
+        height: 15
+      spriteId: 29f7d57c96531b04a877a10135ff248c
+    - name: Wizard_Frame_66
+      frameIndex: 66
+      additiveSortOrder: 0
+      cellRect:
+        x: 41
+        y: 41
+        width: 21
+        height: 15
+      spriteId: 66973525030bef2438a920c2c63a25d9
+    - name: Wizard_Frame_67
+      frameIndex: 67
+      additiveSortOrder: 0
+      cellRect:
+        x: 48
+        y: 42
+        width: 14
+        height: 14
+      spriteId: 8d17c67d0c896684288abc386565cb40
+    - name: Wizard_Frame_68
+      frameIndex: 68
+      additiveSortOrder: 0
+      cellRect:
+        x: 45
+        y: 39
+        width: 19
+        height: 19
+      spriteId: 5084894e23637e549840b1db40ffbd24
+    - name: Wizard_Frame_69
+      frameIndex: 69
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 37
+        width: 22
+        height: 22
+      spriteId: 989cc360e5c248a4983d59682d762b1d
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 100, y: 100}

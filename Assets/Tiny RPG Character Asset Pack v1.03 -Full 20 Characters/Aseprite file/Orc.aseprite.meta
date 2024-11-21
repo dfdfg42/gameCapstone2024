@@ -1,0 +1,1125 @@
+fileFormatVersion: 2
+guid: 9342489247553a24ab8d3a46d365db48
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: Orc_Frame_0
+    originalName: 
+    pivot: {x: 0.30434778, y: -2.222222}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 72
+      y: 196
+      width: 23
+      height: 18
+    spriteID: 41b476999d066644cbb2439b0b0c05ff
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 72, y: 196}
+  - name: Orc_Frame_23
+    originalName: 
+    pivot: {x: 0.2, y: -1.1333333}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 30
+      height: 30
+    spriteID: c4d9e16876174a94cb1f27c8b7f7e419
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: Orc_Frame_25
+    originalName: 
+    pivot: {x: 0.36842102, y: -1.85}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 139
+      y: 158
+      width: 19
+      height: 20
+    spriteID: 71d1559918556f34a8265267c59aec4a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 139, y: 158}
+  - name: Orc_Frame_31
+    originalName: 
+    pivot: {x: 0.38461536, y: -2.1052632}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 72
+      y: 31
+      width: 26
+      height: 19
+    spriteID: 49f0f20fef93c0c4699c8fd352be3b3c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 72, y: 31}
+  - name: Orc_Frame_32
+    originalName: 
+    pivot: {x: 0.4642857, y: -1.9047619}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 174
+      width: 28
+      height: 21
+    spriteID: 6209473ea97521849bb4617ab74f2c8b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 174}
+  - name: Orc_Frame_33
+    originalName: 
+    pivot: {x: 0.48275855, y: -2.857143}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 236
+      width: 29
+      height: 14
+    spriteID: a25495df4eef8884ba6a1490589f678e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 236}
+  - name: Orc_Frame_1
+    originalName: 
+    pivot: {x: 0.30434778, y: -2.222222}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 72
+      y: 222
+      width: 23
+      height: 18
+    spriteID: 20ecd71b12e825546a2a32f5604830c3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 72, y: 222}
+  - name: Orc_Frame_2
+    originalName: 
+    pivot: {x: 0.30434778, y: -2.1052632}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 72
+      y: 88
+      width: 23
+      height: 19
+    spriteID: f24511c6e2cc9694abb736ad8aa74479
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 72, y: 88}
+  - name: Orc_Frame_3
+    originalName: 
+    pivot: {x: 0.30434778, y: -2.1052632}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 72
+      y: 115
+      width: 23
+      height: 19
+    spriteID: e75233e27edcffd4680a7646bee77364
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 72, y: 115}
+  - name: Orc_Frame_4
+    originalName: 
+    pivot: {x: 0.30434778, y: -2.222222}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 108
+      y: 4
+      width: 23
+      height: 18
+    spriteID: 4dcea916b31557b4f8b37cefa1ce5a16
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 108, y: 4}
+  - name: Orc_Frame_5
+    originalName: 
+    pivot: {x: 0.30434778, y: -2.222222}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 108
+      y: 30
+      width: 23
+      height: 18
+    spriteID: 8bedc3fd9f258bc46bfc84a4bf314703
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 108, y: 30}
+  - name: Orc_Frame_6
+    originalName: 
+    pivot: {x: 0.30434778, y: -2.222222}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 108
+      y: 56
+      width: 23
+      height: 18
+    spriteID: 23b4f3720c7487b41ac71f15c56eb325
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 108, y: 56}
+  - name: Orc_Frame_7
+    originalName: 
+    pivot: {x: 0.30434778, y: -2.1052632}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 72
+      y: 142
+      width: 23
+      height: 19
+    spriteID: c69446e8654f43e4da26956b889ae7cf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 72, y: 142}
+  - name: Orc_Frame_8
+    originalName: 
+    pivot: {x: 0.30434778, y: -2.222222}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 108
+      y: 82
+      width: 23
+      height: 18
+    spriteID: b59af48a0324d114185c63cc0c833249
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 108, y: 82}
+  - name: Orc_Frame_9
+    originalName: 
+    pivot: {x: 0.30434778, y: -2.3529413}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 139
+      y: 108
+      width: 23
+      height: 17
+    spriteID: c857b8da018f9da4bb3c5eb84f22d616
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 139, y: 108}
+  - name: Orc_Frame_10
+    originalName: 
+    pivot: {x: 0.30434778, y: -2.222222}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 108
+      y: 108
+      width: 23
+      height: 18
+    spriteID: a85be49ebf9e22944bc201f7428e5628
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 108, y: 108}
+  - name: Orc_Frame_11
+    originalName: 
+    pivot: {x: 0.30434778, y: -2.1052632}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 72
+      y: 169
+      width: 23
+      height: 19
+    spriteID: 4620a6376fca5194aa0a7fcd8a409198
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 72, y: 169}
+  - name: Orc_Frame_12
+    originalName: 
+    pivot: {x: 0.30434778, y: -2.222222}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 108
+      y: 134
+      width: 23
+      height: 18
+    spriteID: 07b229490dbc4ab4ba001af29a03e837
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 108, y: 134}
+  - name: Orc_Frame_13
+    originalName: 
+    pivot: {x: 0.30434778, y: -2.3529413}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 139
+      y: 133
+      width: 23
+      height: 17
+    spriteID: 7997852471e62344bbcb68ce70a14883
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 139, y: 133}
+  - name: Orc_Frame_14
+    originalName: 
+    pivot: {x: 0.30434778, y: -2.222222}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 108
+      y: 160
+      width: 23
+      height: 18
+    spriteID: 654477790cc00ec468c6e67e1337e0a0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 108, y: 160}
+  - name: Orc_Frame_15
+    originalName: 
+    pivot: {x: 0.34999996, y: -1.8181819}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 72
+      y: 58
+      width: 20
+      height: 22
+    spriteID: c60ddc65d50f373439bd7a753b3254ec
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 72, y: 58}
+  - name: Orc_Frame_16
+    originalName: 
+    pivot: {x: 0.63636357, y: -1.4814814}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 104
+      width: 22
+      height: 27
+    spriteID: 44401b52dae4136468d1a6c55bd41132
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 104}
+  - name: Orc_Frame_17
+    originalName: 
+    pivot: {x: 0.2333333, y: -1.4615384}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 42
+      width: 30
+      height: 26
+    spriteID: bfb840b48b5d2dc499b71e05e4b8f850
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 42}
+  - name: Orc_Frame_18
+    originalName: 
+    pivot: {x: 0.2333333, y: -1.9}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 76
+      width: 30
+      height: 20
+    spriteID: a9978436b70309f4db90e6df03a58446
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 76}
+  - name: Orc_Frame_19
+    originalName: 
+    pivot: {x: 0.24999997, y: -2}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 72
+      y: 4
+      width: 28
+      height: 19
+    spriteID: 260f4275bc8c2374e9502a7778d40e12
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 72, y: 4}
+  - name: Orc_Frame_20
+    originalName: 
+    pivot: {x: 0.30434778, y: -2.222222}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 108
+      y: 186
+      width: 23
+      height: 18
+    spriteID: 7cfca342930983d488356f618708e711
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 108, y: 186}
+  - name: Orc_Frame_21
+    originalName: 
+    pivot: {x: 0.63636357, y: -1.4814814}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 139
+      width: 22
+      height: 27
+    spriteID: 6e1c712a5f0443c47bc8b4c26ec32747
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 139}
+  - name: Orc_Frame_22
+    originalName: 
+    pivot: {x: 0.63636357, y: -1.5384616}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 42
+      y: 4
+      width: 22
+      height: 26
+    spriteID: 7118a85e056f6a54da34f7364c214c53
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 42, y: 4}
+  - name: Orc_Frame_24
+    originalName: 
+    pivot: {x: 0.26086956, y: -1.36}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 203
+      width: 23
+      height: 25
+    spriteID: 93ba6cbb463f6b347a65bb855d66ceb8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 203}
+  - name: Orc_Frame_26
+    originalName: 
+    pivot: {x: 0.34782612, y: -2.222222}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 108
+      y: 212
+      width: 23
+      height: 18
+    spriteID: f210fe8b8133a044e816dbfaeec70dd5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 108, y: 212}
+  - name: Orc_Frame_27
+    originalName: 
+    pivot: {x: 0.34782612, y: -2.222222}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 139
+      y: 4
+      width: 23
+      height: 18
+    spriteID: 6f6a4a723d9da6b4c91d9546f99d89b0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 139, y: 4}
+  - name: Orc_Frame_28
+    originalName: 
+    pivot: {x: 0.34782612, y: -2.222222}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 139
+      y: 30
+      width: 23
+      height: 18
+    spriteID: 0e1ee4a58b2242e46834b7d7f00f862e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 139, y: 30}
+  - name: Orc_Frame_29
+    originalName: 
+    pivot: {x: 0.34782612, y: -2.222222}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 139
+      y: 56
+      width: 23
+      height: 18
+    spriteID: 99d77c370ad1a894e888580431fd0eec
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 139, y: 56}
+  - name: Orc_Frame_30
+    originalName: 
+    pivot: {x: 0.30434778, y: -2.222222}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 139
+      y: 82
+      width: 23
+      height: 18
+    spriteID: 1df5017c533e125448a3ed1696be68f5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 139, y: 82}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -1037614740
+    name: Orc
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Orc_Frame_0
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 23
+        height: 18
+      spriteId: 41b476999d066644cbb2439b0b0c05ff
+    - name: Orc_Frame_23
+      frameIndex: 23
+      additiveSortOrder: 0
+      cellRect:
+        x: 44
+        y: 34
+        width: 30
+        height: 30
+      spriteId: c4d9e16876174a94cb1f27c8b7f7e419
+    - name: Orc_Frame_25
+      frameIndex: 25
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 37
+        width: 19
+        height: 20
+      spriteId: 71d1559918556f34a8265267c59aec4a
+    - name: Orc_Frame_31
+      frameIndex: 31
+      additiveSortOrder: 0
+      cellRect:
+        x: 40
+        y: 40
+        width: 26
+        height: 19
+      spriteId: 49f0f20fef93c0c4699c8fd352be3b3c
+    - name: Orc_Frame_32
+      frameIndex: 32
+      additiveSortOrder: 0
+      cellRect:
+        x: 37
+        y: 40
+        width: 28
+        height: 21
+      spriteId: 6209473ea97521849bb4617ab74f2c8b
+    - name: Orc_Frame_33
+      frameIndex: 33
+      additiveSortOrder: 0
+      cellRect:
+        x: 36
+        y: 40
+        width: 29
+        height: 14
+      spriteId: a25495df4eef8884ba6a1490589f678e
+    - name: Orc_Frame_1
+      frameIndex: 1
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 23
+        height: 18
+      spriteId: 20ecd71b12e825546a2a32f5604830c3
+    - name: Orc_Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 23
+        height: 19
+      spriteId: f24511c6e2cc9694abb736ad8aa74479
+    - name: Orc_Frame_3
+      frameIndex: 3
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 23
+        height: 19
+      spriteId: e75233e27edcffd4680a7646bee77364
+    - name: Orc_Frame_4
+      frameIndex: 4
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 23
+        height: 18
+      spriteId: 4dcea916b31557b4f8b37cefa1ce5a16
+    - name: Orc_Frame_5
+      frameIndex: 5
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 23
+        height: 18
+      spriteId: 8bedc3fd9f258bc46bfc84a4bf314703
+    - name: Orc_Frame_6
+      frameIndex: 6
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 23
+        height: 18
+      spriteId: 23b4f3720c7487b41ac71f15c56eb325
+    - name: Orc_Frame_7
+      frameIndex: 7
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 23
+        height: 19
+      spriteId: c69446e8654f43e4da26956b889ae7cf
+    - name: Orc_Frame_8
+      frameIndex: 8
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 23
+        height: 18
+      spriteId: b59af48a0324d114185c63cc0c833249
+    - name: Orc_Frame_9
+      frameIndex: 9
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 23
+        height: 17
+      spriteId: c857b8da018f9da4bb3c5eb84f22d616
+    - name: Orc_Frame_10
+      frameIndex: 10
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 23
+        height: 18
+      spriteId: a85be49ebf9e22944bc201f7428e5628
+    - name: Orc_Frame_11
+      frameIndex: 11
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 23
+        height: 19
+      spriteId: 4620a6376fca5194aa0a7fcd8a409198
+    - name: Orc_Frame_12
+      frameIndex: 12
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 23
+        height: 18
+      spriteId: 07b229490dbc4ab4ba001af29a03e837
+    - name: Orc_Frame_13
+      frameIndex: 13
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 23
+        height: 17
+      spriteId: 7997852471e62344bbcb68ce70a14883
+    - name: Orc_Frame_14
+      frameIndex: 14
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 23
+        height: 18
+      spriteId: 654477790cc00ec468c6e67e1337e0a0
+    - name: Orc_Frame_15
+      frameIndex: 15
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 20
+        height: 22
+      spriteId: c60ddc65d50f373439bd7a753b3254ec
+    - name: Orc_Frame_16
+      frameIndex: 16
+      additiveSortOrder: 0
+      cellRect:
+        x: 36
+        y: 40
+        width: 22
+        height: 27
+      spriteId: 44401b52dae4136468d1a6c55bd41132
+    - name: Orc_Frame_17
+      frameIndex: 17
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 38
+        width: 30
+        height: 26
+      spriteId: bfb840b48b5d2dc499b71e05e4b8f850
+    - name: Orc_Frame_18
+      frameIndex: 18
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 38
+        width: 30
+        height: 20
+      spriteId: a9978436b70309f4db90e6df03a58446
+    - name: Orc_Frame_19
+      frameIndex: 19
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 38
+        width: 28
+        height: 19
+      spriteId: 260f4275bc8c2374e9502a7778d40e12
+    - name: Orc_Frame_20
+      frameIndex: 20
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 23
+        height: 18
+      spriteId: 7cfca342930983d488356f618708e711
+    - name: Orc_Frame_21
+      frameIndex: 21
+      additiveSortOrder: 0
+      cellRect:
+        x: 36
+        y: 40
+        width: 22
+        height: 27
+      spriteId: 6e1c712a5f0443c47bc8b4c26ec32747
+    - name: Orc_Frame_22
+      frameIndex: 22
+      additiveSortOrder: 0
+      cellRect:
+        x: 36
+        y: 40
+        width: 22
+        height: 26
+      spriteId: 7118a85e056f6a54da34f7364c214c53
+    - name: Orc_Frame_24
+      frameIndex: 24
+      additiveSortOrder: 0
+      cellRect:
+        x: 44
+        y: 34
+        width: 23
+        height: 25
+      spriteId: 93ba6cbb463f6b347a65bb855d66ceb8
+    - name: Orc_Frame_26
+      frameIndex: 26
+      additiveSortOrder: 0
+      cellRect:
+        x: 42
+        y: 40
+        width: 23
+        height: 18
+      spriteId: f210fe8b8133a044e816dbfaeec70dd5
+    - name: Orc_Frame_27
+      frameIndex: 27
+      additiveSortOrder: 0
+      cellRect:
+        x: 42
+        y: 40
+        width: 23
+        height: 18
+      spriteId: 6f6a4a723d9da6b4c91d9546f99d89b0
+    - name: Orc_Frame_28
+      frameIndex: 28
+      additiveSortOrder: 0
+      cellRect:
+        x: 42
+        y: 40
+        width: 23
+        height: 18
+      spriteId: 0e1ee4a58b2242e46834b7d7f00f862e
+    - name: Orc_Frame_29
+      frameIndex: 29
+      additiveSortOrder: 0
+      cellRect:
+        x: 42
+        y: 40
+        width: 23
+        height: 18
+      spriteId: 99d77c370ad1a894e888580431fd0eec
+    - name: Orc_Frame_30
+      frameIndex: 30
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 23
+        height: 18
+      spriteId: 1df5017c533e125448a3ed1696be68f5
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 100, y: 100}

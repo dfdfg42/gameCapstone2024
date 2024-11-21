@@ -1,0 +1,1589 @@
+fileFormatVersion: 2
+guid: 1b5f67e8e3007704ca155dd73e5dd462
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: Armored Orc_Frame_0
+    originalName: 
+    pivot: {x: 0.32000005, y: -1.8181819}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 74
+      y: 57
+      width: 25
+      height: 22
+    spriteID: 4b9ed3f8250589b458bcad9d55e68a73
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 74, y: 57}
+  - name: Armored Orc_Frame_46
+    originalName: 
+    pivot: {x: 0.32000005, y: -1.8181819}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 74
+      y: 87
+      width: 25
+      height: 22
+    spriteID: 22f7a9de9ee0e914185310438a1a9f4a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 74, y: 87}
+  - name: Armored Orc_Frame_47
+    originalName: 
+    pivot: {x: 0.35714284, y: -1.6666666}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 310
+      width: 28
+      height: 24
+    spriteID: b7dbc3ae0212ce348971549047c9f1b2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 310}
+  - name: Armored Orc_Frame_48
+    originalName: 
+    pivot: {x: 0.5365854, y: -1.9047619}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 98
+      width: 41
+      height: 21
+    spriteID: bf25002a271259240b26c6d4a4fab444
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 98}
+  - name: Armored Orc_Frame_49
+    originalName: 
+    pivot: {x: 0.5609756, y: -2.857143}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 74
+      y: 4
+      width: 41
+      height: 14
+    spriteID: 298c107a4651dc04297e152601436fbe
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 74, y: 4}
+  - name: Armored Orc_Frame_1
+    originalName: 
+    pivot: {x: 0.32000005, y: -1.8181819}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 74
+      y: 117
+      width: 25
+      height: 22
+    spriteID: 57785812dfa5b0c46b3ac48064dabe41
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 74, y: 117}
+  - name: Armored Orc_Frame_2
+    originalName: 
+    pivot: {x: 0.32000005, y: -1.7391304}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 374
+      width: 25
+      height: 23
+    spriteID: 744fff39dc20a6349b18aaa008e251c9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 374}
+  - name: Armored Orc_Frame_3
+    originalName: 
+    pivot: {x: 0.32000005, y: -1.7391304}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 405
+      width: 25
+      height: 23
+    spriteID: 73e15fccae14d2d47a38a045a513e376
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 405}
+  - name: Armored Orc_Frame_4
+    originalName: 
+    pivot: {x: 0.32000005, y: -1.8181819}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 74
+      y: 147
+      width: 25
+      height: 22
+    spriteID: 99991dcf1e363f943a729312038dc62b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 74, y: 147}
+  - name: Armored Orc_Frame_5
+    originalName: 
+    pivot: {x: 0.32000005, y: -1.8181819}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 74
+      y: 177
+      width: 25
+      height: 22
+    spriteID: 88ddebe7e0bd94e409cdc48ff862a84d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 74, y: 177}
+  - name: Armored Orc_Frame_6
+    originalName: 
+    pivot: {x: 0.32000005, y: -1.8181819}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 74
+      y: 207
+      width: 25
+      height: 22
+    spriteID: 151222357abfd1f4792b1754efcb72d7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 74, y: 207}
+  - name: Armored Orc_Frame_7
+    originalName: 
+    pivot: {x: 0.29166663, y: -1.7391304}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 74
+      y: 26
+      width: 24
+      height: 23
+    spriteID: 88d1ef1ed343e68419d37f48028480ed
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 74, y: 26}
+  - name: Armored Orc_Frame_8
+    originalName: 
+    pivot: {x: 0.29166663, y: -1.8181819}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 123
+      y: 34
+      width: 24
+      height: 22
+    spriteID: 42fc20df3d1b0784293c389f3beb6145
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 123, y: 34}
+  - name: Armored Orc_Frame_9
+    originalName: 
+    pivot: {x: 0.32000005, y: -1.9047619}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 123
+      y: 154
+      width: 25
+      height: 21
+    spriteID: 1b59bfc1807a49041b61c73307522154
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 123, y: 154}
+  - name: Armored Orc_Frame_10
+    originalName: 
+    pivot: {x: 0.32000005, y: -1.8181819}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 74
+      y: 237
+      width: 25
+      height: 22
+    spriteID: 2fba90818f540834bbbf7023fcecc1ac
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 74, y: 237}
+  - name: Armored Orc_Frame_11
+    originalName: 
+    pivot: {x: 0.32000005, y: -1.7391304}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 436
+      width: 25
+      height: 23
+    spriteID: 41b0b725a40d6cf46a44c4b812474e3d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 436}
+  - name: Armored Orc_Frame_12
+    originalName: 
+    pivot: {x: 0.32000005, y: -1.8181819}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 74
+      y: 267
+      width: 25
+      height: 22
+    spriteID: be0a2f3a74037a84ea2107cb604c3733
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 74, y: 267}
+  - name: Armored Orc_Frame_13
+    originalName: 
+    pivot: {x: 0.32000005, y: -1.9047619}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 123
+      y: 183
+      width: 25
+      height: 21
+    spriteID: ee76166598f246e46ab2da6d51978b6e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 123, y: 183}
+  - name: Armored Orc_Frame_14
+    originalName: 
+    pivot: {x: 0.32000005, y: -1.8181819}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 74
+      y: 297
+      width: 25
+      height: 22
+    spriteID: 3a0179e55ce132c4da288c16e320975e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 74, y: 297}
+  - name: Armored Orc_Frame_15
+    originalName: 
+    pivot: {x: 0.32000005, y: -1.7391304}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 467
+      width: 25
+      height: 23
+    spriteID: 6192fee1ed9813846b9dbb7fcf64ed31
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 467}
+  - name: Armored Orc_Frame_16
+    originalName: 
+    pivot: {x: 0.38095245, y: -1.4814814}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 40
+      y: 460
+      width: 21
+      height: 27
+    spriteID: 0f50726c6551b524db8e026191b20fbb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 40, y: 460}
+  - name: Armored Orc_Frame_17
+    originalName: 
+    pivot: {x: 0.50000006, y: -1.3793104}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 123
+      y: 240
+      width: 16
+      height: 29
+    spriteID: 8f8919905bb4c6244a27b47e7f7492da
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 123, y: 240}
+  - name: Armored Orc_Frame_18
+    originalName: 
+    pivot: {x: 0.28125, y: -1.4615384}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 127
+      width: 32
+      height: 26
+    spriteID: 3f4c32e5928cf8e4c927962d335fc6de
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 127}
+  - name: Armored Orc_Frame_19
+    originalName: 
+    pivot: {x: 0.28125, y: -1.5833333}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 248
+      width: 32
+      height: 24
+    spriteID: 36feaa60859e82f4688a9a804360ca1a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 248}
+  - name: Armored Orc_Frame_20
+    originalName: 
+    pivot: {x: 0.34615386, y: -1.5833333}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 342
+      width: 26
+      height: 24
+    spriteID: e6dcccde94f10e84ea88cd24d84c958c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 342}
+  - name: Armored Orc_Frame_21
+    originalName: 
+    pivot: {x: 0.32000005, y: -1.8181819}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 74
+      y: 327
+      width: 25
+      height: 22
+    spriteID: 7085cd6c5d71e2f4682de3d05b7b0933
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 74, y: 327}
+  - name: Armored Orc_Frame_22
+    originalName: 
+    pivot: {x: 0.25806457, y: -1.8181819}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 280
+      width: 31
+      height: 22
+    spriteID: 1a58560214deee940b9c2a04b9bab2e8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 280}
+  - name: Armored Orc_Frame_23
+    originalName: 
+    pivot: {x: 0.30769235, y: -1.8181819}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 40
+      y: 310
+      width: 26
+      height: 22
+    spriteID: e83855769b2fcc249adeb7ac7437c98c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 40, y: 310}
+  - name: Armored Orc_Frame_24
+    originalName: 
+    pivot: {x: 0.36363643, y: -1.9047619}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 43
+      y: 280
+      width: 22
+      height: 21
+    spriteID: c62c069febbd86e4fb3b6f3884b46785
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 43, y: 280}
+  - name: Armored Orc_Frame_25
+    originalName: 
+    pivot: {x: 0.36363643, y: -1.9047619}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 44
+      y: 248
+      width: 22
+      height: 21
+    spriteID: bdd22d37317b21048afdd4b6b4dcc8d6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 44, y: 248}
+  - name: Armored Orc_Frame_26
+    originalName: 
+    pivot: {x: 0.24324326, y: -1.9047619}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 219
+      width: 37
+      height: 21
+    spriteID: d0ce5f20f07dcba4a8241bf41902bad8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 219}
+  - name: Armored Orc_Frame_27
+    originalName: 
+    pivot: {x: 0.23684211, y: -1.9047619}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 161
+      width: 38
+      height: 21
+    spriteID: ddf4e17f58ba61b4ba4dfc3b23c4c981
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 161}
+  - name: Armored Orc_Frame_28
+    originalName: 
+    pivot: {x: 0.23684211, y: -1.9047619}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 190
+      width: 38
+      height: 21
+    spriteID: 63674758ba6629a408a3a538514fd20a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 190}
+  - name: Armored Orc_Frame_29
+    originalName: 
+    pivot: {x: 0.32000005, y: -1.8181819}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 74
+      y: 357
+      width: 25
+      height: 22
+    spriteID: 58f008b1970a84f45902a0cd647835c6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 74, y: 357}
+  - name: Armored Orc_Frame_30
+    originalName: 
+    pivot: {x: 0.32000005, y: -1.8181819}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 74
+      y: 387
+      width: 25
+      height: 22
+    spriteID: f83c2e2d31b64e24eb25201cc40d8d49
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 74, y: 387}
+  - name: Armored Orc_Frame_31
+    originalName: 
+    pivot: {x: 0.32000005, y: -1.8181819}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 74
+      y: 417
+      width: 25
+      height: 22
+    spriteID: aa74fc3b2b649af428c6744dee852d06
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 74, y: 417}
+  - name: Armored Orc_Frame_32
+    originalName: 
+    pivot: {x: 0.32000005, y: -1.8181819}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 74
+      y: 447
+      width: 25
+      height: 22
+    spriteID: 5c3da2ec16277a84eba83cf51559ab7d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 74, y: 447}
+  - name: Armored Orc_Frame_33
+    originalName: 
+    pivot: {x: 0.33333337, y: -2}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 123
+      y: 212
+      width: 24
+      height: 20
+    spriteID: a09319ff8cd5dc241954572e7289e3fe
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 123, y: 212}
+  - name: Armored Orc_Frame_34
+    originalName: 
+    pivot: {x: 0.5777778, y: -1.5384616}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 64
+      width: 45
+      height: 26
+    spriteID: 0c5c0e3ae3132a04ea49c545c4eba45b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 64}
+  - name: Armored Orc_Frame_35
+    originalName: 
+    pivot: {x: 0.5, y: -1.8181819}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 34
+      width: 58
+      height: 22
+    spriteID: 680eca0684fbe644fb09f8612f29e137
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 34}
+  - name: Armored Orc_Frame_36
+    originalName: 
+    pivot: {x: 0.46774197, y: -1.8181819}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 62
+      height: 22
+    spriteID: 61905ca8018ddcb4f8fe026359a5e94d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: Armored Orc_Frame_37
+    originalName: 
+    pivot: {x: 0.32000005, y: -1.8181819}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 74
+      y: 477
+      width: 25
+      height: 22
+    spriteID: dac4a5a81f8ab034ea170c9212503bb3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 74, y: 477}
+  - name: Armored Orc_Frame_38
+    originalName: 
+    pivot: {x: 0.32000005, y: -1.8181819}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 123
+      y: 4
+      width: 25
+      height: 22
+    spriteID: c89901f762392114c9d7b969bb289e9f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 123, y: 4}
+  - name: Armored Orc_Frame_39
+    originalName: 
+    pivot: {x: 0.29166663, y: -1.8181819}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 123
+      y: 64
+      width: 24
+      height: 22
+    spriteID: c3563786358dfbd4c95d7eb6c022b262
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 123, y: 64}
+  - name: Armored Orc_Frame_40
+    originalName: 
+    pivot: {x: 0.29166663, y: -1.8181819}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 123
+      y: 94
+      width: 24
+      height: 22
+    spriteID: 023c3bfc34693dc419968647e7f53400
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 123, y: 94}
+  - name: Armored Orc_Frame_41
+    originalName: 
+    pivot: {x: 0.29166663, y: -1.8181819}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 123
+      y: 124
+      width: 24
+      height: 22
+    spriteID: 1ee393b9e8f427c4f9fa9ad1723d8bfb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 123, y: 124}
+  - name: Armored Orc_Frame_42
+    originalName: 
+    pivot: {x: 0.38461536, y: -1.8181819}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 40
+      y: 340
+      width: 26
+      height: 22
+    spriteID: d4e1d3cbfddaa4540b8011babf649479
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 40, y: 340}
+  - name: Armored Orc_Frame_43
+    originalName: 
+    pivot: {x: 0.38461536, y: -1.8181819}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 40
+      y: 370
+      width: 26
+      height: 22
+    spriteID: d576f60a4d004d942b670bd65ebfbf95
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 40, y: 370}
+  - name: Armored Orc_Frame_44
+    originalName: 
+    pivot: {x: 0.38461536, y: -1.8181819}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 40
+      y: 400
+      width: 26
+      height: 22
+    spriteID: 3a37e23ae4337e94f89b1b3f6d85e8a5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 40, y: 400}
+  - name: Armored Orc_Frame_45
+    originalName: 
+    pivot: {x: 0.38461536, y: -1.8181819}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 40
+      y: 430
+      width: 26
+      height: 22
+    spriteID: 1a7f23ad6d3fcb543a374433d93c6f40
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 40, y: 430}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -1892967994
+    name: Armored Orc
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Armored Orc_Frame_0
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 42
+        y: 40
+        width: 25
+        height: 22
+      spriteId: 4b9ed3f8250589b458bcad9d55e68a73
+    - name: Armored Orc_Frame_46
+      frameIndex: 46
+      additiveSortOrder: 0
+      cellRect:
+        x: 42
+        y: 40
+        width: 25
+        height: 22
+      spriteId: 22f7a9de9ee0e914185310438a1a9f4a
+    - name: Armored Orc_Frame_47
+      frameIndex: 47
+      additiveSortOrder: 0
+      cellRect:
+        x: 40
+        y: 40
+        width: 28
+        height: 24
+      spriteId: b7dbc3ae0212ce348971549047c9f1b2
+    - name: Armored Orc_Frame_48
+      frameIndex: 48
+      additiveSortOrder: 0
+      cellRect:
+        x: 28
+        y: 40
+        width: 41
+        height: 21
+      spriteId: bf25002a271259240b26c6d4a4fab444
+    - name: Armored Orc_Frame_49
+      frameIndex: 49
+      additiveSortOrder: 0
+      cellRect:
+        x: 27
+        y: 40
+        width: 41
+        height: 14
+      spriteId: 298c107a4651dc04297e152601436fbe
+    - name: Armored Orc_Frame_1
+      frameIndex: 1
+      additiveSortOrder: 0
+      cellRect:
+        x: 42
+        y: 40
+        width: 25
+        height: 22
+      spriteId: 57785812dfa5b0c46b3ac48064dabe41
+    - name: Armored Orc_Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: 42
+        y: 40
+        width: 25
+        height: 23
+      spriteId: 744fff39dc20a6349b18aaa008e251c9
+    - name: Armored Orc_Frame_3
+      frameIndex: 3
+      additiveSortOrder: 0
+      cellRect:
+        x: 42
+        y: 40
+        width: 25
+        height: 23
+      spriteId: 73e15fccae14d2d47a38a045a513e376
+    - name: Armored Orc_Frame_4
+      frameIndex: 4
+      additiveSortOrder: 0
+      cellRect:
+        x: 42
+        y: 40
+        width: 25
+        height: 22
+      spriteId: 99991dcf1e363f943a729312038dc62b
+    - name: Armored Orc_Frame_5
+      frameIndex: 5
+      additiveSortOrder: 0
+      cellRect:
+        x: 42
+        y: 40
+        width: 25
+        height: 22
+      spriteId: 88ddebe7e0bd94e409cdc48ff862a84d
+    - name: Armored Orc_Frame_6
+      frameIndex: 6
+      additiveSortOrder: 0
+      cellRect:
+        x: 42
+        y: 40
+        width: 25
+        height: 22
+      spriteId: 151222357abfd1f4792b1754efcb72d7
+    - name: Armored Orc_Frame_7
+      frameIndex: 7
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 24
+        height: 23
+      spriteId: 88d1ef1ed343e68419d37f48028480ed
+    - name: Armored Orc_Frame_8
+      frameIndex: 8
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 24
+        height: 22
+      spriteId: 42fc20df3d1b0784293c389f3beb6145
+    - name: Armored Orc_Frame_9
+      frameIndex: 9
+      additiveSortOrder: 0
+      cellRect:
+        x: 42
+        y: 40
+        width: 25
+        height: 21
+      spriteId: 1b59bfc1807a49041b61c73307522154
+    - name: Armored Orc_Frame_10
+      frameIndex: 10
+      additiveSortOrder: 0
+      cellRect:
+        x: 42
+        y: 40
+        width: 25
+        height: 22
+      spriteId: 2fba90818f540834bbbf7023fcecc1ac
+    - name: Armored Orc_Frame_11
+      frameIndex: 11
+      additiveSortOrder: 0
+      cellRect:
+        x: 42
+        y: 40
+        width: 25
+        height: 23
+      spriteId: 41b0b725a40d6cf46a44c4b812474e3d
+    - name: Armored Orc_Frame_12
+      frameIndex: 12
+      additiveSortOrder: 0
+      cellRect:
+        x: 42
+        y: 40
+        width: 25
+        height: 22
+      spriteId: be0a2f3a74037a84ea2107cb604c3733
+    - name: Armored Orc_Frame_13
+      frameIndex: 13
+      additiveSortOrder: 0
+      cellRect:
+        x: 42
+        y: 40
+        width: 25
+        height: 21
+      spriteId: ee76166598f246e46ab2da6d51978b6e
+    - name: Armored Orc_Frame_14
+      frameIndex: 14
+      additiveSortOrder: 0
+      cellRect:
+        x: 42
+        y: 40
+        width: 25
+        height: 22
+      spriteId: 3a0179e55ce132c4da288c16e320975e
+    - name: Armored Orc_Frame_15
+      frameIndex: 15
+      additiveSortOrder: 0
+      cellRect:
+        x: 42
+        y: 40
+        width: 25
+        height: 23
+      spriteId: 6192fee1ed9813846b9dbb7fcf64ed31
+    - name: Armored Orc_Frame_16
+      frameIndex: 16
+      additiveSortOrder: 0
+      cellRect:
+        x: 42
+        y: 40
+        width: 21
+        height: 27
+      spriteId: 0f50726c6551b524db8e026191b20fbb
+    - name: Armored Orc_Frame_17
+      frameIndex: 17
+      additiveSortOrder: 0
+      cellRect:
+        x: 42
+        y: 40
+        width: 16
+        height: 29
+      spriteId: 8f8919905bb4c6244a27b47e7f7492da
+    - name: Armored Orc_Frame_18
+      frameIndex: 18
+      additiveSortOrder: 0
+      cellRect:
+        x: 41
+        y: 38
+        width: 32
+        height: 26
+      spriteId: 3f4c32e5928cf8e4c927962d335fc6de
+    - name: Armored Orc_Frame_19
+      frameIndex: 19
+      additiveSortOrder: 0
+      cellRect:
+        x: 41
+        y: 38
+        width: 32
+        height: 24
+      spriteId: 36feaa60859e82f4688a9a804360ca1a
+    - name: Armored Orc_Frame_20
+      frameIndex: 20
+      additiveSortOrder: 0
+      cellRect:
+        x: 41
+        y: 38
+        width: 26
+        height: 24
+      spriteId: e6dcccde94f10e84ea88cd24d84c958c
+    - name: Armored Orc_Frame_21
+      frameIndex: 21
+      additiveSortOrder: 0
+      cellRect:
+        x: 42
+        y: 40
+        width: 25
+        height: 22
+      spriteId: 7085cd6c5d71e2f4682de3d05b7b0933
+    - name: Armored Orc_Frame_22
+      frameIndex: 22
+      additiveSortOrder: 0
+      cellRect:
+        x: 42
+        y: 40
+        width: 31
+        height: 22
+      spriteId: 1a58560214deee940b9c2a04b9bab2e8
+    - name: Armored Orc_Frame_23
+      frameIndex: 23
+      additiveSortOrder: 0
+      cellRect:
+        x: 42
+        y: 40
+        width: 26
+        height: 22
+      spriteId: e83855769b2fcc249adeb7ac7437c98c
+    - name: Armored Orc_Frame_24
+      frameIndex: 24
+      additiveSortOrder: 0
+      cellRect:
+        x: 42
+        y: 40
+        width: 22
+        height: 21
+      spriteId: c62c069febbd86e4fb3b6f3884b46785
+    - name: Armored Orc_Frame_25
+      frameIndex: 25
+      additiveSortOrder: 0
+      cellRect:
+        x: 42
+        y: 40
+        width: 22
+        height: 21
+      spriteId: bdd22d37317b21048afdd4b6b4dcc8d6
+    - name: Armored Orc_Frame_26
+      frameIndex: 26
+      additiveSortOrder: 0
+      cellRect:
+        x: 41
+        y: 40
+        width: 37
+        height: 21
+      spriteId: d0ce5f20f07dcba4a8241bf41902bad8
+    - name: Armored Orc_Frame_27
+      frameIndex: 27
+      additiveSortOrder: 0
+      cellRect:
+        x: 41
+        y: 40
+        width: 38
+        height: 21
+      spriteId: ddf4e17f58ba61b4ba4dfc3b23c4c981
+    - name: Armored Orc_Frame_28
+      frameIndex: 28
+      additiveSortOrder: 0
+      cellRect:
+        x: 41
+        y: 40
+        width: 38
+        height: 21
+      spriteId: 63674758ba6629a408a3a538514fd20a
+    - name: Armored Orc_Frame_29
+      frameIndex: 29
+      additiveSortOrder: 0
+      cellRect:
+        x: 42
+        y: 40
+        width: 25
+        height: 22
+      spriteId: 58f008b1970a84f45902a0cd647835c6
+    - name: Armored Orc_Frame_30
+      frameIndex: 30
+      additiveSortOrder: 0
+      cellRect:
+        x: 42
+        y: 40
+        width: 25
+        height: 22
+      spriteId: f83c2e2d31b64e24eb25201cc40d8d49
+    - name: Armored Orc_Frame_31
+      frameIndex: 31
+      additiveSortOrder: 0
+      cellRect:
+        x: 42
+        y: 40
+        width: 25
+        height: 22
+      spriteId: aa74fc3b2b649af428c6744dee852d06
+    - name: Armored Orc_Frame_32
+      frameIndex: 32
+      additiveSortOrder: 0
+      cellRect:
+        x: 42
+        y: 40
+        width: 25
+        height: 22
+      spriteId: 5c3da2ec16277a84eba83cf51559ab7d
+    - name: Armored Orc_Frame_33
+      frameIndex: 33
+      additiveSortOrder: 0
+      cellRect:
+        x: 42
+        y: 40
+        width: 24
+        height: 20
+      spriteId: a09319ff8cd5dc241954572e7289e3fe
+    - name: Armored Orc_Frame_34
+      frameIndex: 34
+      additiveSortOrder: 0
+      cellRect:
+        x: 24
+        y: 40
+        width: 45
+        height: 26
+      spriteId: 0c5c0e3ae3132a04ea49c545c4eba45b
+    - name: Armored Orc_Frame_35
+      frameIndex: 35
+      additiveSortOrder: 0
+      cellRect:
+        x: 21
+        y: 40
+        width: 58
+        height: 22
+      spriteId: 680eca0684fbe644fb09f8612f29e137
+    - name: Armored Orc_Frame_36
+      frameIndex: 36
+      additiveSortOrder: 0
+      cellRect:
+        x: 21
+        y: 40
+        width: 62
+        height: 22
+      spriteId: 61905ca8018ddcb4f8fe026359a5e94d
+    - name: Armored Orc_Frame_37
+      frameIndex: 37
+      additiveSortOrder: 0
+      cellRect:
+        x: 42
+        y: 40
+        width: 25
+        height: 22
+      spriteId: dac4a5a81f8ab034ea170c9212503bb3
+    - name: Armored Orc_Frame_38
+      frameIndex: 38
+      additiveSortOrder: 0
+      cellRect:
+        x: 42
+        y: 40
+        width: 25
+        height: 22
+      spriteId: c89901f762392114c9d7b969bb289e9f
+    - name: Armored Orc_Frame_39
+      frameIndex: 39
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 24
+        height: 22
+      spriteId: c3563786358dfbd4c95d7eb6c022b262
+    - name: Armored Orc_Frame_40
+      frameIndex: 40
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 24
+        height: 22
+      spriteId: 023c3bfc34693dc419968647e7f53400
+    - name: Armored Orc_Frame_41
+      frameIndex: 41
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 24
+        height: 22
+      spriteId: 1ee393b9e8f427c4f9fa9ad1723d8bfb
+    - name: Armored Orc_Frame_42
+      frameIndex: 42
+      additiveSortOrder: 0
+      cellRect:
+        x: 40
+        y: 40
+        width: 26
+        height: 22
+      spriteId: d4e1d3cbfddaa4540b8011babf649479
+    - name: Armored Orc_Frame_43
+      frameIndex: 43
+      additiveSortOrder: 0
+      cellRect:
+        x: 40
+        y: 40
+        width: 26
+        height: 22
+      spriteId: d576f60a4d004d942b670bd65ebfbf95
+    - name: Armored Orc_Frame_44
+      frameIndex: 44
+      additiveSortOrder: 0
+      cellRect:
+        x: 40
+        y: 40
+        width: 26
+        height: 22
+      spriteId: 3a37e23ae4337e94f89b1b3f6d85e8a5
+    - name: Armored Orc_Frame_45
+      frameIndex: 45
+      additiveSortOrder: 0
+      cellRect:
+        x: 40
+        y: 40
+        width: 26
+        height: 22
+      spriteId: 1a7f23ad6d3fcb543a374433d93c6f40
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 100, y: 100}

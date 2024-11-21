@@ -1,0 +1,1647 @@
+fileFormatVersion: 2
+guid: bce07f820c8f1dc48ac5a778dff4cb7f
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: Armored Axeman_Frame_0
+    originalName: 
+    pivot: {x: 0.34999996, y: -1.8181819}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 53
+      y: 40
+      width: 20
+      height: 22
+    spriteID: ffe9478d26fc2fb4991a0549e3797894
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 53, y: 40}
+  - name: Armored Axeman_Frame_23
+    originalName: 
+    pivot: {x: 0.34999996, y: -1.8181819}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 53
+      y: 70
+      width: 20
+      height: 22
+    spriteID: 622f75d68059c114c85bf701d2cb0d86
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 53, y: 70}
+  - name: Armored Axeman_Frame_24
+    originalName: 
+    pivot: {x: 0.63636357, y: -1.4285715}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 134
+      y: 315
+      width: 22
+      height: 28
+    spriteID: 34a9465d62f40fe45841f88120f8267d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 134, y: 315}
+  - name: Armored Axeman_Frame_25
+    originalName: 
+    pivot: {x: 0.65217394, y: -1.3793104}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 103
+      y: 315
+      width: 23
+      height: 29
+    spriteID: 100b6e0af85ccca4fbb75ee751141751
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 103, y: 315}
+  - name: Armored Axeman_Frame_26
+    originalName: 
+    pivot: {x: 0.65217394, y: -1.3793104}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 103
+      y: 352
+      width: 23
+      height: 29
+    spriteID: c433efea39ab91546928dd86eac9c7c6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 103, y: 352}
+  - name: Armored Axeman_Frame_27
+    originalName: 
+    pivot: {x: 0.26315787, y: -1.7727271}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 103
+      y: 165
+      width: 38
+      height: 22
+    spriteID: 79c4922e8d2e1c041bd86aedba367cc0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 103, y: 165}
+  - name: Armored Axeman_Frame_28
+    originalName: 
+    pivot: {x: 0.25000003, y: -1.5416666}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 103
+      y: 254
+      width: 32
+      height: 24
+    spriteID: f1ce93036b29ec04597f05650e327a34
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 103, y: 254}
+  - name: Armored Axeman_Frame_29
+    originalName: 
+    pivot: {x: 0.5238095, y: -1.9047619}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 103
+      y: 62
+      width: 42
+      height: 21
+    spriteID: 817e18fc80fbea74c8c3f7b087b62d02
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 103, y: 62}
+  - name: Armored Axeman_Frame_30
+    originalName: 
+    pivot: {x: 0.52777773, y: -1.9047619}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 103
+      y: 286
+      width: 36
+      height: 21
+    spriteID: 4614e24bed7c73649865f7362cd7546e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 103, y: 286}
+  - name: Armored Axeman_Frame_31
+    originalName: 
+    pivot: {x: 0.26315787, y: -1.7727271}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 103
+      y: 195
+      width: 38
+      height: 22
+    spriteID: df9dc41eaba66724ca1ee50a4f2ee5ce
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 103, y: 195}
+  - name: Armored Axeman_Frame_32
+    originalName: 
+    pivot: {x: 0.34999996, y: -1.8181819}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 53
+      y: 100
+      width: 20
+      height: 22
+    spriteID: 0a70bfd4c3b99504e80d89dfacb0eb17
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 53, y: 100}
+  - name: Armored Axeman_Frame_44
+    originalName: 
+    pivot: {x: 0.50000006, y: -1.9047619}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 140
+      y: 91
+      width: 16
+      height: 21
+    spriteID: bdbde6716828e0e44b1ca070f4841e59
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 140, y: 91}
+  - name: Armored Axeman_Frame_49
+    originalName: 
+    pivot: {x: 0.30769235, y: -1.6666666}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 103
+      y: 484
+      width: 26
+      height: 24
+    spriteID: f01976049aca6a0428df982fb50931e0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 103, y: 484}
+  - name: Armored Axeman_Frame_50
+    originalName: 
+    pivot: {x: 0.34615386, y: -2.1052632}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 231
+      width: 26
+      height: 19
+    spriteID: 3c98d2a61f89b584b88554c3cdd7ef6d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 231}
+  - name: Armored Axeman_Frame_51
+    originalName: 
+    pivot: {x: 0.62962955, y: -2.3529413}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 476
+      width: 27
+      height: 17
+    spriteID: d4e934a7b0195804e9c1c9e946a7aa2b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 476}
+  - name: Armored Axeman_Frame_1
+    originalName: 
+    pivot: {x: 0.34999996, y: -1.8181819}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 53
+      y: 130
+      width: 20
+      height: 22
+    spriteID: 0800f18191bad05439d728c9f8d3462f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 53, y: 130}
+  - name: Armored Axeman_Frame_2
+    originalName: 
+    pivot: {x: 0.34999996, y: -1.7391304}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 290
+      width: 20
+      height: 23
+    spriteID: 14c267e35ae6bf54ebf8a69de306fcd5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 290}
+  - name: Armored Axeman_Frame_3
+    originalName: 
+    pivot: {x: 0.34999996, y: -1.7391304}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 321
+      width: 20
+      height: 23
+    spriteID: 80f89efcc0defe341ac002daaba67789
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 321}
+  - name: Armored Axeman_Frame_4
+    originalName: 
+    pivot: {x: 0.34999996, y: -1.7391304}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 352
+      width: 20
+      height: 23
+    spriteID: 2997e5e1a5de14749be06ba9d4139b6d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 352}
+  - name: Armored Axeman_Frame_5
+    originalName: 
+    pivot: {x: 0.34999996, y: -1.7391304}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 383
+      width: 20
+      height: 23
+    spriteID: dda7d2f3eda2e1a478f63c9c49cec6ea
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 383}
+  - name: Armored Axeman_Frame_6
+    originalName: 
+    pivot: {x: 0.34999996, y: -1.8181819}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 53
+      y: 160
+      width: 20
+      height: 22
+    spriteID: 92bded08e5b33694d99e5ae12e344bb4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 53, y: 160}
+  - name: Armored Axeman_Frame_7
+    originalName: 
+    pivot: {x: 0.34999996, y: -1.7391304}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 414
+      width: 20
+      height: 23
+    spriteID: adc9e781c6248bc4b873cc3f1d51a48f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 414}
+  - name: Armored Axeman_Frame_8
+    originalName: 
+    pivot: {x: 0.34999996, y: -1.8181819}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 53
+      y: 190
+      width: 20
+      height: 22
+    spriteID: 0633d4a491b4e6146be5293c5f77c58a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 53, y: 190}
+  - name: Armored Axeman_Frame_9
+    originalName: 
+    pivot: {x: 0.34999996, y: -1.9047619}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 53
+      y: 310
+      width: 20
+      height: 21
+    spriteID: bef9e0624e77acc42b5c63de8773bb02
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 53, y: 310}
+  - name: Armored Axeman_Frame_10
+    originalName: 
+    pivot: {x: 0.34999996, y: -1.8181819}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 53
+      y: 220
+      width: 20
+      height: 22
+    spriteID: f4daabc251671974aa3a9b265cd90660
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 53, y: 220}
+  - name: Armored Axeman_Frame_11
+    originalName: 
+    pivot: {x: 0.34999996, y: -1.6666666}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 258
+      width: 20
+      height: 24
+    spriteID: 61f3c745489c87841b668250e0df8113
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 258}
+  - name: Armored Axeman_Frame_12
+    originalName: 
+    pivot: {x: 0.34999996, y: -1.7391304}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 445
+      width: 20
+      height: 23
+    spriteID: ca60d39f8d81aa842add6cddad0d9ff1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 445}
+  - name: Armored Axeman_Frame_13
+    originalName: 
+    pivot: {x: 0.34999996, y: -1.9047619}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 53
+      y: 339
+      width: 20
+      height: 21
+    spriteID: 9ad06f2d61eb4fc40bbb62fc4cba1e0f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 53, y: 339}
+  - name: Armored Axeman_Frame_14
+    originalName: 
+    pivot: {x: 0.34999996, y: -1.8181819}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 53
+      y: 250
+      width: 20
+      height: 22
+    spriteID: e5619cce53b06b241ae37fe3528615fb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 53, y: 250}
+  - name: Armored Axeman_Frame_15
+    originalName: 
+    pivot: {x: 0.63636357, y: -1.4285715}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 134
+      y: 352
+      width: 22
+      height: 28
+    spriteID: 58cf7d246f2173745b01fbcee14a2237
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 134, y: 352}
+  - name: Armored Axeman_Frame_16
+    originalName: 
+    pivot: {x: 0.63636357, y: -1.4285715}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 134
+      y: 389
+      width: 22
+      height: 28
+    spriteID: 690bdcd8162e2704b943f797b9d5aed5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 134, y: 389}
+  - name: Armored Axeman_Frame_17
+    originalName: 
+    pivot: {x: 0.65217394, y: -1.3793104}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 103
+      y: 389
+      width: 23
+      height: 29
+    spriteID: 08b4009c2a8f2e441a12be54e238ce3e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 103, y: 389}
+  - name: Armored Axeman_Frame_18
+    originalName: 
+    pivot: {x: 0.3414634, y: -1.2580645}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 41
+      height: 31
+    spriteID: 22cc63a11b310ef4189ff5619271925a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: Armored Axeman_Frame_19
+    originalName: 
+    pivot: {x: 0.22580643, y: -1.3928571}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 103
+      y: 129
+      width: 31
+      height: 28
+    spriteID: 3cd6f8350c2062d4bb0fe4a1e1d5143f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 103, y: 129}
+  - name: Armored Axeman_Frame_20
+    originalName: 
+    pivot: {x: 0.2333333, y: -1.9047619}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 103
+      y: 426
+      width: 30
+      height: 21
+    spriteID: d61e0d23167ea89468c559be76e45cb5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 103, y: 426}
+  - name: Armored Axeman_Frame_21
+    originalName: 
+    pivot: {x: 0.2333333, y: -1.9047619}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 103
+      y: 455
+      width: 30
+      height: 21
+    spriteID: a542233cbfc9f2846bfb6f3642929fd9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 103, y: 455}
+  - name: Armored Axeman_Frame_22
+    originalName: 
+    pivot: {x: 0.4210527, y: -1.9047619}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 137
+      y: 484
+      width: 19
+      height: 21
+    spriteID: c2afc7f7740630b4ebc70a48636ad2d8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 137, y: 484}
+  - name: Armored Axeman_Frame_33
+    originalName: 
+    pivot: {x: 0.67999995, y: -2}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 175
+      width: 25
+      height: 20
+    spriteID: 2ddc2300704cc2a48a21c36fe31e2448
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 175}
+  - name: Armored Axeman_Frame_34
+    originalName: 
+    pivot: {x: 0.67999995, y: -2}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 203
+      width: 25
+      height: 20
+    spriteID: eefd5b0a3e275074488ea3a9888d01e6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 203}
+  - name: Armored Axeman_Frame_35
+    originalName: 
+    pivot: {x: 0.6666666, y: -1.8571428}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 146
+      width: 24
+      height: 21
+    spriteID: 2f336c71304d93544909e725abdd84bf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 146}
+  - name: Armored Axeman_Frame_36
+    originalName: 
+    pivot: {x: 0.35135135, y: -1.9047619}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 103
+      y: 225
+      width: 37
+      height: 21
+    spriteID: f6c1c0b68df955a4e9af7d9262b557b6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 103, y: 225}
+  - name: Armored Axeman_Frame_37
+    originalName: 
+    pivot: {x: 0.48275855, y: -1.3333334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 103
+      y: 91
+      width: 29
+      height: 30
+    spriteID: e47acf70e88b535489853a9b8cc9bb46
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 103, y: 91}
+  - name: Armored Axeman_Frame_38
+    originalName: 
+    pivot: {x: 0.63636357, y: -1.4285715}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 82
+      width: 22
+      height: 28
+    spriteID: 50c52430920ebdf49be1a227c08fa770
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 82}
+  - name: Armored Axeman_Frame_39
+    originalName: 
+    pivot: {x: 0.3414634, y: -1.2580645}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 43
+      width: 41
+      height: 31
+    spriteID: d9fb169af1b85ef48a9b1ad17eef235e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 43}
+  - name: Armored Axeman_Frame_40
+    originalName: 
+    pivot: {x: 0.16666664, y: -1.3928571}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 53
+      y: 4
+      width: 42
+      height: 28
+    spriteID: 1ef63a6be33786b4aaad33d0b27924f5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 53, y: 4}
+  - name: Armored Axeman_Frame_41
+    originalName: 
+    pivot: {x: 0.13999999, y: -1.8571428}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 103
+      y: 33
+      width: 50
+      height: 21
+    spriteID: 6890449f1c5c12148a8a5c39c1a92724
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 103, y: 33}
+  - name: Armored Axeman_Frame_42
+    originalName: 
+    pivot: {x: 0.13207546, y: -1.8571428}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 103
+      y: 4
+      width: 53
+      height: 21
+    spriteID: beeb55553cd6d30498f444364be2d87a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 103, y: 4}
+  - name: Armored Axeman_Frame_43
+    originalName: 
+    pivot: {x: 0.2333333, y: -2}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 118
+      width: 30
+      height: 20
+    spriteID: 1c0150cbc84379d43b95f5f65be4e2fe
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 118}
+  - name: Armored Axeman_Frame_45
+    originalName: 
+    pivot: {x: 0.50000006, y: -1.9047619}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 53
+      y: 368
+      width: 16
+      height: 21
+    spriteID: 7bc27709f36ab224a9e5c4c6bffebf08
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 53, y: 368}
+  - name: Armored Axeman_Frame_46
+    originalName: 
+    pivot: {x: 0.50000006, y: -1.9047619}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 53
+      y: 397
+      width: 16
+      height: 21
+    spriteID: e3bbf8b5fb96ba249b78393408aae000
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 53, y: 397}
+  - name: Armored Axeman_Frame_47
+    originalName: 
+    pivot: {x: 0.50000006, y: -1.9047619}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 53
+      y: 426
+      width: 16
+      height: 21
+    spriteID: 3598defc62c0b934aa126a50bfee9d13
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 53, y: 426}
+  - name: Armored Axeman_Frame_48
+    originalName: 
+    pivot: {x: 0.34999996, y: -1.8181819}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 53
+      y: 280
+      width: 20
+      height: 22
+    spriteID: e449f434cfe0175488943cf6347922e1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 53, y: 280}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -1732322216
+    name: Armored Axeman
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Armored Axeman_Frame_0
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 20
+        height: 22
+      spriteId: ffe9478d26fc2fb4991a0549e3797894
+    - name: Armored Axeman_Frame_23
+      frameIndex: 23
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 20
+        height: 22
+      spriteId: 622f75d68059c114c85bf701d2cb0d86
+    - name: Armored Axeman_Frame_24
+      frameIndex: 24
+      additiveSortOrder: 0
+      cellRect:
+        x: 36
+        y: 40
+        width: 22
+        height: 28
+      spriteId: 34a9465d62f40fe45841f88120f8267d
+    - name: Armored Axeman_Frame_25
+      frameIndex: 25
+      additiveSortOrder: 0
+      cellRect:
+        x: 35
+        y: 40
+        width: 23
+        height: 29
+      spriteId: 100b6e0af85ccca4fbb75ee751141751
+    - name: Armored Axeman_Frame_26
+      frameIndex: 26
+      additiveSortOrder: 0
+      cellRect:
+        x: 35
+        y: 40
+        width: 23
+        height: 29
+      spriteId: c433efea39ab91546928dd86eac9c7c6
+    - name: Armored Axeman_Frame_27
+      frameIndex: 27
+      additiveSortOrder: 0
+      cellRect:
+        x: 40
+        y: 39
+        width: 38
+        height: 22
+      spriteId: 79c4922e8d2e1c041bd86aedba367cc0
+    - name: Armored Axeman_Frame_28
+      frameIndex: 28
+      additiveSortOrder: 0
+      cellRect:
+        x: 42
+        y: 37
+        width: 32
+        height: 24
+      spriteId: f1ce93036b29ec04597f05650e327a34
+    - name: Armored Axeman_Frame_29
+      frameIndex: 29
+      additiveSortOrder: 0
+      cellRect:
+        x: 28
+        y: 40
+        width: 42
+        height: 21
+      spriteId: 817e18fc80fbea74c8c3f7b087b62d02
+    - name: Armored Axeman_Frame_30
+      frameIndex: 30
+      additiveSortOrder: 0
+      cellRect:
+        x: 31
+        y: 40
+        width: 36
+        height: 21
+      spriteId: 4614e24bed7c73649865f7362cd7546e
+    - name: Armored Axeman_Frame_31
+      frameIndex: 31
+      additiveSortOrder: 0
+      cellRect:
+        x: 40
+        y: 39
+        width: 38
+        height: 22
+      spriteId: df9dc41eaba66724ca1ee50a4f2ee5ce
+    - name: Armored Axeman_Frame_32
+      frameIndex: 32
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 20
+        height: 22
+      spriteId: 0a70bfd4c3b99504e80d89dfacb0eb17
+    - name: Armored Axeman_Frame_44
+      frameIndex: 44
+      additiveSortOrder: 0
+      cellRect:
+        x: 42
+        y: 40
+        width: 16
+        height: 21
+      spriteId: bdbde6716828e0e44b1ca070f4841e59
+    - name: Armored Axeman_Frame_49
+      frameIndex: 49
+      additiveSortOrder: 0
+      cellRect:
+        x: 42
+        y: 40
+        width: 26
+        height: 24
+      spriteId: f01976049aca6a0428df982fb50931e0
+    - name: Armored Axeman_Frame_50
+      frameIndex: 50
+      additiveSortOrder: 0
+      cellRect:
+        x: 41
+        y: 40
+        width: 26
+        height: 19
+      spriteId: 3c98d2a61f89b584b88554c3cdd7ef6d
+    - name: Armored Axeman_Frame_51
+      frameIndex: 51
+      additiveSortOrder: 0
+      cellRect:
+        x: 33
+        y: 40
+        width: 27
+        height: 17
+      spriteId: d4e934a7b0195804e9c1c9e946a7aa2b
+    - name: Armored Axeman_Frame_1
+      frameIndex: 1
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 20
+        height: 22
+      spriteId: 0800f18191bad05439d728c9f8d3462f
+    - name: Armored Axeman_Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 20
+        height: 23
+      spriteId: 14c267e35ae6bf54ebf8a69de306fcd5
+    - name: Armored Axeman_Frame_3
+      frameIndex: 3
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 20
+        height: 23
+      spriteId: 80f89efcc0defe341ac002daaba67789
+    - name: Armored Axeman_Frame_4
+      frameIndex: 4
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 20
+        height: 23
+      spriteId: 2997e5e1a5de14749be06ba9d4139b6d
+    - name: Armored Axeman_Frame_5
+      frameIndex: 5
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 20
+        height: 23
+      spriteId: dda7d2f3eda2e1a478f63c9c49cec6ea
+    - name: Armored Axeman_Frame_6
+      frameIndex: 6
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 20
+        height: 22
+      spriteId: 92bded08e5b33694d99e5ae12e344bb4
+    - name: Armored Axeman_Frame_7
+      frameIndex: 7
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 20
+        height: 23
+      spriteId: adc9e781c6248bc4b873cc3f1d51a48f
+    - name: Armored Axeman_Frame_8
+      frameIndex: 8
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 20
+        height: 22
+      spriteId: 0633d4a491b4e6146be5293c5f77c58a
+    - name: Armored Axeman_Frame_9
+      frameIndex: 9
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 20
+        height: 21
+      spriteId: bef9e0624e77acc42b5c63de8773bb02
+    - name: Armored Axeman_Frame_10
+      frameIndex: 10
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 20
+        height: 22
+      spriteId: f4daabc251671974aa3a9b265cd90660
+    - name: Armored Axeman_Frame_11
+      frameIndex: 11
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 20
+        height: 24
+      spriteId: 61f3c745489c87841b668250e0df8113
+    - name: Armored Axeman_Frame_12
+      frameIndex: 12
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 20
+        height: 23
+      spriteId: ca60d39f8d81aa842add6cddad0d9ff1
+    - name: Armored Axeman_Frame_13
+      frameIndex: 13
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 20
+        height: 21
+      spriteId: 9ad06f2d61eb4fc40bbb62fc4cba1e0f
+    - name: Armored Axeman_Frame_14
+      frameIndex: 14
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 20
+        height: 22
+      spriteId: e5619cce53b06b241ae37fe3528615fb
+    - name: Armored Axeman_Frame_15
+      frameIndex: 15
+      additiveSortOrder: 0
+      cellRect:
+        x: 36
+        y: 40
+        width: 22
+        height: 28
+      spriteId: 58cf7d246f2173745b01fbcee14a2237
+    - name: Armored Axeman_Frame_16
+      frameIndex: 16
+      additiveSortOrder: 0
+      cellRect:
+        x: 36
+        y: 40
+        width: 22
+        height: 28
+      spriteId: 690bdcd8162e2704b943f797b9d5aed5
+    - name: Armored Axeman_Frame_17
+      frameIndex: 17
+      additiveSortOrder: 0
+      cellRect:
+        x: 35
+        y: 40
+        width: 23
+        height: 29
+      spriteId: 08b4009c2a8f2e441a12be54e238ce3e
+    - name: Armored Axeman_Frame_18
+      frameIndex: 18
+      additiveSortOrder: 0
+      cellRect:
+        x: 36
+        y: 39
+        width: 41
+        height: 31
+      spriteId: 22cc63a11b310ef4189ff5619271925a
+    - name: Armored Axeman_Frame_19
+      frameIndex: 19
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 39
+        width: 31
+        height: 28
+      spriteId: 3cd6f8350c2062d4bb0fe4a1e1d5143f
+    - name: Armored Axeman_Frame_20
+      frameIndex: 20
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 30
+        height: 21
+      spriteId: d61e0d23167ea89468c559be76e45cb5
+    - name: Armored Axeman_Frame_21
+      frameIndex: 21
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 30
+        height: 21
+      spriteId: a542233cbfc9f2846bfb6f3642929fd9
+    - name: Armored Axeman_Frame_22
+      frameIndex: 22
+      additiveSortOrder: 0
+      cellRect:
+        x: 42
+        y: 40
+        width: 19
+        height: 21
+      spriteId: c2afc7f7740630b4ebc70a48636ad2d8
+    - name: Armored Axeman_Frame_33
+      frameIndex: 33
+      additiveSortOrder: 0
+      cellRect:
+        x: 33
+        y: 40
+        width: 25
+        height: 20
+      spriteId: 2ddc2300704cc2a48a21c36fe31e2448
+    - name: Armored Axeman_Frame_34
+      frameIndex: 34
+      additiveSortOrder: 0
+      cellRect:
+        x: 33
+        y: 40
+        width: 25
+        height: 20
+      spriteId: eefd5b0a3e275074488ea3a9888d01e6
+    - name: Armored Axeman_Frame_35
+      frameIndex: 35
+      additiveSortOrder: 0
+      cellRect:
+        x: 34
+        y: 39
+        width: 24
+        height: 21
+      spriteId: 2f336c71304d93544909e725abdd84bf
+    - name: Armored Axeman_Frame_36
+      frameIndex: 36
+      additiveSortOrder: 0
+      cellRect:
+        x: 37
+        y: 40
+        width: 37
+        height: 21
+      spriteId: f6c1c0b68df955a4e9af7d9262b557b6
+    - name: Armored Axeman_Frame_37
+      frameIndex: 37
+      additiveSortOrder: 0
+      cellRect:
+        x: 36
+        y: 40
+        width: 29
+        height: 30
+      spriteId: e47acf70e88b535489853a9b8cc9bb46
+    - name: Armored Axeman_Frame_38
+      frameIndex: 38
+      additiveSortOrder: 0
+      cellRect:
+        x: 36
+        y: 40
+        width: 22
+        height: 28
+      spriteId: 50c52430920ebdf49be1a227c08fa770
+    - name: Armored Axeman_Frame_39
+      frameIndex: 39
+      additiveSortOrder: 0
+      cellRect:
+        x: 36
+        y: 39
+        width: 41
+        height: 31
+      spriteId: d9fb169af1b85ef48a9b1ad17eef235e
+    - name: Armored Axeman_Frame_40
+      frameIndex: 40
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 39
+        width: 42
+        height: 28
+      spriteId: 1ef63a6be33786b4aaad33d0b27924f5
+    - name: Armored Axeman_Frame_41
+      frameIndex: 41
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 39
+        width: 50
+        height: 21
+      spriteId: 6890449f1c5c12148a8a5c39c1a92724
+    - name: Armored Axeman_Frame_42
+      frameIndex: 42
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 39
+        width: 53
+        height: 21
+      spriteId: beeb55553cd6d30498f444364be2d87a
+    - name: Armored Axeman_Frame_43
+      frameIndex: 43
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 30
+        height: 20
+      spriteId: 1c0150cbc84379d43b95f5f65be4e2fe
+    - name: Armored Axeman_Frame_45
+      frameIndex: 45
+      additiveSortOrder: 0
+      cellRect:
+        x: 42
+        y: 40
+        width: 16
+        height: 21
+      spriteId: 7bc27709f36ab224a9e5c4c6bffebf08
+    - name: Armored Axeman_Frame_46
+      frameIndex: 46
+      additiveSortOrder: 0
+      cellRect:
+        x: 42
+        y: 40
+        width: 16
+        height: 21
+      spriteId: e3bbf8b5fb96ba249b78393408aae000
+    - name: Armored Axeman_Frame_47
+      frameIndex: 47
+      additiveSortOrder: 0
+      cellRect:
+        x: 42
+        y: 40
+        width: 16
+        height: 21
+      spriteId: 3598defc62c0b934aa126a50bfee9d13
+    - name: Armored Axeman_Frame_48
+      frameIndex: 48
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 40
+        width: 20
+        height: 22
+      spriteId: e449f434cfe0175488943cf6347922e1
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 100, y: 100}
