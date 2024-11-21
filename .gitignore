@@ -20,17 +20,7 @@
 *.pdb.meta
 *.ipa
 
-# 메타파일 포함
-!*.*.meta
-!*.anim
-!*.anim.meta
-!*.controller
-!*.controller.meta
-!*.unity
-!*.unity.meta
 
-# Asset 폴더는 모두 포함
-!/[Aa]ssets/**/*.meta
 
 # Additional build directories (customizable if necessary)
 Builds/
