@@ -17,7 +17,11 @@ public class Player : MonoBehaviour
 
     private bool isDashing = false;  // 대시 상태 플래그
 
-    void Awake()
+	// Dash 애니메이션을 위한 파라미터 추가
+	private readonly string ATTACK_VERTICAL = "AttackVertical";
+	private readonly string ATTACK_HORIZONTAL = "AttackHorizontal";
+
+	void Awake()
     {
         rigid = GetComponent<Rigidbody2D>();
         spriter = GetComponent<SpriteRenderer>();
@@ -90,7 +94,12 @@ public class Player : MonoBehaviour
         if (enemy != null)
         {
             GameManager.Instance.health -= Time.deltaTime * 10;
-        }
+
+			if (!anim.GetCurrentAnimatorStateInfo(0).IsName("Soldier_Hurt"))  // 현재 Hurt 애니메이션이 재생 중이 아닐 때만
+			{
+				anim.SetTrigger("Damaged");
+			}
+		}
         if (GameManager.Instance.health < 0)
         {
             this.onDeath();
@@ -112,13 +121,32 @@ public class Player : MonoBehaviour
     {
         Vector2 direction = inputVec.normalized;
         isDashing = true; // 대시 중으로 설정
-        anim.SetBool("Attack", true); // attack 애니메이션 시작
+       // anim.SetBool("Attack", true); // attack 애니메이션 시작
+
+       // 방향에 따라 다른 애니메이션 파라미터 설정
+        if (Mathf.Abs(direction.y) > Mathf.Abs(direction.x))
+        {
+            // 수직 방향이 더 큰 경우 (위/아래)
+            anim.SetBool(ATTACK_VERTICAL, true);
+            anim.SetBool(ATTACK_HORIZONTAL, false);
+        }
+        else
+        {
+            // 수평 방향이 더 큰 경우 (왼쪽/오른쪽)
+            anim.SetBool(ATTACK_HORIZONTAL, true);
+            anim.SetBool(ATTACK_VERTICAL, false);
+        }
+
         dashComponent.Init(direction);  // 대시 시작
     }
 
     void HandleDashEnd()
     {
         isDashing = false;  // 대시가 끝나면 대시 중 아님으로 설정
-        anim.SetBool("Attack", false); // attack 애니메이션 종료
-    }
+							//anim.SetBool("Attack", false); // attack 애니메이션 종료
+
+		// 모든 공격 애니메이션 파라미터 리셋
+		anim.SetBool(ATTACK_VERTICAL, false);
+		anim.SetBool(ATTACK_HORIZONTAL, false);
+	}
 }
