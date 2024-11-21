@@ -16,7 +16,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3852239936409155884
 Transform:
   m_ObjectHideFlags: 0
@@ -280,6 +280,7 @@ MonoBehaviour:
   attacked: 0
   attackMaxCooldown: 2
   attackCooldown: 2
+  attackRange: 1
   animCon:
   - {fileID: 9100000, guid: 3dca74a8563a0404dbbf4363b7a1d68d, type: 2}
   - {fileID: 9100000, guid: 3dca74a8563a0404dbbf4363b7a1d68d, type: 2}
