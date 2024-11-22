@@ -26,8 +26,9 @@ public class GameManager : MonoBehaviour
     public Result uiResult;
     public Transform uiJoy;
     public GameObject enemyCleaner;
+	public GameObject PauseScene;
 
-    void Awake()
+	void Awake()
     {
         Instance = this;
         Application.targetFrameRate = 60;
@@ -86,7 +87,7 @@ public class GameManager : MonoBehaviour
 
     public void GameRetry()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 
     public void GameQuit()
@@ -136,4 +137,19 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1;
         uiJoy.localScale = Vector3.one;
     }
+
+	public void PauseToggle()
+	{
+			if (!PauseScene.activeSelf)
+			{
+				Stop();
+			    PauseScene.SetActive(true);
+			}
+			else
+			{
+				Resume();
+			    PauseScene.SetActive(false);
+			}
+		
+	}
 }

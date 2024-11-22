@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Gear : MonoBehaviour
 {
+
     public ItemData.ItemType type;
     public float rate;
 
