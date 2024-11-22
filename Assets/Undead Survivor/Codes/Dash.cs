@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Assets.Undead_Survivor.Codes;
+
 public class Dash : MonoBehaviour
 {
     public delegate void DashEndHandler();
@@ -17,9 +18,12 @@ public class Dash : MonoBehaviour
     private bool canDash = true;
     private Rigidbody2D rb;
 
+    public GameObject hitEffectPrefab; // 히트 이펙트 프리팹
+
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        trailRenderer = GetComponent<TrailRenderer>();
     }
 
     public void Init(Vector2 direction)
@@ -56,7 +60,7 @@ public class Dash : MonoBehaviour
         if (trailRenderer != null)
             trailRenderer.enabled = true;
 
-        //데미지 준 아이 저장.
+        // 데미지를 준 아이 저장
         HashSet<Collider2D> damagedTargets = new HashSet<Collider2D>();
 
         while (elapsedTime < dashDuration)
@@ -70,7 +74,8 @@ public class Dash : MonoBehaviour
                 if (hit.CompareTag("Enemy") && !damagedTargets.Contains(hit))
                 {
                     IObjectDameged target = hit.GetComponent<IObjectDameged>();
-                    if(target!=null){
+                    if (target != null)
+                    {
                         damagedTargets.Add(hit);
                     }
                 }
@@ -79,12 +84,18 @@ public class Dash : MonoBehaviour
             yield return null;
         }
 
-        foreach (var hit2 in damagedTargets){
-            if (hit2.CompareTag("Enemy")){
+        foreach (var hit2 in damagedTargets)
+        {
+            if (hit2.CompareTag("Enemy"))
+            {
                 IObjectDameged target = hit2.GetComponent<IObjectDameged>();
-                if(target!=null){
+                if (target != null)
+                {
                     target.Dameged(damage);
-                    hitTarget=true;
+                    hitTarget = true;
+
+                    // 히트 위치에 이펙트 생성
+                    SpawnHitEffect(hit2.transform.position);
                 }
             }
         }
@@ -113,5 +124,54 @@ public class Dash : MonoBehaviour
         //AudioManager.instance.PlaySfx(AudioManager.Sfx.dash);
         // 대시 시 비주얼 이펙트 (잔상, 이펙트 등) 처리
         Debug.Log("Dash effect triggered");
+    }
+
+    private void SpawnHitEffect(Vector3 position)
+    {
+        if (hitEffectPrefab != null)
+        {
+            // 히트 이펙트 인스턴스화
+            GameObject effect = Instantiate(hitEffectPrefab, position, Quaternion.identity);
+
+            // 이펙트 삭제 코루틴 시작
+            StartCoroutine(DestroyAfterEffect(effect));
+        }
+        else
+        {
+            Debug.LogWarning("Hit effect prefab is not assigned!");
+        }
+    }
+
+    private IEnumerator DestroyAfterEffect(GameObject effect)
+    {
+        // Particle System이 있는 경우, 남은 시간 확인
+        ParticleSystem particle = effect.GetComponent<ParticleSystem>();
+        if (particle != null)
+        {
+            // 파티클 시스템 재생이 완료될 때까지 대기
+            yield return new WaitForSeconds(particle.main.duration);
+        }
+        else
+        {
+            // 애니메이터가 있는 경우
+            Animator animator = effect.GetComponent<Animator>();
+            if (animator != null)
+            {
+                // 애니메이션 클립 길이를 가져와 대기
+                AnimatorClipInfo[] clipInfo = animator.GetCurrentAnimatorClipInfo(0);
+                if (clipInfo.Length > 0)
+                {
+                    yield return new WaitForSeconds(clipInfo[0].clip.length);
+                }
+            }
+            else
+            {
+                // 애니메이션이나 파티클 시스템이 없는 경우 기본 시간 대기
+                yield return new WaitForSeconds(1.0f);
+            }
+        }
+
+        // 이펙트 오브젝트 삭제
+        Destroy(effect);
     }
 }

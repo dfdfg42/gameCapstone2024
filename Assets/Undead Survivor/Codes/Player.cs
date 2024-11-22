@@ -1,6 +1,7 @@
 using UnityEngine.InputSystem;
 using UnityEngine;
 using Unity.VisualScripting;
+using System.Collections;
 
 public class Player : MonoBehaviour
 {
@@ -16,9 +17,10 @@ public class Player : MonoBehaviour
     Dash dashComponent;
 
     private bool isDashing = false;  // 대시 상태 플래그
+    private bool isImmune = false;  // 데미지 면역 상태 플래그
 
-	// Dash 애니메이션을 위한 파라미터 추가
-	private readonly string ATTACK_VERTICAL = "AttackVertical";
+    // Dash 애니메이션을 위한 파라미터 추가
+    private readonly string ATTACK_VERTICAL = "AttackVertical";
 	private readonly string ATTACK_HORIZONTAL = "AttackHorizontal";
 
 	void Awake()
@@ -85,27 +87,25 @@ public class Player : MonoBehaviour
 
     void OnCollisionStay2D(Collision2D collision)
     {
-        if (!GameManager.Instance.isLive)
-            return;
+        if (!GameManager.Instance.isLive || isImmune)
+            return;  // 면역 상태일 경우 데미지 처리하지 않음
 
         Enemy enemy = collision.gameObject.GetComponent<Enemy>();
 
-        //기본 몬스터의 근접 공격
         if (enemy != null)
         {
             GameManager.Instance.health -= Time.deltaTime * 10;
 
-			if (!anim.GetCurrentAnimatorStateInfo(0).IsName("Soldier_Hurt"))  // 현재 Hurt 애니메이션이 재생 중이 아닐 때만
-			{
-				anim.SetTrigger("Damaged");
-			}
-		}
+            if (!anim.GetCurrentAnimatorStateInfo(0).IsName("Soldier_Hurt"))
+            {
+                anim.SetTrigger("Damaged");
+            }
+        }
         if (GameManager.Instance.health < 0)
         {
             this.onDeath();
         }
     }
-
     public void onDeath()
     {
         for (int index = 2; index < transform.childCount; index++)
@@ -142,11 +142,24 @@ public class Player : MonoBehaviour
 
     void HandleDashEnd()
     {
-        isDashing = false;  // 대시가 끝나면 대시 중 아님으로 설정
-							//anim.SetBool("Attack", false); // attack 애니메이션 종료
+        isDashing = false;
+        anim.SetBool(ATTACK_VERTICAL, false);
+        anim.SetBool(ATTACK_HORIZONTAL, false);
 
-		// 모든 공격 애니메이션 파라미터 리셋
-		anim.SetBool(ATTACK_VERTICAL, false);
-		anim.SetBool(ATTACK_HORIZONTAL, false);
-	}
+        if (GameManager.Instance.isLive)
+        {
+            StartCoroutine(ActivateImmunity());
+        }
+    }
+
+    private IEnumerator ActivateImmunity()
+    {
+        isImmune = true;  // 면역 상태 활성화
+        Debug.Log("Player is immune!");
+
+        yield return new WaitForSeconds(0.5f);  // 0.5초 동안 면역
+
+        isImmune = false;  // 면역 상태 비활성화
+        Debug.Log("Player is no longer immune.");
+    }
 }
