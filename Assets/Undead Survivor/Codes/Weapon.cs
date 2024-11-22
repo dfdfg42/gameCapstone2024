@@ -36,7 +36,7 @@ public class Weapon : MonoBehaviour
                 if(timer > speed)
                 {
                     timer = 0f;
-                    Fire();
+                    //Fire();
                 }
                 break;
         }
@@ -57,7 +57,7 @@ public class Weapon : MonoBehaviour
 
         if(id == 0)
         {
-            Batch();
+           // Batch();
         }
 
         player.BroadcastMessage("ApplyGear", SendMessageOptions.DontRequireReceiver);
@@ -82,73 +82,73 @@ public class Weapon : MonoBehaviour
             }
         }*/
 
-        switch (id)
-        {
-            case 0:
-                speed = 150 * Character.WeaponSpeed;
-                Batch();
+        //switch (id)
+        //{
+        //    case 0:
+        //        speed = 150 * Character.WeaponSpeed;
+        //        Batch();
 
 
-                break;
-            default:
-                speed = 0.5f * Character.WeaponRate;
+        //        break;
+        //    default:
+        //        speed = 0.5f * Character.WeaponRate;
 
-                break;
-        }
+        //        break;
+        //}
 
-        // Hand Set
-        Hand hand = player.hands[(int)data.itemType];
-        hand.spriter.sprite = data.hand;
-        hand.gameObject.SetActive(true);
+        //// Hand Set
+        //Hand hand = player.hands[(int)data.itemType];
+        //hand.spriter.sprite = data.hand;
+        //hand.gameObject.SetActive(true);
 
-        player.BroadcastMessage("ApplyGear",SendMessageOptions.DontRequireReceiver);
+        //player.BroadcastMessage("ApplyGear",SendMessageOptions.DontRequireReceiver);
     }
 
-    void Batch()
-    {
-        for(int index= 0; index < count; index++)
-        {
-            Transform bullet;
-            if(index < transform.childCount)
-            {
-                bullet = transform.GetChild(index);
-            }
-            else
-            {
-                bullet = GameManager.Instance.pool.Get(prefabId).transform;
-                bullet.parent = transform;
-            }
+    //void Batch()
+    //{
+    //    for(int index= 0; index < count; index++)
+    //    {
+    //        Transform bullet;
+    //        if(index < transform.childCount)
+    //        {
+    //            bullet = transform.GetChild(index);
+    //        }
+    //        else
+    //        {
+    //            bullet = GameManager.Instance.pool.Get(prefabId).transform;
+    //            bullet.parent = transform;
+    //        }
             
 
 
-            bullet.localPosition = Vector3.zero;
-            bullet.localRotation = Quaternion.identity;
+    //        bullet.localPosition = Vector3.zero;
+    //        bullet.localRotation = Quaternion.identity;
 
-            Vector3 rotVec = Vector3.forward * 360 * index / count;
-            bullet.Rotate(rotVec);
-            bullet.Translate(bullet.up * 1.5f, Space.World);
-            bullet.GetComponent<Bullet>().Init(damage, -100,Vector3.zero);  // -100 is Infinity Per.
+    //        Vector3 rotVec = Vector3.forward * 360 * index / count;
+    //        bullet.Rotate(rotVec);
+    //        bullet.Translate(bullet.up * 1.5f, Space.World);
+    //        bullet.GetComponent<Bullet>().Init(damage, -100,Vector3.zero);  // -100 is Infinity Per.
 
-        }
-    }
+    //    }
+    //}
 
-    void Fire()
-    {
-        if (!player.scanner.nearestTarget)
-        {
-            return;
-        }
+    //void Fire()
+    //{
+    //    if (!player.scanner.nearestTarget)
+    //    {
+    //        return;
+    //    }
 
-        Vector3 targetPos = player.scanner.nearestTarget.position;
-        Vector3 dir = targetPos - transform.position;
-        dir = dir.normalized;
+    //    Vector3 targetPos = player.scanner.nearestTarget.position;
+    //    Vector3 dir = targetPos - transform.position;
+    //    dir = dir.normalized;
 
-        Transform bullet = GameManager.Instance.pool.Get(prefabId).transform;
-        bullet.position = transform.position;
-        bullet.rotation = Quaternion.FromToRotation(Vector3.up,dir);
-        bullet.GetComponent<Bullet>().Init(damage, count, dir);
+    //    Transform bullet = GameManager.Instance.pool.Get(prefabId).transform;
+    //    bullet.position = transform.position;
+    //    bullet.rotation = Quaternion.FromToRotation(Vector3.up,dir);
+    //    bullet.GetComponent<Bullet>().Init(damage, count, dir);
 
-        AudioManager.instance.PlaySfx(AudioManager.Sfx.Range);
+    //    AudioManager.instance.PlaySfx(AudioManager.Sfx.Range);
 
-    }
+    //}
 }

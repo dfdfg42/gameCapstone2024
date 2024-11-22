@@ -8,7 +8,7 @@ public class Player : MonoBehaviour
     public Vector2 inputVec;
     public float speed;
     public Scanner scanner;
-    public Hand[] hands;
+    //public Hand[] hands;
     public RuntimeAnimatorController[] animCon;
 
     Rigidbody2D rigid;
@@ -29,7 +29,7 @@ public class Player : MonoBehaviour
         spriter = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
         scanner = GetComponent<Scanner>();
-        hands = GetComponentsInChildren<Hand>(true);
+        //hands = GetComponentsInChildren<Hand>(true);
         dashComponent = GetComponent<Dash>();
 
         // Dash 컴포넌트에서 대시가 끝났을 때 호출할 수 있도록 이벤트 설정

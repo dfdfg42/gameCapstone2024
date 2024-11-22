@@ -27,6 +27,8 @@ public class GameManager : MonoBehaviour
     public Transform uiJoy;
     public GameObject enemyCleaner;
 	public GameObject PauseScene;
+    public GameObject HUD;
+    public GameObject PoolManager;
 
 	void Awake()
     {
@@ -88,12 +90,16 @@ public class GameManager : MonoBehaviour
     public void GameRetry()
     {
         SceneManager.LoadScene(1);
-    }
+        PauseScene.SetActive(false);
+
+	}
 
     public void GameQuit()
     {
         Application.Quit();
-    }
+        PauseScene.SetActive(false);
+
+	}
 
     void Update()
     {
@@ -136,7 +142,10 @@ public class GameManager : MonoBehaviour
         isLive = true;
         Time.timeScale = 1;
         uiJoy.localScale = Vector3.one;
-    }
+        PauseScene.SetActive(false);
+		HUD.SetActive(true);
+
+	}
 
 	public void PauseToggle()
 	{
@@ -144,7 +153,8 @@ public class GameManager : MonoBehaviour
 			{
 				Stop();
 			    PauseScene.SetActive(true);
-			}
+			    HUD.SetActive(false);
+		}
 			else
 			{
 				Resume();
