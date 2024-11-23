@@ -4,8 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-public class Enemy : MonoBehaviour, IObjectDameged
-{
+public class Enemy : MonoBehaviour, IObjectDameged {
     //default info
     public float speed;
     public float health;
@@ -201,8 +200,19 @@ public class Enemy : MonoBehaviour, IObjectDameged
     {
         anim.runtimeAnimatorController = animCon[data.spriteType];
         speed = data.speed;
-        maxHealth = data.health;
-        health = maxHealth;
+        if (attackType == EnemyAttackType.melee) {
+            maxHealth = data.health;
+            health = maxHealth;
+        }
+        else if(attackType == EnemyAttackType.ranged) {
+            maxHealth = (int) (data.health * 0.75);
+            health = maxHealth;
+        }
+        else if(attackType == EnemyAttackType.rush) {
+            maxHealth = (int) (data.health * 2);
+            health = maxHealth;
+        }
+
     }
 
     void OnTriggerEnter2D(Collider2D collision)
