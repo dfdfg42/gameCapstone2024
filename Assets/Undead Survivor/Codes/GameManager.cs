@@ -92,7 +92,7 @@ public class GameManager : MonoBehaviour
 
     public void GameRetry()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(0);
         PauseScene.SetActive(false);
 
 	}
