@@ -269,18 +269,7 @@
                     "path": "<Keyboard>/space",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Keyboard&Mouse;Gamepad;Touch;Joystick",
-                    "action": "Jump",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "9505328d-bcc5-4980-9780-dc1e6c39e6b1",
-                    "path": "<Touchscreen>/touch*/Press",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Touch;Joystick;Gamepad;Keyboard&Mouse",
+                    "groups": "Gamepad;Keyboard&Mouse",
                     "action": "Jump",
                     "isComposite": false,
                     "isPartOfComposite": false

@@ -7141,14 +7141,14 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0.0017415534
+    y: 0
     width: 1
-    height: 0.99616855
+    height: 1
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 7.9444447
+  orthographic size: 7.975
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -7196,7 +7196,7 @@ MonoBehaviour:
   m_RefResolutionX: 135
   m_RefResolutionY: 270
   m_CropFrame: 0
-  m_GridSnapping: 2
+  m_GridSnapping: 0
   m_FilterMode: 0
   m_UpscaleRT: 0
   m_PixelSnapping: 0
@@ -24189,7 +24189,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_ActionEvents: []
-  m_NeverAutoSwitchControlSchemes: 0
+  m_NeverAutoSwitchControlSchemes: 1
   m_DefaultControlScheme: Gamepad
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
