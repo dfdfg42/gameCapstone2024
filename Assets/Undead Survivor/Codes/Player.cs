@@ -2,6 +2,7 @@ using UnityEngine.InputSystem;
 using UnityEngine;
 using Unity.VisualScripting;
 using System.Collections;
+using System.Collections.Generic;
 
 public class Player : MonoBehaviour
 {
@@ -22,6 +23,11 @@ public class Player : MonoBehaviour
     // Dash 애니메이션을 위한 파라미터 추가
     private readonly string ATTACK_VERTICAL = "AttackVertical";
 	private readonly string ATTACK_HORIZONTAL = "AttackHorizontal";
+
+	private float damageInterval = 0.5f;  // 데미지를 받는 간격
+	private float lastDamageTime;  // 마지막으로 데미지를 받은 시간
+	private HashSet<Collider2D> collidingEnemies = new HashSet<Collider2D>();  // 현재 충돌 중인 적들
+
 
 	void Awake()
     {
@@ -85,32 +91,106 @@ public class Player : MonoBehaviour
         }
     }
 
-    void OnCollisionStay2D(Collision2D collision)
+	//void OnCollisionStay2D(Collision2D collision)
+	//{
+	//    if (!GameManager.Instance.isLive || isImmune)
+	//        return;  // 면역 상태일 경우 데미지 처리하지 않음
+
+	//    Enemy enemy = collision.gameObject.GetComponent<Enemy>();
+
+	//    if (enemy != null)
+	//    {
+	//        GameManager.Instance.health -= Time.deltaTime * 10;
+
+	//        if (!anim.GetCurrentAnimatorStateInfo(0).IsName("Soldier_Hurt"))
+	//        {
+	//            anim.SetTrigger("Damaged");
+	//        }
+	//    }
+	//    if (GameManager.Instance.health < 0)
+	//    {
+	//        this.onDeath();
+	//    }
+	//}
+
+    //충돌 시작
+	void OnCollisionEnter2D(Collision2D collision)
+	{
+		if (!GameManager.Instance.isLive || isImmune || isDashing)
+			return;
+
+		Enemy enemy = collision.gameObject.GetComponent<Enemy>();
+
+		if (enemy != null && !collidingEnemies.Contains(collision.collider))
+		{
+			collidingEnemies.Add(collision.collider);
+			if (!isImmune)  // 면역 상태가 아닐 때만 데미지 루틴 시작
+			{
+				StartCoroutine(ApplyDamageRoutine(enemy));
+			}
+		}
+	}
+
+	void OnCollisionExit2D(Collision2D collision)
+	{
+		Enemy enemy = collision.gameObject.GetComponent<Enemy>();
+		if (enemy != null)
+		{
+			collidingEnemies.Remove(collision.collider);
+
+			if (collidingEnemies.Count == 0)
+			{
+				anim.ResetTrigger("Damaged");  // 충돌이 끝나면 트리거 리셋
+			}
+		}
+	}
+
+
+	IEnumerator ApplyDamageRoutine(Enemy enemy)
+	{
+		while (GameManager.Instance.isLive && !isImmune && !isDashing && collidingEnemies.Count > 0)
+		{
+			float currentTime = Time.time;
+			if (currentTime >= lastDamageTime + damageInterval)
+			{
+				// 데미지 적용
+				GameManager.Instance.health -= enemy.damage;
+				lastDamageTime = currentTime;
+
+				// Hurt 애니메이션이 재생 중이 아닐 때만 트리거
+				if (!anim.GetCurrentAnimatorStateInfo(0).IsName("Soldier_Hurt"))
+				{
+					anim.SetTrigger("Damaged");
+					// 트리거 리셋 추가
+					StartCoroutine(ResetDamageTrigger());
+				}
+
+				if (GameManager.Instance.health < 0)
+				{
+					onDeath();
+					yield break;
+				}
+			}
+			yield return new WaitForSeconds(0.1f);
+		}
+	}
+
+	// 트리거 리셋을 위한 코루틴 추가
+	IEnumerator ResetDamageTrigger()
+	{
+		// Hurt 애니메이션 길이만큼 대기
+		yield return new WaitForSeconds(0.5f); // 애니메이션 길이에 맞게 조정
+											   // Damaged 트리거 리셋
+		anim.ResetTrigger("Damaged");
+	}
+
+	public void onDeath()
     {
-        if (!GameManager.Instance.isLive || isImmune)
-            return;  // 면역 상태일 경우 데미지 처리하지 않음
+		collidingEnemies.Clear();
 
-        Enemy enemy = collision.gameObject.GetComponent<Enemy>();
-
-        if (enemy != null)
+		for (int index = 2; index < transform.childCount; index++)
         {
-            GameManager.Instance.health -= Time.deltaTime * 10;
-
-            if (!anim.GetCurrentAnimatorStateInfo(0).IsName("Soldier_Hurt"))
-            {
-                anim.SetTrigger("Damaged");
-            }
-        }
-        if (GameManager.Instance.health < 0)
-        {
-            this.onDeath();
-        }
-    }
-    public void onDeath()
-    {
-        for (int index = 2; index < transform.childCount; index++)
-        {
-            transform.GetChild(index).gameObject.SetActive(false);
+           transform.GetChild(index).gameObject.SetActive(false);
         }
 
         anim.SetTrigger("Dead");
@@ -149,17 +229,24 @@ public class Player : MonoBehaviour
         if (GameManager.Instance.isLive)
         {
             StartCoroutine(ActivateImmunity());
+            // 대시 종료 시 모든 충돌 중인 적 초기화
+            //collidingEnemies.Clear();
         }
     }
 
     private IEnumerator ActivateImmunity()
     {
         isImmune = true;  // 면역 상태 활성화
-        Debug.Log("Player is immune!");
+		collidingEnemies.Clear();  // 면역 상태 시작할 때도 충돌 초기화
+		anim.ResetTrigger("Damaged");
+		Debug.Log("Player is immune!");
 
-        yield return new WaitForSeconds(0.5f);  // 0.5초 동안 면역
 
-        isImmune = false;  // 면역 상태 비활성화
+		yield return new WaitForSeconds(0.5f);  // 0.5초 동안 면역
+
+
+		isImmune = false;  // 면역 상태 비활성화
         Debug.Log("Player is no longer immune.");
     }
+
 }
