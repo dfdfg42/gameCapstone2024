@@ -27,6 +27,7 @@ public class GameManager : MonoBehaviour
     public LevelUp uiLevelUp;
     public Result uiResult;
     public Transform uiJoy;
+    public Transform dashButton;
     public GameObject enemyCleaner;
 	public GameObject PauseScene;
     public GameObject HUD;
@@ -137,6 +138,7 @@ public class GameManager : MonoBehaviour
         isLive = false;
         Time.timeScale = 0;
         uiJoy.localScale = Vector3.zero;
+        dashButton.localScale = Vector3.zero;
     }
 
     public void Resume()
@@ -144,6 +146,7 @@ public class GameManager : MonoBehaviour
         isLive = true;
         Time.timeScale = 1;
         uiJoy.localScale = Vector3.one;
+        dashButton.localScale = Vector3.one;
         PauseScene.SetActive(false);
 		HUD.SetActive(true);
 
