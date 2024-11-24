@@ -52,7 +52,12 @@
       "dependencies": {
         "com.unity.2d.animation": "9.1.1",
         "com.unity.2d.common": "8.0.2",
+<<<<<<< Updated upstream
         "com.unity.2d.sprite": "1.0.0"
+=======
+        "com.unity.2d.sprite": "1.0.0",
+        "com.unity.2d.animation": "9.1.1"
+>>>>>>> Stashed changes
       },
       "url": "https://packages.unity.com"
     },
@@ -67,6 +72,10 @@
       "depth": 1,
       "source": "registry",
       "dependencies": {
+<<<<<<< Updated upstream
+=======
+        "com.unity.2d.common": "8.0.2",
+>>>>>>> Stashed changes
         "com.unity.mathematics": "1.1.0",
         "com.unity.2d.common": "8.0.2",
         "com.unity.modules.physics2d": "1.0.0"

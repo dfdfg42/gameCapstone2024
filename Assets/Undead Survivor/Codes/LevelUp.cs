@@ -8,7 +8,6 @@ public class LevelUp : MonoBehaviour
 
     Item[] items;
 
-
     void Awake()
     {
         rect = GetComponent<RectTransform>();
@@ -62,7 +61,9 @@ public class LevelUp : MonoBehaviour
             Item ranItem = items[ran[index]];
 
             //3. 만렙 아이템의 경우는 소비아이템으로 대체
-            if(ranItem.level == ranItem.data.damages.Length) {
+            //(!isOneTime && data.options.Length == level)
+            if (ranItem.level == ranItem.data.options.Length && ranItem.data.options.Length > 0)
+            {
                 items[4].gameObject.SetActive(true);
             }
             else

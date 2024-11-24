@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Rendering.Universal;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,13 +8,12 @@ public class Item : MonoBehaviour
 {
     public ItemData data;
     public int level;
-    public Weapon weapon;
-    public Gear gear;
 
     Image icon;
     Text textLevel;
     Text textName;
     Text textDesc;
+    bool isOneTime;
 
     void Awake()
     {
@@ -25,81 +25,63 @@ public class Item : MonoBehaviour
         textName = texts[1];
         textDesc = texts[2];
         textName.text = data.itemName;
-
+        isOneTime = (data.options.Length == 0);
     }
 
     void OnEnable()
     {
         textLevel.text = "Lv." + (level + 1);
 
-        switch (data.itemType)
+        if (isOneTime)
         {
-            case ItemData.ItemType.Melee:
-            case ItemData.ItemType.Range:
-                textDesc.text = string.Format(data.itemDesc, data.damages[level] * 100, data.counts[level]);
-                break;
-            case ItemData.ItemType.Glove:
-            case ItemData.ItemType.Shoe:
-                textDesc.text = string.Format(data.itemDesc, data.damages[level] * 100);
-                break;
-            default:
-                textDesc.text = string.Format(data.itemDesc);
-                break;
-
+            textDesc.text = string.Format(data.itemDesc);
         }
- 
+        else
+        {
+            textDesc.text = string.Format(data.itemDesc, data.options[level]);
+        }
     }
 
 
     public void OnClick()
     {
-        switch (data.itemType)
+        if (!isOneTime)
         {
-            case ItemData.ItemType.Melee:
-            case ItemData.ItemType.Range:
-                if(level == 0)
+            if (data.isUpgrade)
+            {
+                if (GameManager.upgrades.ContainsKey(data.itemId))
                 {
-                    GameObject newWeapon = new GameObject();
-                    weapon = newWeapon.AddComponent<Weapon>();
-                    weapon.Init(data);
+                    GameManager.upgrades[data.itemId] = data.options[level];
                 }
                 else
                 {
-                    float nextDamage = data.baseDamage;
-                    int nextCount = 0;
-
-                    nextDamage += data.baseDamage * data.damages[level];
-                    nextCount += data.counts[level];
-
-                    weapon.LevelUp(nextDamage, nextCount);
+                    GameManager.upgrades.Add(data.itemId, data.options[level]);
                 }
-                level++;
-                break;
-            case ItemData.ItemType.Glove:
-            case ItemData.ItemType.Shoe:
-                if(level == 0)
+            }
+            else
+            {
+                switch (data.itemId)
                 {
-                    GameObject newGear = new GameObject();
-                    gear = newGear.AddComponent<Gear>();
-                    gear.Init(data);
+                    case 1:
+                        GameManager.Instance.player.speed = 6 * (1 + data.options[level] / 100);
+                        break;
                 }
-                else
-                {
-                    float nextRate = data.damages[level];
-                    gear.LevelUp(nextRate);
-                }
-                level++;
-                break;
-            case ItemData.ItemType.Heal:
-                GameManager.Instance.health = GameManager.Instance.maxHealth;
-                break;
+            }
+            level++;
+        }
+        else
+        {
+            switch (data.itemId)
+            {
+                case 4:
+                    GameManager.Instance.health = GameManager.Instance.maxHealth;
+                    break;
+            }
         }
 
-
-
-        if(level == data.damages.Length)
+        if (!isOneTime && data.options.Length == level)
         {
-            GetComponent<Button>().interactable= false;
+            GetComponent<Button>().interactable = false;
         }
     }
 }

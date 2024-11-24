@@ -79,7 +79,37 @@ public class Enemy : MonoBehaviour
             return;
 
 
+<<<<<<< Updated upstream
         health -= collision.GetComponent<Bullet>().damage;
+=======
+        //health -= collision.GetComponent<Bullet>().damage;
+        //StartCoroutine(KnockBack());
+
+        //if (health > 0)
+        //{
+        //    anim.SetTrigger("Hit");
+        //    AudioManager.instance.PlaySfx(AudioManager.Sfx.Hit);
+        //}
+        //else
+        //{
+        //    isLive = false;
+        //    coll.enabled = false;
+        //    rigid.simulated = false;
+        //    spriter.sortingOrder = 1;
+        //    anim.SetBool("Dead", true);
+        //    GameManager.Instance.kill++;
+        //    GameManager.Instance.GetExp();
+
+        //    if (GameManager.Instance.isLive)
+        //        AudioManager.instance.PlaySfx(AudioManager.Sfx.Dead);
+        //}
+
+    }
+
+    public void Dameged(float tempdamege)
+    {
+        health -= tempdamege;
+>>>>>>> Stashed changes
         StartCoroutine(KnockBack());
 
         if (health > 0)

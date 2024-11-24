@@ -18,7 +18,12 @@ public class GameManager : MonoBehaviour
     public int level;
     public int kill;
     public int exp;
-    public int[] nextExp = { 3, 5, 10, 100, 150, 210, 280, 360, 450, 600 };
+
+    public int[] nextExp;
+    //int[] oriNextExp = = { 3, 5, 10, 50, 100, 150, 210, 280, 360, 450, 600 };
+    int[] oriNextExp = { 1, 2, 3, 4, 5, 6, 7 }; //언데드서바이버 돈무한버그버전1.1.1구독과좋아요부탁드려요
+    static public Dictionary<int, float> upgrades;
+
     [Header("# Game Object")]
     public Player player;
     public PoolManager pool;
@@ -35,11 +40,12 @@ public class GameManager : MonoBehaviour
 
     public void GameStart(int id)
     {
+        upgrades = new Dictionary<int, float>();
+        nextExp = oriNextExp;
         playerId = id;
         health = maxHealth;
 
         player.gameObject.SetActive(true);
-        uiLevelUp.Select(playerId % 2);     
         Resume();
         AudioManager.instance.PlayBgm(true);
         AudioManager.instance.PlaySfx(AudioManager.Sfx.Select);

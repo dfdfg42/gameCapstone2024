@@ -61,9 +61,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Undead Survivor\Codes\LevelUp.cs" />
+<<<<<<< Updated upstream
     <Compile Include="Assets\Undead Survivor\Codes\Hand.cs" />
     <Compile Include="Assets\Undead Survivor\Codes\Spawner.cs" />
     <Compile Include="Assets\Undead Survivor\Codes\Gear.cs" />
+=======
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
+    <Compile Include="Assets\Undead Survivor\Codes\Spawner.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
+>>>>>>> Stashed changes
     <Compile Include="Assets\Undead Survivor\Codes\Bullet.cs" />
     <Compile Include="Assets\Undead Survivor\Codes\Enemy.cs" />
     <Compile Include="Assets\Undead Survivor\Codes\Character.cs" />
@@ -79,7 +90,17 @@
     <Compile Include="Assets\Undead Survivor\Codes\Item.cs" />
     <Compile Include="Assets\Undead Survivor\Codes\Scanner.cs" />
     <Compile Include="Assets\Undead Survivor\Codes\PoolManager.cs" />
+<<<<<<< Updated upstream
     <Compile Include="Assets\Undead Survivor\Codes\Weapon.cs" />
+=======
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
+    <Compile Include="Assets\Undead Survivor\Codes\IObjectDameged.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
+>>>>>>> Stashed changes
     <Compile Include="Assets\Undead Survivor\Codes\ItemData.cs" />
   </ItemGroup>
   <ItemGroup>
