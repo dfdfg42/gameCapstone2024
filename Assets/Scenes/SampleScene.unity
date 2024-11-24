@@ -1943,7 +1943,7 @@ MonoBehaviour:
   level: 0
   kill: 0
   exp: 0
-  nextExp: 03000000050000000a0000006400000096000000d20000001801000068010000c201000058020000
+  nextExp: 03000000050000000a0000000a0000000f000000150000001c000000240000002d0000003c000000
   player: {fileID: 1269587923}
   pool: {fileID: 1368503947}
   uiLevelUp: {fileID: 466113357}
@@ -6983,7 +6983,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 18.669125
+  orthographic size: 8.126985
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
