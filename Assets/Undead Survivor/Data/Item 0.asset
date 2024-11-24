@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 0
   isUpgrade: 1
-  itemName: "\uB300\uC26C \uB370\uBBF8\uC9C0 \uC99D\uAC00"
+  itemName: "\uD0C0\uACA9"
   itemDesc: "\uB300\uC26C \uB370\uBBF8\uC9C0 {0}% \uC99D\uAC00"
-  itemIcon: {fileID: -181907988, guid: d71a3dc7aa20fad4f9a99fc76a9254ba, type: 3}
+  itemIcon: {fileID: -1420291954, guid: cebff8c752149d64598e49dd465b864c, type: 3}
   baseOption: 0
   options:
   - 10

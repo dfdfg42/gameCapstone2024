@@ -12,19 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd8a371046829bb48bc4c6d6cb98f59a, type: 3}
   m_Name: Item 4
   m_EditorClassIdentifier: 
-  itemType: 4
   itemId: 4
-  itemName: "\uC74C\uB8CC\uC218"
+  isUpgrade: 0
+  itemName: "\uBB3C\uC57D"
   itemDesc: "\uC0DD\uBA85\uB825 \uC804\uCCB4 \uD68C\uBCF5"
-  itemIcon: {fileID: 927338625, guid: d71a3dc7aa20fad4f9a99fc76a9254ba, type: 3}
-  baseDamage: 0
-  baseCount: 0
-  damages:
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  counts: 0000000000000000000000000000000000000000
-  projectile: {fileID: 0}
-  hand: {fileID: 0}
+  itemIcon: {fileID: 1026653078, guid: cebff8c752149d64598e49dd465b864c, type: 3}
+  baseOption: 0
+  options: []
