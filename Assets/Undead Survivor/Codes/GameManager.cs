@@ -19,6 +19,8 @@ public class GameManager : MonoBehaviour
     public int kill;
     public int exp;
     public int[] nextExp = { 3, 5, 10, 100, 150, 210, 280, 360, 450, 600 };
+    static public Dictionary<int, float> upgrades;
+
     [Header("# Game Object")]
     public Player player;
     public PoolManager pool;
@@ -38,11 +40,11 @@ public class GameManager : MonoBehaviour
 
     public void GameStart(int id)
     {
+        upgrades = new Dictionary<int, float>();
         playerId = id;
         health = maxHealth;
 
         player.gameObject.SetActive(true);
-        uiLevelUp.Select(playerId % 2);     
         Resume();
         AudioManager.instance.PlayBgm(true);
         AudioManager.instance.PlaySfx(AudioManager.Sfx.Select);

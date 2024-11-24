@@ -245,7 +245,7 @@ public class Enemy : MonoBehaviour, IObjectDameged {
 
     }
 
-    public void Dameged(int tempdamege)
+    public void Dameged(float tempdamege)
     {
         health -= tempdamege;
         StartCoroutine(KnockBack());

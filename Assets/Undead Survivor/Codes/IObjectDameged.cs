@@ -8,6 +8,6 @@ namespace Assets.Undead_Survivor.Codes
 {
     interface IObjectDameged
     {
-        void Dameged(int damage);
+        void Dameged(float damage);
     }
 }

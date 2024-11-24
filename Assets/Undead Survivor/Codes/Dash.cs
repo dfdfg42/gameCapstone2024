@@ -14,8 +14,8 @@ public class Dash : MonoBehaviour
     private TrailRenderer trailRenderer;
 
     Vector2 dir;
-    int damage, distance;
-    const int Fdamage = 1, Fdistance = 5;
+    float damage, distance;
+    const float Fdamage = 1, Fdistance = 5;
 
     public float dashDuration = 0.1f;  // 대시 지속 시간
     public float dashCooldown = 0.5f;  // 대시 쿨타임
@@ -49,7 +49,11 @@ public class Dash : MonoBehaviour
         damage = Fdamage;
         distance = Fdistance;
 
-        Debug.Log("Setting up dash: damage = " + damage + ", distance = " + distance);
+        foreach (var upgrade in GameManager.upgrades)
+        {
+            SettingUpgrade(upgrade.Key, upgrade.Value);
+        }
+
     }
 
     protected IEnumerator Dashing()
@@ -173,4 +177,19 @@ public class Dash : MonoBehaviour
         // 이펙트 오브젝트 삭제
         Destroy(effect);
     }
+
+    protected void SettingUpgrade(int utype, float uvalue)
+    {
+        switch (utype)
+        {
+            case 0:
+                damage *= uvalue / 100 + 1;
+                break;
+            case 2:
+                distance *= uvalue / 100 + 1;
+                break;
+
+        }
+}
+
 }

@@ -1,38 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\RYZEN\\Downloads\\gameCapstone2024-master (1)\\gameCapstone2024-master\\",
+  "WorkspaceRootPath": "C:\\Users\\RYZEN\\Downloads\\gamecapstone\\gameCapstone2024-master\\gameCapstone2024-master\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AEF71C7F-0A7A-E58A-7510-96CEF29CC8BF}|Assembly-CSharp.csproj|c:\\users\\ryzen\\downloads\\gamecapstone2024-master (1)\\gamecapstone2024-master\\assets\\undead survivor\\codes\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AEF71C7F-0A7A-E58A-7510-96CEF29CC8BF}|Assembly-CSharp.csproj|solutionrelative:assets\\undead survivor\\codes\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AEF71C7F-0A7A-E58A-7510-96CEF29CC8BF}|Assembly-CSharp.csproj|c:\\users\\ryzen\\downloads\\gamecapstone2024-master (1)\\gamecapstone2024-master\\assets\\undead survivor\\codes\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AEF71C7F-0A7A-E58A-7510-96CEF29CC8BF}|Assembly-CSharp.csproj|c:\\users\\ryzen\\downloads\\gamecapstone\\gamecapstone2024-master\\gamecapstone2024-master\\assets\\undead survivor\\codes\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AEF71C7F-0A7A-E58A-7510-96CEF29CC8BF}|Assembly-CSharp.csproj|solutionrelative:assets\\undead survivor\\codes\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AEF71C7F-0A7A-E58A-7510-96CEF29CC8BF}|Assembly-CSharp.csproj|C:\\Users\\RYZEN\\Downloads\\gameCapstone2024-master (1)\\gameCapstone2024-master\\assets\\undead survivor\\codes\\levelup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AEF71C7F-0A7A-E58A-7510-96CEF29CC8BF}|Assembly-CSharp.csproj|solutionrelative:assets\\undead survivor\\codes\\levelup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AEF71C7F-0A7A-E58A-7510-96CEF29CC8BF}|Assembly-CSharp.csproj|C:\\Users\\RYZEN\\Downloads\\gameCapstone2024-master (1)\\gameCapstone2024-master\\assets\\undead survivor\\codes\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AEF71C7F-0A7A-E58A-7510-96CEF29CC8BF}|Assembly-CSharp.csproj|solutionrelative:assets\\undead survivor\\codes\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AEF71C7F-0A7A-E58A-7510-96CEF29CC8BF}|Assembly-CSharp.csproj|C:\\Users\\RYZEN\\Downloads\\gameCapstone2024-master (1)\\gameCapstone2024-master\\assets\\undead survivor\\codes\\dash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AEF71C7F-0A7A-E58A-7510-96CEF29CC8BF}|Assembly-CSharp.csproj|C:\\Users\\RYZEN\\Downloads\\gamecapstone\\gameCapstone2024-master\\gameCapstone2024-master\\assets\\undead survivor\\codes\\dash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AEF71C7F-0A7A-E58A-7510-96CEF29CC8BF}|Assembly-CSharp.csproj|solutionrelative:assets\\undead survivor\\codes\\dash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AEF71C7F-0A7A-E58A-7510-96CEF29CC8BF}|Assembly-CSharp.csproj|C:\\Users\\RYZEN\\Downloads\\gameCapstone2024-master (1)\\gameCapstone2024-master\\assets\\undead survivor\\codes\\hand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AEF71C7F-0A7A-E58A-7510-96CEF29CC8BF}|Assembly-CSharp.csproj|solutionrelative:assets\\undead survivor\\codes\\hand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AEF71C7F-0A7A-E58A-7510-96CEF29CC8BF}|Assembly-CSharp.csproj|C:\\Users\\RYZEN\\Downloads\\gamecapstone\\gameCapstone2024-master\\gameCapstone2024-master\\assets\\undead survivor\\codes\\levelup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AEF71C7F-0A7A-E58A-7510-96CEF29CC8BF}|Assembly-CSharp.csproj|solutionrelative:assets\\undead survivor\\codes\\levelup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AEF71C7F-0A7A-E58A-7510-96CEF29CC8BF}|Assembly-CSharp.csproj|C:\\Users\\RYZEN\\Downloads\\gameCapstone2024-master (1)\\gameCapstone2024-master\\assets\\undead survivor\\codes\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AEF71C7F-0A7A-E58A-7510-96CEF29CC8BF}|Assembly-CSharp.csproj|solutionrelative:assets\\undead survivor\\codes\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AEF71C7F-0A7A-E58A-7510-96CEF29CC8BF}|Assembly-CSharp.csproj|C:\\Users\\RYZEN\\Downloads\\gamecapstone\\gameCapstone2024-master\\gameCapstone2024-master\\assets\\undead survivor\\codes\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AEF71C7F-0A7A-E58A-7510-96CEF29CC8BF}|Assembly-CSharp.csproj|solutionrelative:assets\\undead survivor\\codes\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AEF71C7F-0A7A-E58A-7510-96CEF29CC8BF}|Assembly-CSharp.csproj|C:\\Users\\RYZEN\\Downloads\\gameCapstone2024-master (1)\\gameCapstone2024-master\\assets\\undead survivor\\codes\\iobjectdameged.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AEF71C7F-0A7A-E58A-7510-96CEF29CC8BF}|Assembly-CSharp.csproj|solutionrelative:assets\\undead survivor\\codes\\iobjectdameged.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AEF71C7F-0A7A-E58A-7510-96CEF29CC8BF}|Assembly-CSharp.csproj|c:\\users\\ryzen\\downloads\\gamecapstone\\gamecapstone2024-master\\gamecapstone2024-master\\assets\\undead survivor\\codes\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AEF71C7F-0A7A-E58A-7510-96CEF29CC8BF}|Assembly-CSharp.csproj|solutionrelative:assets\\undead survivor\\codes\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEF71C7F-0A7A-E58A-7510-96CEF29CC8BF}|Assembly-CSharp.csproj|c:\\users\\ryzen\\downloads\\gamecapstone\\gamecapstone2024-master\\gamecapstone2024-master\\assets\\undead survivor\\codes\\itemdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AEF71C7F-0A7A-E58A-7510-96CEF29CC8BF}|Assembly-CSharp.csproj|solutionrelative:assets\\undead survivor\\codes\\itemdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -47,104 +39,80 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Item.cs",
-              "DocumentMoniker": "C:\\Users\\RYZEN\\Downloads\\gameCapstone2024-master (1)\\gameCapstone2024-master\\Assets\\Undead Survivor\\Codes\\Item.cs",
-              "RelativeDocumentMoniker": "Assets\\Undead Survivor\\Codes\\Item.cs",
-              "ToolTip": "C:\\Users\\RYZEN\\Downloads\\gameCapstone2024-master (1)\\gameCapstone2024-master\\Assets\\Undead Survivor\\Codes\\Item.cs",
-              "RelativeToolTip": "Assets\\Undead Survivor\\Codes\\Item.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAxwBsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-03T10:17:10.062Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "GameManager.cs",
-              "DocumentMoniker": "C:\\Users\\RYZEN\\Downloads\\gameCapstone2024-master (1)\\gameCapstone2024-master\\Assets\\Undead Survivor\\Codes\\GameManager.cs",
+              "DocumentMoniker": "C:\\Users\\RYZEN\\Downloads\\gamecapstone\\gameCapstone2024-master\\gameCapstone2024-master\\Assets\\Undead Survivor\\Codes\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Undead Survivor\\Codes\\GameManager.cs",
-              "ToolTip": "C:\\Users\\RYZEN\\Downloads\\gameCapstone2024-master (1)\\gameCapstone2024-master\\Assets\\Undead Survivor\\Codes\\GameManager.cs",
+              "ToolTip": "C:\\Users\\RYZEN\\Downloads\\gamecapstone\\gameCapstone2024-master\\gameCapstone2024-master\\Assets\\Undead Survivor\\Codes\\GameManager.cs",
               "RelativeToolTip": "Assets\\Undead Survivor\\Codes\\GameManager.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAewBQAAABBAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwCkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-03T11:31:16.492Z",
+              "WhenOpened": "2024-11-24T09:40:32.962Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Hand.cs",
-              "DocumentMoniker": "C:\\Users\\RYZEN\\Downloads\\gameCapstone2024-master (1)\\gameCapstone2024-master\\Assets\\Undead Survivor\\Codes\\Hand.cs",
-              "RelativeDocumentMoniker": "Assets\\Undead Survivor\\Codes\\Hand.cs",
-              "ToolTip": "C:\\Users\\RYZEN\\Downloads\\gameCapstone2024-master (1)\\gameCapstone2024-master\\Assets\\Undead Survivor\\Codes\\Hand.cs",
-              "RelativeToolTip": "Assets\\Undead Survivor\\Codes\\Hand.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Title": "ItemData.cs",
+              "DocumentMoniker": "C:\\Users\\RYZEN\\Downloads\\gamecapstone\\gameCapstone2024-master\\gameCapstone2024-master\\Assets\\Undead Survivor\\Codes\\ItemData.cs",
+              "RelativeDocumentMoniker": "Assets\\Undead Survivor\\Codes\\ItemData.cs",
+              "ToolTip": "C:\\Users\\RYZEN\\Downloads\\gamecapstone\\gameCapstone2024-master\\gameCapstone2024-master\\Assets\\Undead Survivor\\Codes\\ItemData.cs",
+              "RelativeToolTip": "Assets\\Undead Survivor\\Codes\\ItemData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-03T11:27:02.021Z"
+              "WhenOpened": "2024-11-24T09:32:04.545Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Item.cs",
+              "DocumentMoniker": "C:\\Users\\RYZEN\\Downloads\\gamecapstone\\gameCapstone2024-master\\gameCapstone2024-master\\Assets\\Undead Survivor\\Codes\\Item.cs",
+              "RelativeDocumentMoniker": "Assets\\Undead Survivor\\Codes\\Item.cs",
+              "ToolTip": "C:\\Users\\RYZEN\\Downloads\\gamecapstone\\gameCapstone2024-master\\gameCapstone2024-master\\Assets\\Undead Survivor\\Codes\\Item.cs",
+              "RelativeToolTip": "Assets\\Undead Survivor\\Codes\\Item.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwDMAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T09:31:17.989Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "LevelUp.cs",
-              "DocumentMoniker": "C:\\Users\\RYZEN\\Downloads\\gameCapstone2024-master (1)\\gameCapstone2024-master\\Assets\\Undead Survivor\\Codes\\LevelUp.cs",
+              "DocumentMoniker": "C:\\Users\\RYZEN\\Downloads\\gamecapstone\\gameCapstone2024-master\\gameCapstone2024-master\\Assets\\Undead Survivor\\Codes\\LevelUp.cs",
               "RelativeDocumentMoniker": "Assets\\Undead Survivor\\Codes\\LevelUp.cs",
-              "ToolTip": "C:\\Users\\RYZEN\\Downloads\\gameCapstone2024-master (1)\\gameCapstone2024-master\\Assets\\Undead Survivor\\Codes\\LevelUp.cs",
+              "ToolTip": "C:\\Users\\RYZEN\\Downloads\\gamecapstone\\gameCapstone2024-master\\gameCapstone2024-master\\Assets\\Undead Survivor\\Codes\\LevelUp.cs",
               "RelativeToolTip": "Assets\\Undead Survivor\\Codes\\LevelUp.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAkwC0AAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEQAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-03T10:07:20.328Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Player.cs",
-              "DocumentMoniker": "C:\\Users\\RYZEN\\Downloads\\gameCapstone2024-master (1)\\gameCapstone2024-master\\Assets\\Undead Survivor\\Codes\\Player.cs",
-              "RelativeDocumentMoniker": "Assets\\Undead Survivor\\Codes\\Player.cs",
-              "ToolTip": "C:\\Users\\RYZEN\\Downloads\\gameCapstone2024-master (1)\\gameCapstone2024-master\\Assets\\Undead Survivor\\Codes\\Player.cs",
-              "RelativeToolTip": "Assets\\Undead Survivor\\Codes\\Player.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAYwAwAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-03T10:08:36.114Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "IObjectDameged.cs",
-              "DocumentMoniker": "C:\\Users\\RYZEN\\Downloads\\gameCapstone2024-master (1)\\gameCapstone2024-master\\Assets\\Undead Survivor\\Codes\\IObjectDameged.cs",
-              "RelativeDocumentMoniker": "Assets\\Undead Survivor\\Codes\\IObjectDameged.cs",
-              "ToolTip": "C:\\Users\\RYZEN\\Downloads\\gameCapstone2024-master (1)\\gameCapstone2024-master\\Assets\\Undead Survivor\\Codes\\IObjectDameged.cs",
-              "RelativeToolTip": "Assets\\Undead Survivor\\Codes\\IObjectDameged.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-03T09:41:57.823Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Dash.cs",
-              "DocumentMoniker": "C:\\Users\\RYZEN\\Downloads\\gameCapstone2024-master (1)\\gameCapstone2024-master\\Assets\\Undead Survivor\\Codes\\Dash.cs",
+              "DocumentMoniker": "C:\\Users\\RYZEN\\Downloads\\gamecapstone\\gameCapstone2024-master\\gameCapstone2024-master\\Assets\\Undead Survivor\\Codes\\Dash.cs",
               "RelativeDocumentMoniker": "Assets\\Undead Survivor\\Codes\\Dash.cs",
-              "ToolTip": "C:\\Users\\RYZEN\\Downloads\\gameCapstone2024-master (1)\\gameCapstone2024-master\\Assets\\Undead Survivor\\Codes\\Dash.cs",
+              "ToolTip": "C:\\Users\\RYZEN\\Downloads\\gamecapstone\\gameCapstone2024-master\\gameCapstone2024-master\\Assets\\Undead Survivor\\Codes\\Dash.cs",
               "RelativeToolTip": "Assets\\Undead Survivor\\Codes\\Dash.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAwwEIAAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-03T09:33:14.005Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Enemy.cs",
-              "DocumentMoniker": "C:\\Users\\RYZEN\\Downloads\\gameCapstone2024-master (1)\\gameCapstone2024-master\\Assets\\Undead Survivor\\Codes\\Enemy.cs",
-              "RelativeDocumentMoniker": "Assets\\Undead Survivor\\Codes\\Enemy.cs",
-              "ToolTip": "C:\\Users\\RYZEN\\Downloads\\gameCapstone2024-master (1)\\gameCapstone2024-master\\Assets\\Undead Survivor\\Codes\\Enemy.cs",
-              "RelativeToolTip": "Assets\\Undead Survivor\\Codes\\Enemy.cs",
-              "ViewState": "AgIAAMIAAAAAAAAAAAAswOsAAAAbAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\Users\\RYZEN\\Downloads\\gamecapstone\\gameCapstone2024-master\\gameCapstone2024-master\\Assets\\Undead Survivor\\Codes\\Player.cs",
+              "RelativeDocumentMoniker": "Assets\\Undead Survivor\\Codes\\Player.cs",
+              "ToolTip": "C:\\Users\\RYZEN\\Downloads\\gamecapstone\\gameCapstone2024-master\\gameCapstone2024-master\\Assets\\Undead Survivor\\Codes\\Player.cs",
+              "RelativeToolTip": "Assets\\Undead Survivor\\Codes\\Player.cs",
+              "ViewState": "AgIAALgAAAAAAAAAAAAqwNcAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-03T09:35:27.554Z"
+              "WhenOpened": "2024-11-03T10:08:36.114Z",
+              "EditorCaption": ""
             }
           ]
         }
