@@ -275,7 +275,7 @@ public class Enemy : MonoBehaviour, IObjectDameged {
         yield return wait; //다음 물리 프레임까지 딜레이
         Vector3 playerPos = GameManager.Instance.player.transform.position;
         Vector3 dirVec = transform.position - playerPos;
-        rigid.AddForce(dirVec.normalized * 1.5f, ForceMode2D.Impulse);
+        rigid.AddForce(dirVec.normalized * 1.3f, ForceMode2D.Impulse);
     }
 
     IEnumerator rushAttack(){
