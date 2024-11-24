@@ -24,6 +24,7 @@ public class Dash : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         trailRenderer = GetComponent<TrailRenderer>();
+        trailRenderer.enabled = false;
     }
 
     public void Init(Vector2 direction)
