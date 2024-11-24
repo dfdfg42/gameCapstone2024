@@ -284,7 +284,7 @@ public class Enemy : MonoBehaviour, IObjectDameged {
 
         anim.SetTrigger("Ready_Rush");
 
-        yield return new WaitForSeconds(0.75f);
+        yield return new WaitForSeconds(1.0f);
 
         anim.SetTrigger("Rush");
         //돌진 로직
