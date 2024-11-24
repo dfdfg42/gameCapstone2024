@@ -141,6 +141,7 @@ public class Player : MonoBehaviour
                 // Hurt 애니메이션이 재생 중이 아닐 때만 트리거
                 if (!anim.GetCurrentAnimatorStateInfo(0).IsName("Soldier_Hurt"))
                 {
+                    AudioManager.instance.PlaySfx(AudioManager.Sfx.PlayerHit);
                     anim.SetTrigger("Damaged");
                     // 트리거 리셋 추가
                     StartCoroutine(ResetDamageTrigger());

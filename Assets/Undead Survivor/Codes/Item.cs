@@ -75,7 +75,8 @@ public class Item : MonoBehaviour
 			switch (data.itemId)
 			{
 				case 3:
-					Collider2D[] hits = Physics2D.OverlapCircleAll(GameManager.Instance.player.transform.position, 5.0f);
+                    AudioManager.instance.PlaySfx(AudioManager.Sfx.Bomb);
+                    Collider2D[] hits = Physics2D.OverlapCircleAll(GameManager.Instance.player.transform.position, 5.0f);
 					foreach (var hit in hits)
 					{
 						IObjectDameged target = hit.GetComponent<IObjectDameged>();
