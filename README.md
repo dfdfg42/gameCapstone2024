@@ -6,4 +6,10 @@
 ## 게임제작캡스톤 프로젝트
 
 1. 시연 영상 : https://youtu.be/uqcBlJQgl9k
-2. 작품 설명서 : https://drive.google.com/file/d/1Qy_b7nkLUp0smsEs_dufZh1miBUEFcG-/view
+2. 작품 설명서 : https://drive.google.com/file/d/12L20PNTEPQR8G3x6UdmzJob0mDLsvlnd/view?usp=sharing
+
+### 사용 엔진
+Unity 2022.3.31f1
+
+### 개발 기간
+2024.09 ~ 2024.11
