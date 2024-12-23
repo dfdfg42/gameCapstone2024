@@ -1,18 +1,15 @@
 # Unity build files and directories
 [Bb]uild/
 [Bb]uilds/
-*.apk
 *.aab
 *.xcodeproj
 *.xcworkspace
 *.sln
-*.exe
 *.app
 *.msi
 *.zip
 *.tar.gz
 *.jar
-*.dll
 *.so
 *.dylib
 *.bc
