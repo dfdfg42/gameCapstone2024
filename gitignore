@@ -7,7 +7,6 @@
 *.sln
 *.app
 *.msi
-*.zip
 *.tar.gz
 *.jar
 *.so
