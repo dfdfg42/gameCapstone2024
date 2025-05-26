@@ -8,28 +8,31 @@ public class Dash : MonoBehaviour
     public delegate void DashEndHandler();
     public event DashEndHandler OnDashEnd;
 
-    public delegate void HitTargetHandler();
-    public event HitTargetHandler OnHitTarget;  // 적을 맞췄을 때 발생하는 이벤트 추가
+    public delegate void HitTargetHandler(Enemy target);
+    public event HitTargetHandler OnHitTarget;
 
     private TrailRenderer trailRenderer;
+    private Player player;
 
     Vector2 dir;
     float damage, distance;
     const float Fdamage = 1, Fdistance = 5;
 
-    public float dashDuration = 0.1f;  // 대시 지속 시간
-    public float dashCooldown = 0.5f;  // 대시 쿨타임
+    public float dashDuration = 0.1f;
+    public float dashCooldown = 0.5f;
     private bool canDash = true;
     private Rigidbody2D rb;
 
-    public GameObject hitEffectPrefab; // 히트 이펙트 프리팹
+    public GameObject hitEffectPrefab;
 
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         trailRenderer = GetComponent<TrailRenderer>();
+        player = GetComponent<Player>();
+
         if (trailRenderer != null)
-            trailRenderer.enabled = false; // 초기에는 비활성화
+            trailRenderer.enabled = false;
     }
 
     public void Init(Vector2 direction)
@@ -37,7 +40,6 @@ public class Dash : MonoBehaviour
         if (canDash)
         {
             this.dir = direction;
-
             Setting();
             StartCoroutine(Dashing());
             Effect();
@@ -46,31 +48,30 @@ public class Dash : MonoBehaviour
 
     protected void Setting()
     {
-        damage = Fdamage;
+        // 플레이어의 현재 데미지 사용
+        damage = player != null ? player.GetCurrentDamage() : Fdamage;
         distance = Fdistance;
 
+        // 기존 업그레이드 시스템과의 호환성 유지
         foreach (var upgrade in GameManager.upgrades)
         {
             SettingUpgrade(upgrade.Key, upgrade.Value);
         }
-
     }
 
     protected IEnumerator Dashing()
     {
-        canDash = false;  // 대시 중에는 대시 불가
+        canDash = false;
 
         Vector2 startPosition = rb.position;
         Vector2 targetPosition = startPosition + dir.normalized * distance;
 
         float elapsedTime = 0;
-        bool hitTarget = false;
+        List<Enemy> hitEnemies = new List<Enemy>();
 
-        // 트레일 렌더러 활성화
         if (trailRenderer != null)
             trailRenderer.enabled = true;
 
-        // 데미지를 준 적 저장
         HashSet<Collider2D> damagedTargets = new HashSet<Collider2D>();
 
         while (elapsedTime < dashDuration)
@@ -79,33 +80,22 @@ public class Dash : MonoBehaviour
             float t = Mathf.Clamp01(elapsedTime / dashDuration);
             rb.position = Vector2.Lerp(startPosition, targetPosition, t);
 
+            // 충돌 검사
             Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, 1.0f);
             foreach (var hit in hits)
             {
                 if (hit.CompareTag("Enemy") && !damagedTargets.Contains(hit))
                 {
-                    IObjectDameged target = hit.GetComponent<IObjectDameged>();
-                    if (target != null)
+                    Enemy enemy = hit.GetComponent<Enemy>();
+                    if (enemy != null)
                     {
                         damagedTargets.Add(hit);
+                        hitEnemies.Add(enemy);
                     }
                 }
             }
 
             yield return null;
-        }
-
-        foreach (var hit2 in damagedTargets)
-        {
-            IObjectDameged target = hit2.GetComponent<IObjectDameged>();
-            if (target != null)
-            {
-                target.Dameged(damage);
-                hitTarget = true;
-
-                // 히트 위치에 이펙트 생성
-                SpawnHitEffect(hit2.transform.position);
-            }
         }
 
         // 트레일 렌더러 비활성화
@@ -114,22 +104,46 @@ public class Dash : MonoBehaviour
 
         rb.position = targetPosition;
 
-        if (hitTarget)
+        // 적들에게 데미지 적용 및 특수 효과 처리
+        bool hitAnyTarget = false;
+        foreach (var enemy in hitEnemies)
         {
-            OnHitTarget?.Invoke();  // 적을 맞췄을 때 이벤트 발생
+            if (enemy != null)
+            {
+                // 기본 데미지 적용
+                enemy.Dameged(damage);
+                hitAnyTarget = true;
+
+                // 히트 이펙트 생성
+                SpawnHitEffect(enemy.transform.position);
+
+                // 플레이어의 공격 성공 이벤트 호출 (특수 효과 적용)
+                if (player != null)
+                {
+                    player.OnAttackSuccess(enemy);
+                }
+
+                // 개별 적 타격 이벤트 발생
+                OnHitTarget?.Invoke(enemy);
+            }
+        }
+
+        if (hitAnyTarget)
+        {
+            // 전체 타격 성공 이벤트 (면역 효과 등)
+            OnHitTarget?.Invoke(null);
         }
         else
         {
             yield return new WaitForSeconds(dashCooldown);
         }
 
-        canDash = true;  // 대시 가능 상태로 변경
-        OnDashEnd?.Invoke();  // 대시 종료 이벤트 호출
+        canDash = true;
+        OnDashEnd?.Invoke();
     }
 
     protected void Effect()
     {
-        // 대시 시 비주얼 이펙트 처리
         Debug.Log("Dash effect triggered");
     }
 
@@ -137,10 +151,7 @@ public class Dash : MonoBehaviour
     {
         if (hitEffectPrefab != null)
         {
-            // 히트 이펙트 생성
             GameObject effect = Instantiate(hitEffectPrefab, position, Quaternion.identity);
-
-            // 이펙트 삭제 코루틴 시작
             StartCoroutine(DestroyAfterEffect(effect));
         }
         else
@@ -151,7 +162,6 @@ public class Dash : MonoBehaviour
 
     private IEnumerator DestroyAfterEffect(GameObject effect)
     {
-        // 이펙트의 재생 시간 동안 대기
         ParticleSystem particle = effect.GetComponent<ParticleSystem>();
         if (particle != null)
         {
@@ -174,7 +184,6 @@ public class Dash : MonoBehaviour
             }
         }
 
-        // 이펙트 오브젝트 삭제
         Destroy(effect);
     }
 
@@ -188,8 +197,22 @@ public class Dash : MonoBehaviour
             case 2:
                 distance *= uvalue / 100 + 1;
                 break;
-
         }
-}
+    }
 
+    // 공개 메서드들
+    public bool CanDash()
+    {
+        return canDash;
+    }
+
+    public float GetDashCooldown()
+    {
+        return dashCooldown;
+    }
+
+    public float GetDashDistance()
+    {
+        return distance;
+    }
 }
