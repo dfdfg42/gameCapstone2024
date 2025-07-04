@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-// ========== ë°ì´í„° í´ë˜ìŠ¤ë“¤ ==========
+// ========== µ¥ÀÌÅÍ Å¬·¡½ºµé ==========
 
-// ìœ ë¬¼ íš¨ê³¼ ë°ì´í„°
+// À¯¹° È¿°ú µ¥ÀÌÅÍ
 [System.Serializable]
 public class EffectData
 {
@@ -12,7 +12,7 @@ public class EffectData
     public string specialId;
     public List<EffectParameter> parameters = new List<EffectParameter>();
 
-    // Dictionary ëŒ€ì‹  ì§ë ¬í™” ê°€ëŠ¥í•œ ë¦¬ìŠ¤íŠ¸ ì‚¬ìš©
+    // Dictionary ´ë½Å Á÷·ÄÈ­ °¡´ÉÇÑ ¸®½ºÆ® »ç¿ë
     public Dictionary<string, object> GetParametersDictionary()
     {
         var dict = new Dictionary<string, object>();
@@ -47,14 +47,14 @@ public class EffectParameter
     }
 }
 
-// ========== ì‹œë„ˆì§€ ì‹œìŠ¤í…œ ==========
+// ========== ½Ã³ÊÁö ½Ã½ºÅÛ ==========
 [System.Serializable]
 public class SynergyRule
 {
     public string synergyId;
     public string name;
     public string description;
-    public List<string> requiredEffects = new List<string>(); // í•„ìš”í•œ íš¨ê³¼ IDë“¤
-    public List<EffectData> resultEffects = new List<EffectData>(); // ì‹œë„ˆì§€ ë°œë™ì‹œ ì¶”ê°€ íš¨ê³¼
-    public bool replaceOriginal; // ì›ë³¸ íš¨ê³¼ë¥¼ ëŒ€ì²´í• ì§€ ì—¬ë¶€
+    public List<string> requiredEffects = new List<string>(); // ÇÊ¿äÇÑ È¿°ú IDµé
+    public List<EffectData> resultEffects = new List<EffectData>(); // ½Ã³ÊÁö ¹ßµ¿½Ã Ãß°¡ È¿°ú
+    public bool replaceOriginal; // ¿øº» È¿°ú¸¦ ´ëÃ¼ÇÒÁö ¿©ºÎ
 }

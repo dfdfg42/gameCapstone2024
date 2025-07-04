@@ -203,8 +203,8 @@ public class MapNodeUI : MonoBehaviour
     public Color battleColor = Color.red;
     public Color restColor = Color.blue;
     public Color eventColor = Color.yellow;
-    public Color treasureColor = Color.orange;
-    public Color bossColor = Color.purple;
+    public Color treasureColor = new Color(1.0f, 0.64f, 0.0f); // 주황색 (RGB)
+    public Color bossColor = new Color(0.5f, 0.0f, 0.5f);   // 보라색 (RGB)
     public Color disabledColor = Color.gray;
 
     private MapNode nodeData;

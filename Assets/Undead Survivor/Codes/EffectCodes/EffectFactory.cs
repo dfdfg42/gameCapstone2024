@@ -1,6 +1,6 @@
 using UnityEngine;
 
-// ========== íš¨ê³¼ íŒ©í† ë¦¬ ==========
+// ========== È¿°ú ÆÑÅä¸® ==========
 public static class EffectFactory
 {
     public static IEffect CreateEffect(EffectData effectData)
@@ -16,7 +16,7 @@ public static class EffectFactory
             case EffectType.Special:
                 return CreateSpecialEffect(effectData);
             default:
-                Debug.LogWarning($"ì•Œ ìˆ˜ ì—†ëŠ” íš¨ê³¼ íƒ€ìž…: {effectData.effectType}");
+                Debug.LogWarning($"¾Ë ¼ö ¾ø´Â È¿°ú Å¸ÀÔ: {effectData.effectType}");
                 return null;
         }
     }
@@ -34,7 +34,7 @@ public static class EffectFactory
             case "ice":
                 return new IceEffect(effectData);
             default:
-                Debug.LogWarning($"ì•Œ ìˆ˜ ì—†ëŠ” íŠ¹ìˆ˜ íš¨ê³¼: {effectData.specialId}");
+                Debug.LogWarning($"¾Ë ¼ö ¾ø´Â Æ¯¼ö È¿°ú: {effectData.specialId}");
                 return null;
         }
     }

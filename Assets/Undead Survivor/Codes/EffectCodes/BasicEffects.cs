@@ -1,13 +1,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-// ========== 구체적인 효과 클래스들 ==========
-public class DamageEffect : IEffect
+// ========== 패시브 효과들 (지속 적용) ==========
+
+public class DamageEffect : IEffect, IPassiveEffect
 {
     public string EffectId { get; private set; }
     public string Name { get; private set; }
     public string Description { get; private set; }
     public EffectType Type => EffectType.Damage;
+    public EffectCategory Category => EffectCategory.Passive;  // ⭐ 패시브
 
     private float damageMultiplier;
 
@@ -21,26 +23,33 @@ public class DamageEffect : IEffect
 
     public void Apply(IEffectTarget target)
     {
-        Debug.Log($"플레이어 데미지 {damageMultiplier * 100}% 증가 적용");
+        Debug.Log($"패시브 데미지 효과 활성화: +{damageMultiplier * 100}%");
     }
 
     public void Remove(IEffectTarget target)
     {
-        Debug.Log($"플레이어 데미지 증가 효과 제거");
+        Debug.Log($"패시브 데미지 효과 비활성화");
     }
 
     public bool CanStackWith(IEffect other)
     {
         return other.Type == EffectType.Damage;
     }
+
+    // ⭐ IPassiveEffect 구현
+    public float GetStatModifier(StatType statType)
+    {
+        return statType == StatType.Damage ? damageMultiplier : 0f;
+    }
 }
 
-public class SpeedEffect : IEffect
+public class SpeedEffect : IEffect, IPassiveEffect
 {
     public string EffectId { get; private set; }
     public string Name { get; private set; }
     public string Description { get; private set; }
     public EffectType Type => EffectType.Speed;
+    public EffectCategory Category => EffectCategory.Passive;  // ⭐ 패시브
 
     private float speedMultiplier;
 
@@ -54,26 +63,33 @@ public class SpeedEffect : IEffect
 
     public void Apply(IEffectTarget target)
     {
-        Debug.Log($"플레이어 속도 {speedMultiplier * 100}% 증가 적용");
+        Debug.Log($"패시브 속도 효과 활성화: +{speedMultiplier * 100}%");
     }
 
     public void Remove(IEffectTarget target)
     {
-        Debug.Log($"플레이어 속도 증가 효과 제거");
+        Debug.Log($"패시브 속도 효과 비활성화");
     }
 
     public bool CanStackWith(IEffect other)
     {
         return other.Type == EffectType.Speed;
     }
+
+    // ⭐ IPassiveEffect 구현
+    public float GetStatModifier(StatType statType)
+    {
+        return statType == StatType.Speed ? speedMultiplier : 0f;
+    }
 }
 
-public class DefenseEffect : IEffect
+public class DefenseEffect : IEffect, IPassiveEffect
 {
     public string EffectId { get; private set; }
     public string Name { get; private set; }
     public string Description { get; private set; }
     public EffectType Type => EffectType.Defense;
+    public EffectCategory Category => EffectCategory.Passive;  // ⭐ 패시브
 
     private float defenseValue;
 
@@ -87,16 +103,22 @@ public class DefenseEffect : IEffect
 
     public void Apply(IEffectTarget target)
     {
-        Debug.Log($"플레이어 방어력 {defenseValue} 증가 적용");
+        Debug.Log($"패시브 방어력 효과 활성화: +{defenseValue}");
     }
 
     public void Remove(IEffectTarget target)
     {
-        Debug.Log($"플레이어 방어력 증가 효과 제거");
+        Debug.Log($"패시브 방어력 효과 비활성화");
     }
 
     public bool CanStackWith(IEffect other)
     {
         return other.Type == EffectType.Defense;
+    }
+
+    // ⭐ IPassiveEffect 구현
+    public float GetStatModifier(StatType statType)
+    {
+        return statType == StatType.Defense ? defenseValue : 0f;
     }
 }

@@ -8,6 +8,7 @@ public class SynergyEffect : IEffect
     public string Name { get; private set; }
     public string Description { get; private set; }
     public EffectType Type { get; private set; }
+    public EffectCategory Category { get; private set; }
 
     private List<IEffect> combinedEffects;
 

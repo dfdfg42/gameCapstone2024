@@ -8,6 +8,7 @@ public class Dash : MonoBehaviour
     public delegate void DashEndHandler();
     public event DashEndHandler OnDashEnd;
 
+    // ⭐ 수정된 델리게이트: 타격한 적을 매개변수로 전달
     public delegate void HitTargetHandler(Enemy target);
     public event HitTargetHandler OnHitTarget;
 
@@ -104,36 +105,30 @@ public class Dash : MonoBehaviour
 
         rb.position = targetPosition;
 
-        // 적들에게 데미지 적용 및 특수 효과 처리
-        bool hitAnyTarget = false;
+        // ⭐ 수정된 부분: 각 적에 대해 개별적으로 이벤트 발생
         foreach (var enemy in hitEnemies)
         {
             if (enemy != null)
             {
                 // 기본 데미지 적용
                 enemy.Dameged(damage);
-                hitAnyTarget = true;
 
                 // 히트 이펙트 생성
                 SpawnHitEffect(enemy.transform.position);
 
-                // 플레이어의 공격 성공 이벤트 호출 (특수 효과 적용)
-                if (player != null)
-                {
-                    player.OnAttackSuccess(enemy);
-                }
-
-                // 개별 적 타격 이벤트 발생
+                // ⭐ 개별 적 타격 이벤트 발생 (효과 시스템에서 처리)
                 OnHitTarget?.Invoke(enemy);
             }
         }
 
-        if (hitAnyTarget)
+        // ⭐ 적을 하나도 타격하지 못했을 때 null로 이벤트 발생
+        if (hitEnemies.Count == 0)
         {
-            // 전체 타격 성공 이벤트 (면역 효과 등)
             OnHitTarget?.Invoke(null);
         }
-        else
+
+        // 쿨다운 적용
+        if (hitEnemies.Count == 0)
         {
             yield return new WaitForSeconds(dashCooldown);
         }
