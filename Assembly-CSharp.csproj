@@ -72,11 +72,13 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
+    <Compile Include="Assets\Undead Survivor\Codes\MapSystem\MapUI.cs" />
     <Compile Include="Assets\Undead Survivor\Codes\Bullet.cs" />
     <Compile Include="Assets\Undead Survivor\Codes\Enemy.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
     <Compile Include="Assets\Undead Survivor\Codes\EffectCodes\EffectManager.cs" />
     <Compile Include="Assets\Undead Survivor\Codes\Character.cs" />
+    <Compile Include="Assets\Undead Survivor\Codes\MapSystem\MapSystem.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
     <Compile Include="Assets\Undead Survivor\Codes\IEnumeratr.cs" />
@@ -120,9 +122,11 @@
     <Compile Include="Assets\Undead Survivor\Codes\IObjectDameged.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
     <Compile Include="Assets\Undead Survivor\Codes\EffectCodes\SynergyEffects.cs" />
+    <Compile Include="Assets\Undead Survivor\Codes\MapSystem\MapManager.cs" />
     <Compile Include="Assets\Undead Survivor\Codes\Weapon.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
+    <Compile Include="Assets\Undead Survivor\Codes\MapSystem\MapGenerator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
     <Compile Include="Assets\Undead Survivor\Codes\ItemData.cs" />
