@@ -25,6 +25,8 @@ public abstract class Enemy : MonoBehaviour, IObjectDameged
     public System.Action<Enemy> OnDeath;
     public System.Action<float> OnDamaged;
 
+
+    private bool isKnockingBack = false;
     protected virtual void Awake()
     {
         rigid = GetComponent<Rigidbody2D>();
@@ -55,6 +57,12 @@ public abstract class Enemy : MonoBehaviour, IObjectDameged
     {
         if (!GameManager.Instance.isLive || !isLive)
             return;
+
+        if ((target == null || !target.gameObject.activeInHierarchy) &&
+        GameManager.Instance.player != null)
+        {
+            target = GameManager.Instance.player.transform;
+        }
 
         if (anim.GetCurrentAnimatorStateInfo(0).IsName("Hit"))
             return;
@@ -138,10 +146,16 @@ public abstract class Enemy : MonoBehaviour, IObjectDameged
 
     protected virtual IEnumerator KnockBack()
     {
-        yield return wait;
+        if (isKnockingBack) yield break; // 이미 넉백 중이면 실행하지 않음
+
+        isKnockingBack = true;
+        yield return wait; // WaitForFixedUpdate
         Vector3 playerPos = GameManager.Instance.player.transform.position;
         Vector3 dirVec = transform.position - playerPos;
         rigid.AddForce(dirVec.normalized * 1.3f, ForceMode2D.Impulse);
+
+        yield return new WaitForSeconds(0.1f); // 짧은 딜레이 후
+        isKnockingBack = false; // 넉백 상태 해제
     }
 
     public RuntimeAnimatorController[] animCon;

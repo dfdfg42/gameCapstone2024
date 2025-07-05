@@ -26,11 +26,18 @@ public class Dash : MonoBehaviour
 
     public GameObject hitEffectPrefab;
 
+    public ParticleSystem dashParticle; // ⭐ 대쉬 중에 재생할 파티클
+    private AfterImagePool afterImagePool; // ⭐ 잔상 효과를 위한 참조
+    private int originalLayer; // ⭐ 플레이어의 원래 레이어를 저장할 변수
+
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         trailRenderer = GetComponent<TrailRenderer>();
         player = GetComponent<Player>();
+        afterImagePool = GetComponent<AfterImagePool>(); // ⭐ AfterImagePool 컴포넌트 가져오기
+
+        originalLayer = gameObject.layer;
 
         if (trailRenderer != null)
             trailRenderer.enabled = false;
@@ -43,7 +50,7 @@ public class Dash : MonoBehaviour
             this.dir = direction;
             Setting();
             StartCoroutine(Dashing());
-            Effect();
+            //Effect();
         }
     }
 
@@ -62,84 +69,84 @@ public class Dash : MonoBehaviour
 
     protected IEnumerator Dashing()
     {
+        // --- 1. 대쉬 준비 ---
         canDash = false;
+        float originalGravity = rb.gravityScale;
+        rb.gravityScale = 0f; // 대쉬 중 중력 비활성화
 
-        Vector2 startPosition = rb.position;
-        Vector2 targetPosition = startPosition + dir.normalized * distance;
+        // ⭐ 플레이어 레이어를 DashingPlayer로 변경하여 적과 충돌하지 않게 함
+        gameObject.layer = LayerMask.NameToLayer("DashingPlayer");
 
+        // --- 2. 대쉬 시작 및 효과 재생 ---
+        float dashSpeed = distance / dashDuration;
+        rb.velocity = dir.normalized * dashSpeed; // 물리 속도로 대쉬 실행
+
+        if (afterImagePool != null) afterImagePool.StartEffect();
+        if (dashParticle != null) dashParticle.Play();
+        if (trailRenderer != null) trailRenderer.enabled = true;
+
+        // --- 3. 대쉬 시간 동안 적 타격 감지 ---
         float elapsedTime = 0;
-        List<Enemy> hitEnemies = new List<Enemy>();
-
-        if (trailRenderer != null)
-            trailRenderer.enabled = true;
-
-        HashSet<Collider2D> damagedTargets = new HashSet<Collider2D>();
+        HashSet<Enemy> hitEnemies = new HashSet<Enemy>(); // 중복 타격 방지를 위해 HashSet 사용
 
         while (elapsedTime < dashDuration)
         {
-            elapsedTime += Time.deltaTime;
-            float t = Mathf.Clamp01(elapsedTime / dashDuration);
-            rb.position = Vector2.Lerp(startPosition, targetPosition, t);
-
-            // 충돌 검사
+            // 타격 판정은 계속 수행
             Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, 1.0f);
             foreach (var hit in hits)
             {
-                if (hit.CompareTag("Enemy") && !damagedTargets.Contains(hit))
+                if (hit.CompareTag("Enemy"))
                 {
                     Enemy enemy = hit.GetComponent<Enemy>();
-                    if (enemy != null)
+                    if (enemy != null && !hitEnemies.Contains(enemy))
                     {
-                        damagedTargets.Add(hit);
                         hitEnemies.Add(enemy);
                     }
                 }
             }
-
-            yield return null;
+            elapsedTime += Time.deltaTime;
+            yield return null; // 다음 프레임까지 대기
         }
 
-        // 트레일 렌더러 비활성화
-        if (trailRenderer != null)
-            trailRenderer.enabled = false;
+        // --- 4. 대쉬 종료 및 효과 정지 ---
+        rb.gravityScale = originalGravity; // 중력 복원
+        rb.velocity = Vector2.zero; // 속도 초기화
 
-        rb.position = targetPosition;
+        // ⭐ 플레이어 레이어를 원래대로 복원하여 다시 충돌하게 함
+        gameObject.layer = originalLayer;
 
-        // ⭐ 수정된 부분: 각 적에 대해 개별적으로 이벤트 발생
+
+        if (afterImagePool != null) afterImagePool.StopEffect();
+        if (dashParticle != null) dashParticle.Stop();
+        if (trailRenderer != null) trailRenderer.enabled = false;
+
+        // --- 5. 타격한 적들에게 데미지 및 효과 적용 ---
         foreach (var enemy in hitEnemies)
         {
             if (enemy != null)
             {
-                // 기본 데미지 적용
                 enemy.Dameged(damage);
-
-                // 히트 이펙트 생성
                 SpawnHitEffect(enemy.transform.position);
-
-                // ⭐ 개별 적 타격 이벤트 발생 (효과 시스템에서 처리)
                 OnHitTarget?.Invoke(enemy);
             }
         }
 
-        // ⭐ 적을 하나도 타격하지 못했을 때 null로 이벤트 발생
+        // 적을 한 명도 못 맞혔을 경우
         if (hitEnemies.Count == 0)
         {
             OnHitTarget?.Invoke(null);
         }
 
-        // 쿨다운 적용
+        // --- 6. 쿨다운 적용 (수정된 부분) ---
+        // ⭐ 적을 못 맞혔을 때만 쿨다운을 적용합니다.
         if (hitEnemies.Count == 0)
         {
             yield return new WaitForSeconds(dashCooldown);
         }
 
+        
         canDash = true;
         OnDashEnd?.Invoke();
-    }
-
-    protected void Effect()
-    {
-        Debug.Log("Dash effect triggered");
     }
 
     private void SpawnHitEffect(Vector3 position)
@@ -148,10 +155,6 @@ public class Dash : MonoBehaviour
         {
             GameObject effect = Instantiate(hitEffectPrefab, position, Quaternion.identity);
             StartCoroutine(DestroyAfterEffect(effect));
-        }
-        else
-        {
-            Debug.LogWarning("Hit effect prefab is not assigned!");
         }
     }
 
@@ -164,24 +167,10 @@ public class Dash : MonoBehaviour
         }
         else
         {
-            Animator animator = effect.GetComponent<Animator>();
-            if (animator != null)
-            {
-                AnimatorClipInfo[] clipInfo = animator.GetCurrentAnimatorClipInfo(0);
-                if (clipInfo.Length > 0)
-                {
-                    yield return new WaitForSeconds(clipInfo[0].clip.length);
-                }
-            }
-            else
-            {
-                yield return new WaitForSeconds(1.0f);
-            }
+            yield return new WaitForSeconds(1.0f);
         }
-
         Destroy(effect);
     }
-
     protected void SettingUpgrade(int utype, float uvalue)
     {
         switch (utype)

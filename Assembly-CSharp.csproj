@@ -81,7 +81,6 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
     <Compile Include="Assets\Undead Survivor\Codes\IEnumeratr.cs" />
     <Compile Include="Assets\Undead Survivor\Codes\GameManager.cs" />
-    <Compile Include="Assets\Undead Survivor\Codes\Dash.cs" />
     <Compile Include="Assets\Undead Survivor\Codes\Reposition.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
@@ -96,6 +95,7 @@
     <Compile Include="Assets\Undead Survivor\Codes\AchiveManager.cs" />
     <Compile Include="Assets\Undead Survivor\Codes\Enemy\RushEnemy.cs" />
     <Compile Include="Assets\Undead Survivor\Codes\Result.cs" />
+    <Compile Include="Assets\Undead Survivor\Codes\Dash\Dash.cs" />
     <Compile Include="Assets\Undead Survivor\Codes\Follow.cs" />
     <Compile Include="Assets\Undead Survivor\Codes\Enemy\RangedEnemy.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
@@ -106,11 +106,13 @@
     <Compile Include="Assets\Undead Survivor\Codes\EffectCodes\SpecialEffects.cs" />
     <Compile Include="Assets\Undead Survivor\Codes\Enemy\MeleeEnemy.cs" />
     <Compile Include="Assets\Undead Survivor\Codes\MonsterBullet.cs" />
+    <Compile Include="Assets\Undead Survivor\Codes\Dash\AfterImage.cs" />
     <Compile Include="Assets\Undead Survivor\Codes\HUD.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
     <Compile Include="Assets\Undead Survivor\Codes\Enemy\Enemy.cs" />
     <Compile Include="Assets\Undead Survivor\Codes\Item.cs" />
+    <Compile Include="Assets\Undead Survivor\Codes\Dash\AfterImagePool.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
     <Compile Include="Assets\Undead Survivor\Codes\Scanner.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextConsoleSimulator.cs" />
