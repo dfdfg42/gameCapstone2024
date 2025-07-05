@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class MapUI : MonoBehaviour
 {
@@ -18,8 +19,8 @@ public class MapUI : MonoBehaviour
     public float nodeScale = 1f;
 
     [Header("스테이지 정보 UI")]
-    public Text stageText;
-    public Text stageDescText;
+    public TextMeshProUGUI stageText;
+    public TextMeshProUGUI stageDescText;
 
     private Dictionary<int, MapNodeUI> nodeUIMap = new Dictionary<int, MapNodeUI>();
     private List<GameObject> connectionLines = new List<GameObject>();
@@ -193,7 +194,7 @@ public class MapNodeUI : MonoBehaviour
 {
     [Header("UI 컴포넌트")]
     public Image nodeImage;
-    public Text nodeText;
+    public TextMeshProUGUI nodeText; 
     public Button nodeButton;
     public GameObject selectedIndicator;
     public GameObject visitedIndicator;
@@ -217,7 +218,7 @@ public class MapNodeUI : MonoBehaviour
         if (nodeImage == null)
             nodeImage = GetComponent<Image>();
         if (nodeText == null)
-            nodeText = GetComponentInChildren<Text>();
+            nodeText = GetComponentInChildren<TextMeshProUGUI>();
 
         if (nodeButton != null)
             nodeButton.onClick.AddListener(OnNodeClicked);
@@ -294,11 +295,11 @@ public class MapNodeUI : MonoBehaviour
         switch (nodeData.nodeType)
         {
             case NodeType.Start: return "시작";
-            case NodeType.Battle: return "⚔";
-            case NodeType.Rest: return "💤";
+            case NodeType.Battle: return "전투";
+            case NodeType.Rest: return "휴식";
             case NodeType.Event: return "?";
-            case NodeType.Treasure: return "📦";
-            case NodeType.Boss: return "👑";
+            case NodeType.Treasure: return "보물";
+            case NodeType.Boss: return "보스";
             default: return "?";
         }
     }

@@ -310,7 +310,7 @@ MonoBehaviour:
   lineContainer: {fileID: 1804478797}
   mapCanvas: {fileID: 674784472}
   nodeUIPrefab: {fileID: 4456191783934640427, guid: cee35711a20d8ab4a8b1dba32c541ad9, type: 3}
-  linePrefab: {fileID: 961501220618310668, guid: a0d57d4f3a88f91469bba852aab701cf, type: 3}
+  linePrefab: {fileID: 5193545065372789500, guid: 83225b50864b24a4dbb6b0fbbbfe73d0, type: 3}
   mapSize: {x: 800, y: 600}
   nodeScale: 1
   stageText: {fileID: 681138902}
