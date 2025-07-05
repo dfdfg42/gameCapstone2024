@@ -32,6 +32,13 @@ public class EffectTestUI : MonoBehaviour
 
     void Update()
     {
+        // ▼ 수정됨: 처음에 한 번만 Player를 찾아서 성능을 최적화합니다.
+        player = FindObjectOfType<Player>();
+        if (player == null)
+        {
+            Debug.LogError("Player를 찾을 수 없습니다!");
+        }
+
         // ▼ 수정됨: 매번 FindObjectOfType을 호출하지 않도록 수정했습니다.
         if (!enableKeyboardTest || player == null) return;
 
