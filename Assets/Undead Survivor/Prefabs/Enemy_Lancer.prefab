@@ -97,8 +97,8 @@ GameObject:
   - component: {fileID: 7449331852154502240}
   - component: {fileID: 9173778134403894979}
   - component: {fileID: 2941297134926509999}
-  - component: {fileID: 1950368047036356880}
   - component: {fileID: 7249528748298386063}
+  - component: {fileID: 5404316702362763775}
   m_Layer: 6
   m_Name: Enemy_Lancer
   m_TagString: Enemy
@@ -257,34 +257,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 0.7, y: 0.9}
   m_Direction: 0
---- !u!114 &1950368047036356880
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6749529728457446564}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf9e171770b8cdf488129e9a7587d034, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  health: 3
-  maxHealth: 3
-  rangedDistance: 3
-  damage: 10
-  attackType: 2
-  attackDamage: 3
-  attackSpeed: 20
-  attacked: 0
-  attackMaxCooldown: 2
-  attackCooldown: 2
-  attackRange: 1
-  animCon:
-  - {fileID: 9100000, guid: 3071102b6c98bbc47910785dfc526fde, type: 2}
-  - {fileID: 9100000, guid: 3071102b6c98bbc47910785dfc526fde, type: 2}
-  target: {fileID: 0}
 --- !u!114 &7249528748298386063
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -297,3 +269,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47f32e81ffe4cfd42bc6e109befde24e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &5404316702362763775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6749529728457446564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f45ccf345f999e49bd93bc46b016d0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+  health: 10
+  maxHealth: 10
+  damage: 10
+  animCon: []
+  detectionRange: 5
+  rushSpeed: 10
+  rushDuration: 1
+  rushCooldown: 3
