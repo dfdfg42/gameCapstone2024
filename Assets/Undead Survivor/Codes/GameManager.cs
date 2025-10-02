@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     public bool isLive;
     public float gameTime;
     public float maxGameTime = 2 * 10f;
+
     [Header("# Player Info")]
     public int playerId;
     public float health;
@@ -29,11 +30,11 @@ public class GameManager : MonoBehaviour
     public Transform uiJoy;
     public Transform dashButton;
     public GameObject enemyCleaner;
-	public GameObject PauseScene;
+    public GameObject PauseScene;
     public GameObject HUD;
     public GameObject PoolManager;
 
-	void Awake()
+    void Awake()
     {
         Instance = this;
         Application.targetFrameRate = 60;
@@ -45,6 +46,18 @@ public class GameManager : MonoBehaviour
         playerId = id;
         health = maxHealth;
 
+        // 효과 시스템 초기화
+        if (EffectLevelManager.Instance != null)
+        {
+            EffectLevelManager.Instance.ResetLevels();
+        }
+
+        if (EffectInventory.Instance != null)
+        {
+            EffectInventory.Instance.Reset();
+        }
+
+        // 게임 시작
         player.gameObject.SetActive(true);
         Resume();
         AudioManager.instance.PlayBgm(true);
@@ -94,15 +107,13 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(0);
         PauseScene.SetActive(false);
-
-	}
+    }
 
     public void GameQuit()
     {
         Application.Quit();
         PauseScene.SetActive(false);
-
-	}
+    }
 
     void Update()
     {
@@ -125,11 +136,16 @@ public class GameManager : MonoBehaviour
 
         exp++;
 
-        if(exp == nextExp[Mathf.Min(level,nextExp.Length-1)])
+        if (exp == nextExp[Mathf.Min(level, nextExp.Length - 1)])
         {
             level++;
-            exp= 0;
-            uiLevelUp.Show();
+            exp = 0;
+
+            // 레벨업 UI 표시
+            if (uiLevelUp != null)
+            {
+                uiLevelUp.Show();
+            }
         }
     }
 
@@ -148,23 +164,21 @@ public class GameManager : MonoBehaviour
         uiJoy.localScale = Vector3.one;
         dashButton.localScale = Vector3.one;
         PauseScene.SetActive(false);
-		HUD.SetActive(true);
+        HUD.SetActive(true);
+    }
 
-	}
-
-	public void PauseToggle()
-	{
-			if (!PauseScene.activeSelf)
-			{
-				Stop();
-			    PauseScene.SetActive(true);
-			    HUD.SetActive(false);
-		}
-			else
-			{
-				Resume();
-			    PauseScene.SetActive(false);
-			}
-		
-	}
+    public void PauseToggle()
+    {
+        if (!PauseScene.activeSelf)
+        {
+            Stop();
+            PauseScene.SetActive(true);
+            HUD.SetActive(false);
+        }
+        else
+        {
+            Resume();
+            PauseScene.SetActive(false);
+        }
+    }
 }

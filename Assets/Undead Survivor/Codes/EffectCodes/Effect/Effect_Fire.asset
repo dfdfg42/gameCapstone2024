@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a7b7a24584253a40ad4cb614a659cc7, type: 3}
+  m_Name: Effect_Fire
+  m_EditorClassIdentifier: 
+  effectId: fire
+  effectName: "\uBD88\uC758 \uD798"
+  description: "\uACF5\uACA9\uC5D0 \uD654\uC5FC \uB370\uBBF8\uC9C0 {0} \uCD94\uAC00"
+  icon: {fileID: 0}
+  rarity: 1
+  effectType: 3
+  value: 8
+  specialId: fire
+  parameters: []
+  canLevelUp: 1
+  maxLevel: 5
+  valuePerLevel: 2
