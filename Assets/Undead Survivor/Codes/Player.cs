@@ -32,10 +32,9 @@ public class Player : MonoBehaviour, IEffectTarget
     private bool isImmune = false;
     private float immunityEndTime = 0f;
 
-    // ⭐ 개선된 효과 시스템
-    private List<IEffect> activeEffects = new List<IEffect>();
-    private List<IPassiveEffect> passiveEffects = new List<IPassiveEffect>();
-    private List<IActiveEffect> activeTriggeredEffects = new List<IActiveEffect>();
+    // ⭐ 효과 캐시 (성능 최적화용)
+    private List<IPassiveEffect> cachedPassiveEffects = new List<IPassiveEffect>();
+    private List<IActiveEffect> cachedActiveEffects = new List<IActiveEffect>();
 
     // Dash 애니메이션을 위한 파라미터
     private readonly string ATTACK_VERTICAL = "AttackVertical";
@@ -54,19 +53,27 @@ public class Player : MonoBehaviour, IEffectTarget
         dashComponent = GetComponent<Dash>();
 
         // 기본 스탯으로 초기화
-        RecalculateStats();
+        currentDamage = baseDamage;
+        currentSpeed = baseSpeed;
+        currentDefense = baseDefense;
+        speed = currentSpeed;
 
         // Dash 컴포넌트에서 이벤트 구독
         if (dashComponent != null)
         {
             dashComponent.OnDashEnd += HandleDashEnd;
-            dashComponent.OnHitTarget += OnDashHitTarget;  // ⭐ 수정된 메서드명
+            dashComponent.OnHitTarget += OnDashHitTarget;
         }
     }
 
     void OnEnable()
     {
-        RecalculateStats();
+        // 기본 스탯으로 초기화
+        currentDamage = baseDamage;
+        currentSpeed = baseSpeed;
+        currentDefense = baseDefense;
+        speed = currentSpeed;
+
         anim.runtimeAnimatorController = animCon[GameManager.Instance.playerId];
     }
 
@@ -114,57 +121,46 @@ public class Player : MonoBehaviour, IEffectTarget
         }
     }
 
-    // ⭐ 개선된 IEffectTarget 구현
+    // ========== IEffectTarget 구현 ==========
     public void ApplyEffect(IEffect effect)
     {
-        // 기존 같은 ID 효과 제거
-        RemoveEffect(effect);
-
-        // 새 효과 추가
-        activeEffects.Add(effect);
-
-        // 효과 타입별로 분류
+        // 캐시 업데이트
         if (effect is IPassiveEffect passiveEffect)
         {
-            passiveEffects.Add(passiveEffect);
-            Debug.Log($"패시브 효과 추가: {effect.Name}");
+            cachedPassiveEffects.Add(passiveEffect);
+            RecalculateStats(); // 패시브만 스탯 재계산
         }
 
         if (effect is IActiveEffect activeEffect)
         {
-            activeTriggeredEffects.Add(activeEffect);
-            Debug.Log($"액티브 효과 추가: {effect.Name}");
+            cachedActiveEffects.Add(activeEffect);
         }
 
-        // 패시브 효과의 경우에만 스탯 재계산
-        if (effect.Category == EffectCategory.Passive)
-        {
-            RecalculateStats();
-        }
-
+        effect.Apply(this); // 효과의 Apply 메서드 호출
         Debug.Log($"플레이어: {effect.Name} 효과 적용됨");
     }
 
     public void RemoveEffect(IEffect effect)
     {
-        // 모든 리스트에서 같은 ID 효과 제거
-        activeEffects.RemoveAll(e => e.EffectId == effect.EffectId);
-        passiveEffects.RemoveAll(e => e.EffectId == effect.EffectId);
-        activeTriggeredEffects.RemoveAll(e => e.EffectId == effect.EffectId);
-
-        // 패시브 효과였다면 스탯 재계산
-        if (effect.Category == EffectCategory.Passive)
+        // 캐시에서 제거
+        if (effect is IPassiveEffect passiveEffect)
         {
+            cachedPassiveEffects.Remove(passiveEffect);
             RecalculateStats();
         }
 
+        if (effect is IActiveEffect activeEffect)
+        {
+            cachedActiveEffects.Remove(activeEffect);
+        }
+
+        effect.Remove(this); // 효과의 Remove 메서드 호출
         Debug.Log($"플레이어: {effect.Name} 효과 제거됨");
     }
 
-    // ⭐ 새로운 트리거 시스템
     public void TriggerActiveEffects(EffectTrigger trigger, object context = null)
     {
-        var triggerableEffects = activeTriggeredEffects.Where(e => e.CanTrigger(trigger)).ToList();
+        var triggerableEffects = cachedActiveEffects.Where(e => e.CanTrigger(trigger)).ToList();
 
         if (triggerableEffects.Count > 0)
         {
@@ -177,7 +173,7 @@ public class Player : MonoBehaviour, IEffectTarget
         }
     }
 
-    // ⭐ 개선된 스탯 계산 (패시브 효과만)
+    // ========== 스탯 관리 ==========
     private void RecalculateStats()
     {
         // 기본값으로 초기화
@@ -186,7 +182,7 @@ public class Player : MonoBehaviour, IEffectTarget
         float defenseBonus = 0f;
 
         // 패시브 효과들만 스탯에 반영
-        foreach (var passiveEffect in passiveEffects)
+        foreach (var passiveEffect in cachedPassiveEffects)
         {
             damageMultiplier += passiveEffect.GetStatModifier(StatType.Damage);
             speedMultiplier += passiveEffect.GetStatModifier(StatType.Speed);
@@ -204,7 +200,33 @@ public class Player : MonoBehaviour, IEffectTarget
         Debug.Log($"스탯 업데이트 - 데미지: {currentDamage:F1}, 속도: {currentSpeed:F1}, 방어력: {currentDefense:F1}");
     }
 
-    // ⭐ 대쉬로 적 타격 시 호출 (기존 OnAttackSuccess 대체)
+    // ========== 대쉬 관련 ==========
+    void OnDash()
+    {
+        Vector2 direction = inputVec.normalized;
+        isDashing = true;
+
+        if (Mathf.Abs(direction.y) > Mathf.Abs(direction.x))
+        {
+            anim.SetBool(ATTACK_VERTICAL, true);
+            anim.SetBool(ATTACK_HORIZONTAL, false);
+        }
+        else
+        {
+            anim.SetBool(ATTACK_HORIZONTAL, true);
+            anim.SetBool(ATTACK_VERTICAL, false);
+        }
+
+        dashComponent.Init(direction);
+    }
+
+    void HandleDashEnd()
+    {
+        isDashing = false;
+        anim.SetBool(ATTACK_VERTICAL, false);
+        anim.SetBool(ATTACK_HORIZONTAL, false);
+    }
+
     private void OnDashHitTarget(Enemy target)
     {
         // 면역 효과 활성화
@@ -219,34 +241,11 @@ public class Player : MonoBehaviour, IEffectTarget
         }
         else
         {
-            // target이 null이면 단순히 대쉬만 한 것 (적 타격 X)
             Debug.Log("대쉬 완료 - 적 타격 없음");
         }
     }
 
-    // 공개 스탯 접근자들
-    public float GetCurrentDamage() => currentDamage;
-    public float GetCurrentSpeed() => currentSpeed;
-    public float GetCurrentDefense() => currentDefense;
-    public List<IEffect> GetActiveEffects() => new List<IEffect>(activeEffects);
-
-    // ⭐ 효과 상태 확인 메서드들
-    public bool HasPassiveEffect(string effectId)
-    {
-        return passiveEffects.Any(e => e.EffectId == effectId);
-    }
-
-    public bool HasActiveEffect(string effectId)
-    {
-        return activeTriggeredEffects.Any(e => e.EffectId == effectId);
-    }
-
-    public int GetActiveEffectCount(EffectCategory category)
-    {
-        return activeEffects.Count(e => e.Category == category);
-    }
-
-    // 기존 충돌 및 전투 로직 (변경 없음)
+    // ========== 충돌 및 피해 처리 ==========
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (!GameManager.Instance.isLive || isImmune || isDashing)
@@ -330,29 +329,12 @@ public class Player : MonoBehaviour, IEffectTarget
         GameManager.Instance.GameOver();
     }
 
-    void OnDash()
-    {
-        Vector2 direction = inputVec.normalized;
-        isDashing = true;
+    // ========== 공개 접근자 ==========
+    public float GetCurrentDamage() => currentDamage;
+    public float GetCurrentSpeed() => currentSpeed;
+    public float GetCurrentDefense() => currentDefense;
 
-        if (Mathf.Abs(direction.y) > Mathf.Abs(direction.x))
-        {
-            anim.SetBool(ATTACK_VERTICAL, true);
-            anim.SetBool(ATTACK_HORIZONTAL, false);
-        }
-        else
-        {
-            anim.SetBool(ATTACK_HORIZONTAL, true);
-            anim.SetBool(ATTACK_VERTICAL, false);
-        }
-
-        dashComponent.Init(direction);
-    }
-
-    void HandleDashEnd()
-    {
-        isDashing = false;
-        anim.SetBool(ATTACK_VERTICAL, false);
-        anim.SetBool(ATTACK_HORIZONTAL, false);
-    }
+    // 효과 상태 확인 (디버그용)
+    public int GetPassiveEffectCount() => cachedPassiveEffects.Count;
+    public int GetActiveEffectCount() => cachedActiveEffects.Count;
 }

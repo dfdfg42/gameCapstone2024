@@ -46,15 +46,9 @@ public class GameManager : MonoBehaviour
         playerId = id;
         health = maxHealth;
 
-        // 효과 시스템 초기화
-        if (EffectLevelManager.Instance != null)
+        if (EffectManager.Instance != null)
         {
-            EffectLevelManager.Instance.ResetLevels();
-        }
-
-        if (EffectInventory.Instance != null)
-        {
-            EffectInventory.Instance.Reset();
+            EffectManager.Instance.Reset();
         }
 
         // 게임 시작

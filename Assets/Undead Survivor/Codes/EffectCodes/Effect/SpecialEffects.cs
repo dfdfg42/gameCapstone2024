@@ -119,12 +119,34 @@ public class FireEffect : IEffect, IActiveEffect
 
     private void ShowFireEffect(Vector3 position)
     {
-        // 화염 파티클 이펙트 생성
-        Debug.Log($"화염 이펙트 표시: {position}");
+        // 1. Resources 폴더에서 파티클 프리팹을 불러옵니다.
+        GameObject firePrefab = Resources.Load<GameObject>("FireEffectParticle");
+        if (firePrefab == null)
+        {
+            Debug.LogError("FireEffectParticle 프리팹을 Resources 폴더에서 찾을 수 없습니다!");
+            return;
+        }
+
+        // 2. 프리팹을 전달받은 위치(적의 위치)에 생성합니다.
+        GameObject fireInstance = GameObject.Instantiate(firePrefab, position, Quaternion.identity);
+
+        // 3. 파티클 재생이 끝나면 자동으로 파괴되도록 설정합니다.
+        ParticleSystem ps = fireInstance.GetComponent<ParticleSystem>();
+        if (ps != null)
+        {
+            // 파티클 시스템의 총 지속 시간(Duration + Start Lifetime) 이후에 게임 오브젝트를 파괴합니다.
+            float totalDuration = ps.main.duration + ps.main.startLifetime.constantMax;
+            GameObject.Destroy(fireInstance, totalDuration);
+        }
+        else
+        {
+            // 파티클 시스템이 없는 경우를 대비해 2초 뒤에 파괴합니다.
+            GameObject.Destroy(fireInstance, 2f);
+        }
     }
 }
 
-public class IceEffect : IEffect, IActiveEffect
+    public class IceEffect : IEffect, IActiveEffect
 {
     public string EffectId => "ice";
     public string Name => "얼음";

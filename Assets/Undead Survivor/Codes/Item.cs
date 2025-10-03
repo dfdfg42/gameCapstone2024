@@ -1,135 +1,125 @@
 using UnityEngine;
 using UnityEngine.UI;
-using Assets.Undead_Survivor.Codes;
 
 public class Item : MonoBehaviour
 {
-    public EffectDataScriptable effectData; // Effect 전용
-    public int level;
+    [Header("UI 컴포넌트")]
+    public Text itemName;
+    public Text itemDesc;
+    public Text itemLevelText;
+    public Image itemIcon;
 
-    Image icon;
-    Text textLevel;
-    Text textName;
-    Text textDesc;
-    Image border;
-
-    [Header("희귀도 색상")]
-    public Color commonColor = new Color(0.8f, 0.8f, 0.8f);
-    public Color rareColor = new Color(0.3f, 0.5f, 1f);
-    public Color epicColor = new Color(0.8f, 0.3f, 1f);
-    public Color legendaryColor = new Color(1f, 0.8f, 0.2f);
+    private EffectDataScriptable effectData;
+    private int currentLevel;
+    private int nextLevel;
 
     void Awake()
     {
-        Image[] images = GetComponentsInChildren<Image>();
-        if (images.Length > 1)
-        {
-            border = images[0];
-            icon = images[1];
-        }
-
-        Text[] texts = GetComponentsInChildren<Text>();
-        if (texts.Length >= 3)
-        {
-            textLevel = texts[0];
-            textName = texts[1];
-            textDesc = texts[2];
-        }
+        // UI 컴포넌트가 설정되지 않았으면 자동으로 찾기
+        if (itemName == null)
+            itemName = transform.Find("Name")?.GetComponent<Text>();
+        if (itemDesc == null)
+            itemDesc = transform.Find("Desc")?.GetComponent<Text>();
+        if (itemLevelText == null)
+            itemLevelText = transform.Find("Level")?.GetComponent<Text>();
+        if (itemIcon == null)
+            itemIcon = transform.Find("Icon")?.GetComponent<Image>();
     }
 
-    void OnEnable()
+    public void SetEffectData(EffectDataScriptable data)
     {
-        if (effectData != null)
-        {
-            UpdateDisplay();
-        }
+        effectData = data;
+
+        // 현재 레벨 확인
+        currentLevel = EffectManager.Instance.GetEffectLevel(data.effectId);
+        nextLevel = currentLevel + 1;
+
+        // UI 업데이트
+        UpdateUI();
     }
 
-    public void SetEffectData(EffectDataScriptable effect)
+    private void UpdateUI()
     {
-        effectData = effect;
+        if (effectData == null) return;
 
-        if (effectData == null)
+        // 이름 표시
+        if (itemName != null)
         {
-            gameObject.SetActive(false);
-            return;
+            itemName.text = effectData.effectName;
         }
 
-        UpdateDisplay();
-    }
-
-    void UpdateDisplay()
-    {
-        if (icon != null)
-            icon.sprite = effectData.icon;
-
-        if (textName != null)
-            textName.text = effectData.effectName;
-
-        if (textDesc != null)
+        // 레벨 표시
+        if (itemLevelText != null)
         {
-            // 현재 레벨의 값 계산
-            int currentLevel = EffectLevelManager.Instance.GetEffectLevel(effectData.effectId);
-            float currentValue = effectData.value + (effectData.valuePerLevel * currentLevel);
-
-            // 값을 퍼센트로 표시할지 결정
-            string valueText = effectData.effectType == EffectType.Damage ||
-                             effectData.effectType == EffectType.Speed
-                ? $"{currentValue * 100:F0}%"
-                : $"{currentValue:F0}";
-
-            textDesc.text = effectData.description.Replace("{0}", valueText);
-        }
-
-        // 희귀도에 따른 테두리 색상
-        if (border != null)
-        {
-            switch (effectData.rarity)
+            if (currentLevel > 0)
             {
-                case EffectRarity.Common:
-                    border.color = commonColor;
-                    break;
-                case EffectRarity.Rare:
-                    border.color = rareColor;
-                    break;
-                case EffectRarity.Epic:
-                    border.color = epicColor;
-                    break;
-                case EffectRarity.Legendary:
-                    border.color = legendaryColor;
-                    break;
-            }
-        }
-
-        // 시너지 효과인지 확인
-        bool isSynergy = effectData.effectId.StartsWith("synergy_");
-        if (textLevel != null)
-        {
-            if (isSynergy)
-            {
-                textLevel.text = "[시너지]";
-                textLevel.color = legendaryColor;
+                itemLevelText.text = $"Lv.{currentLevel} → Lv.{nextLevel}";
+                itemLevelText.color = Color.yellow; // 레벨업은 노란색
             }
             else
             {
-                // 현재 레벨 표시
-                if (EffectLevelManager.Instance != null)
-                {
-                    int currentLevel = EffectLevelManager.Instance.GetEffectLevel(effectData.effectId);
-                    textLevel.text = $"Lv.{currentLevel + 1}";
+                itemLevelText.text = "NEW!";
+                itemLevelText.color = Color.green; // 새 효과는 초록색
+            }
+        }
 
-                    // 최대 레벨이면 표시
-                    if (currentLevel >= effectData.maxLevel)
-                    {
-                        textLevel.text = "[MAX]";
-                        textLevel.color = legendaryColor;
-                    }
-                    else
-                    {
-                        textLevel.color = Color.white;
-                    }
+        // 설명 표시 (다음 레벨 값으로)
+        if (itemDesc != null)
+        {
+            float nextValue = effectData.value + (effectData.valuePerLevel * currentLevel);
+
+            // 시너지 효과인 경우 특별 처리
+            if (effectData.effectId.StartsWith("synergy_"))
+            {
+                itemDesc.text = effectData.description;
+                if (itemLevelText != null)
+                {
+                    itemLevelText.text = "SYNERGY!";
+                    itemLevelText.color = new Color(1f, 0.5f, 0f); // 주황색
                 }
             }
+            else
+            {
+                // 값이 포함된 설명 생성
+                itemDesc.text = string.Format(effectData.description, nextValue);
+
+                // 최대 레벨인 경우 표시
+                if (effectData.canLevelUp && nextLevel >= effectData.maxLevel)
+                {
+                    itemDesc.text += " <color=red>(MAX)</color>";
+                }
+            }
+        }
+
+        // 아이콘 설정
+        if (itemIcon != null && effectData.icon != null)
+        {
+            itemIcon.sprite = effectData.icon;
+            itemIcon.enabled = true;
+        }
+        else if (itemIcon != null)
+        {
+            // 아이콘이 없으면 희귀도에 따라 기본 색상 표시
+            itemIcon.enabled = true;
+            itemIcon.sprite = null;
+            itemIcon.color = GetRarityColor(effectData.rarity);
+        }
+    }
+
+    private Color GetRarityColor(EffectRarity rarity)
+    {
+        switch (rarity)
+        {
+            case EffectRarity.Common:
+                return Color.gray;
+            case EffectRarity.Rare:
+                return Color.blue;
+            case EffectRarity.Epic:
+                return new Color(0.5f, 0f, 0.5f); // 보라색
+            case EffectRarity.Legendary:
+                return new Color(1f, 0.5f, 0f); // 주황색
+            default:
+                return Color.white;
         }
     }
 
@@ -137,45 +127,47 @@ public class Item : MonoBehaviour
     {
         if (effectData == null) return;
 
-        // EffectData를 실제 IEffect로 변환
-        EffectData data = new EffectData
-        {
-            effectType = effectData.effectType,
-            value = effectData.value + (effectData.valuePerLevel *
-                    EffectLevelManager.Instance.GetEffectLevel(effectData.effectId)),
-            specialId = effectData.specialId,
-            parameters = effectData.parameters
-        };
+        // 효과 획득 사운드
+        AudioManager.instance.PlaySfx(AudioManager.Sfx.Select);
 
-        // Effect 생성 및 적용
-        IEffect effect = EffectFactory.CreateEffect(data);
-        if (effect != null && GameManager.Instance.player != null)
+        // EffectManager를 통해 효과 획득
+        Player player = FindObjectOfType<Player>();
+        EffectManager.Instance.AcquireEffect(effectData, player);
+
+        // 시너지 효과인 경우 특별 메시지
+        if (effectData.effectId.StartsWith("synergy_"))
         {
-            EffectManager.Instance.ApplyEffect(GameManager.Instance.player, effect);
+            Debug.Log($"시너지 발동! {effectData.effectName}");
         }
 
-        // 레벨 증가
-        if (EffectLevelManager.Instance != null)
+        // LevelUp UI 닫기
+        LevelUp levelUp = GetComponentInParent<LevelUp>();
+        if (levelUp != null)
         {
-            EffectLevelManager.Instance.IncreaseEffectLevel(effectData.effectId);
+            levelUp.Hide();
         }
+    }
 
-        // 효과 ID를 획득 목록에 추가
-        if (EffectInventory.Instance != null)
-        {
-            EffectInventory.Instance.AddEffect(effectData.effectId);
-        }
+    // 버튼 인터랙션 효과
+    public void OnHover()
+    {
+        transform.localScale = Vector3.one * 1.1f;
+    }
 
-        if (AudioManager.instance != null)
-        {
-            AudioManager.instance.PlaySfx(AudioManager.Sfx.Select);
-        }
+    public void OnHoverExit()
+    {
+        transform.localScale = Vector3.one;
+    }
 
-        // 레벨업 UI 닫기
-        LevelUp levelUpUI = FindObjectOfType<LevelUp>();
-        if (levelUpUI != null)
-        {
-            levelUpUI.Hide();
-        }
+    // 효과 정보 가져오기 (디버그용)
+    public EffectDataScriptable GetEffectData()
+    {
+        return effectData;
+    }
+
+    public bool IsMaxLevel()
+    {
+        if (effectData == null) return false;
+        return effectData.canLevelUp && nextLevel > effectData.maxLevel;
     }
 }
